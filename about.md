@@ -37,8 +37,8 @@ Hello! I am Juheon Kim, an undergraduate student at George Mason University, maj
 
 🛠 Tools Used:
   - R
-
 <br><br>
+
 #### 🦟 Trends of Malaria Infections in South Korea
 
 📌 Description
