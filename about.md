@@ -9,16 +9,11 @@ permalink: /about/
 Hello! I am Juheon Kim, an undergraduate student at George Mason University, majoring in Computational and Data Science.
 
 🛠 Technical Skills
-
-Python
-
-SQL
-
-R
-
-Matlab
-
-Netlogo
+- Python
+- SQL
+- R (R studio)
+- Matlab
+- Netlogo
 
 
 🚀 Projects
