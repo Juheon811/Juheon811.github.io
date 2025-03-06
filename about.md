@@ -14,7 +14,6 @@ Hello! I am Juheon Kim, an undergraduate student at George Mason University, maj
 - Netlogo
 <br><br>
 ### 🚀 Projects
-<br><br>
 #### 📂 Meal Planning Database
 
 📌 Description
