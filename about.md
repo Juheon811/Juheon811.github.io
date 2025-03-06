@@ -4,20 +4,17 @@ title: About
 permalink: /about/
 ---
 # 🔥 About Me 🔥
-
-
 Hello! I am Juheon Kim, an undergraduate student at George Mason University, majoring in Computational and Data Science.
-
+<br><br>
 ## 🛠 Technical Skills
 - Python
 - SQL
 - R (R studio)
 - Matlab
 - Netlogo
-
-
+<br><br>
 ## 🚀 Projects
-
+<br><br>
 ### 📂 Meal Planning Database
 
 📌 Description
@@ -28,8 +25,7 @@ Hello! I am Juheon Kim, an undergraduate student at George Mason University, maj
 **🛠 Tools Used:**
   - SQLite
   -  Python
-
-
+<br><br>
 ### 🛍️ Consumer Characteristics and Clothing Sales Analysis
 
 📌 Description
@@ -40,7 +36,7 @@ Hello! I am Juheon Kim, an undergraduate student at George Mason University, maj
 **🛠 Tools Used:**
   - R
 
-
+<br><br>
 ### 🦟 Trends of Malaria Infections in South Korea
 
 📌 Description
