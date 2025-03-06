@@ -3,7 +3,7 @@ layout: inner
 title: About
 permalink: /about/
 ---
-## 👋 About Me
+# 🔥 About Me 🔥
 
 
 Hello! I am Juheon Kim, an undergraduate student at George Mason University, majoring in Computational and Data Science.
