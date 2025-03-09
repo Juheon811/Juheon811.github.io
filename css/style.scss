@@ -142,7 +142,9 @@ button.btn, input.btn {
   }
   .hero-buttons {
     margin: 0 auto;
-    display: table;
+    display: felx;
+    justtify-content: center;
+    gap: 10px:
     i {
       padding-right: 0.5em;
     }
