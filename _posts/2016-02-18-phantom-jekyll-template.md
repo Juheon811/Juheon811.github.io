@@ -2,7 +2,7 @@
 layout: inner
 position: left
 title: 'Consumer Characteristics and Clothing Sales Analysis'
-date: 2025-03-09 21:15:00
+date: 2025-03-01 21:15:00
 categories: data-analysis fashion
 tags: Jekyll RMarkdown GitHub Data-Visualization
 featured_image: '/img/posts/clothing-analysis.png'
