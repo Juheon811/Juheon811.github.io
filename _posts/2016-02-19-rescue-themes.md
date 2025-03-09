@@ -1,8 +1,8 @@
 ---
 layout: inner
 position: right
-title: 'Rescue Themes'
-date: 2016-02-20 15:56:00
+title: 'Trends of Malaria Infections in South Korea'
+date: 2025-03-07 15:56:00
 categories: development design
 tags: WordPress PHP Sass
 featured_image: '/img/posts/03_rescue-themes-1130x864-2x.png'
