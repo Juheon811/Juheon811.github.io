@@ -2,7 +2,7 @@
 layout: inner
 position: right
 title: 'Trends of Malaria Infections in South Korea'
-date: 2025-03-07 15:56:00
+date: 2025-03-06 15:56:00
 categories: data-analysis malaria infection
 tags: RMarkdown GitHub Data-analysis
 featured_image: '/img/posts/malaria.png'
