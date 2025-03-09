@@ -222,17 +222,6 @@ button.btn, input.btn {
   position: relative;
   margin: 0 auto;
   margin-bottom: 1em;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 1.35em;
-    width: 3em;
-    height: 3px;
-    background-color: #ECEFF1;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
 }
 
