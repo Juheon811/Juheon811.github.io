@@ -10,3 +10,4 @@ project_link: 'https://github.com/Juheon811/Clothing-Analysis'
 button_icon: 'bar-chart'
 button_text: 'View Project'
 lead_text: "Analyzing the relationship between consumer characteristics and clothing sales using data from Zara (2018-2022)."
+---
