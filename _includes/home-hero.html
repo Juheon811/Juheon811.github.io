@@ -36,6 +36,9 @@
             {% if site.medium_username != '' %}
               <a href="mailto:{{ site.email }}"><button class="btn btn-default btn-lg"><i class="fa fa-envelope fa-lg"></i> Email</button></a>
             {% endif %}
+            {% if site.resume_link != '' %}
+            <a href="{{ site.resume_link }}" target="_blank"><button class="btn btn-default btn-lg"><i class="fa fa-file-text fa-lg"></i> Resume</button></a>
+            {% endif %}
 
           </div>
 
