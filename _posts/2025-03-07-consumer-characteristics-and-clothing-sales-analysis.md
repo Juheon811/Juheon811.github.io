@@ -5,7 +5,7 @@ title: "Consumer Characteristics and Clothing Sales Analysis"
 date: 2025-03-07 21:15:00
 categories: data-analysis fashion
 tags: RMarkdown GitHub Data-Visualization
-featured_image: "/img/posts/clothing.png"
+featured_image: "/img/posts/Clothing.png"
 project_link: "https://github.com/Juheon811/Clothing-Analysis"
 button_icon: "bar-chart"
 button_text: "View Project"
