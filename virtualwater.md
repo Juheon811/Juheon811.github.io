@@ -4,7 +4,7 @@ title: "💧 Virtual Water Trade and Global Water Scarcity"
 permalink: /virtualwater/
 ---
 
-# Summary of Deng et al. (2021) Social network analysis of virtual water trade among major countries in the world
+# Deng et al.(2021): Social network analysis of virtual water trade among major countries in the world
 
 # 💡 1. Research Question and Research Gap
 
