@@ -1,13 +1,13 @@
 ---
 layout: inner
 position: right
-title: 'Bloc Jams Angular'
-date: 2026-02-20 14:15:00
+title: 'Virtual Water Trade and Global Water Scarcity'
+date: 2025-04-19 14:30:00
 categories: development
-tags: JavaScript AngularJS Sass Grunt
-featured_image: '/img/posts/01_bloc-jams-angular-1130x864-2x.png'
-project_link: 'https://github.com/jamigibbs/bloc-jams-angular'
-button_icon: 'github'
-button_text: 'Visit Project'
-lead_text: 'A digital music player built using AngularJS'
+tags: Water VirtualWaterTrade Sustainability
+featured_image: '/img/posts/virtual-water-trade.png'
+project_link: '/2025/04/19/virtual-water-trade/' 
+button_icon: 'file-alt' 
+button_text: 'Read Article' 
+lead_text: 'Exploring how virtual water trade addresses global water scarcity.'
 ---
