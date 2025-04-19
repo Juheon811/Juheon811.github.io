@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: inner
 title: "Virtual Water Trade and Global Water Scarcity"
 permalink: /virtualwater/
 ---
