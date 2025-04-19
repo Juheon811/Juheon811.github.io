@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: inner
 title: "Virtual Water Trade and Global Water Scarcity"
 date: 2025-04-18 14:30:00
 categories: development
