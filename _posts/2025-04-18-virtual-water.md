@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Virtual Water Trade and Global Water Scarcity"
-date: 2025-04-19
+date: 2025-04-18
 categories: development
 tags: [Water, VirtualWaterTrade, Sustainability]
 project_link: /2025/04/19/virtual-water/
