@@ -1,5 +1,6 @@
 ---
 layout: inner
+position: right
 title: "Virtual Water Trade and Global Water Scarcity"
 date: 2025-04-18 14:30:00
 categories: development
@@ -10,4 +11,3 @@ button_icon: 'bar-chart'
 button_text: "View Project"
 lead_text: 'Exploring how virtual water trade addresses global water scarcity.'
 ---
-
