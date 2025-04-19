@@ -4,6 +4,7 @@ title: "💧 Virtual Water Trade and Global Water Scarcity"
 permalink: /virtualwater/
 ---
 
+# Summary of Deng et al. (2021) Social network analysis of virtual water trade among major countries in the world
 
 # 💡 1. Research Question and Research Gap
 
@@ -17,14 +18,7 @@ Previous studies have primarily focused on virtual water trade related to **agri
 
 ### **Why is virtual water trade important?**
 
-Water is a key resource that supports all industries, agriculture, and daily life.  
-However, the problem is that water is very disproportionately distributed among countries.
-
-That’s where the concept of Virtual Water Trade comes in.  
-It refers to the idea that when we trade goods, we are also indirectly trading the water used to produce them.
-
-This study shows how virtual water trade plays a role in solving water shortages between countries  
-and explores how the global trade network is connected in terms of virtual water flows.
+Water is a key resource that supports all industries, agriculture, and daily life. However, the problem is that water is very disproportionately distributed among countries. That’s where the concept of Virtual Water Trade comes in. It refers to the idea that when we trade goods, we are also indirectly trading the water used to produce them. This study shows how virtual water trade plays a role in solving water shortages between countries and explores how the global trade network is connected in terms of virtual water flows.
 
 ---
 <br><br>
@@ -33,9 +27,8 @@ and explores how the global trade network is connected in terms of virtual water
 ## 💡 How is *Virtual Water* calculated?
 
 This study estimates inter-country virtual water flows using a **Multi-Regional Input–Output (MRIO) model**.  
-Here’s how it works:
 
-### 📌 Step 1. Direct Water Coefficient
+### 1. Direct Water Coefficient
 
 \\[
 w_i^r = \frac{W_i^r}{X_i^r}
@@ -47,7 +40,7 @@ w_i^r = \frac{W_i^r}{X_i^r}
 
 ---
 
-### 📌 Step 2. Input–Output Balance Equation
+### 2. Input–Output Balance Equation
 
 \\[
 AX + Y = X
@@ -60,7 +53,7 @@ AX + Y = X
 
 ---
 
-### 📌 Step 3. Leontief Inverse Matrix
+### 3. Leontief Inverse Matrix
 
 \\[
 X = (I - A)^{-1}Y = LY
@@ -71,7 +64,7 @@ X = (I - A)^{-1}Y = LY
 
 ---
 
-### 📌 Step 4. Virtual Water Trade Matrix
+### 4. Virtual Water Trade Matrix
 
 \\[
 H = \hat{W} \cdot L \cdot Z
@@ -84,7 +77,7 @@ H = \hat{W} \cdot L \cdot Z
 
 ---
 
-### 📌 Step 5. Virtual Water Network Matrix
+### 5. Virtual Water Network Matrix
 
 \\[
 T = H
