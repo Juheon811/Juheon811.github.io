@@ -15,9 +15,6 @@ This study introduces a methodology called **🌐 Social Network Analysis**
 to quantitatively analyze the structural characteristics of virtual water trade,  
 and provides an integrated analysis of virtual water trade networks across the **entire industrial structure**.
 
-\\[
-D = \frac{\sum_{r \neq s} \sum_{s=1}^{m} t_{rs}}{m(m - 1)}
-\\]
 
 ---
 
