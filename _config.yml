@@ -10,6 +10,7 @@ resume_link: "https://drive.google.com/file/d/1OZoHBxPykWS2HYpLYAoZ9aZ5lEQUo4tG/
 
 # Build settings
 markdown: kramdown
+kramdown:
   math_engine: mathjax
   input: GFM
 # theme: phantom  # Trigger rebuild
