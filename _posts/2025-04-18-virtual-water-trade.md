@@ -8,6 +8,6 @@ tags: Water VirtualWaterTrade Sustainability
 featured_image: '/img/posts/virtual-water-trade.png'
 project_link: '/2025/04/19/virtual-watermd/'
 button_icon: 'file-alt' 
-button_text: 'Read Article' 
+button_text: "View Project"
 lead_text: 'Exploring how virtual water trade addresses global water scarcity.'
 ---
