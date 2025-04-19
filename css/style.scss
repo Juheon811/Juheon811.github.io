@@ -263,13 +263,7 @@ button.btn, input.btn {
       position: relative;
       margin-bottom: 1.5em;
       &:after {
-        content: '';
-        position: absolute;
-        top: 1.5em;
-        left: 0;
-        width: 3em;
-        height: 3px;
-        background-color: #ECEFF1;
+        display =none;
       }
     }
     .excerpt {
