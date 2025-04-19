@@ -10,7 +10,7 @@ resume_link: "https://drive.google.com/file/d/1OZoHBxPykWS2HYpLYAoZ9aZ5lEQUo4tG/
 
 # Build settings
 markdown: kramdown
-# theme: phantom # Uncomment once published to RubyGems
+theme: phantom # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate
 
