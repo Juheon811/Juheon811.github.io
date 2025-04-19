@@ -4,6 +4,7 @@ title: "Virtual Water Trade and Global Water Scarcity"
 date: 2025-04-19
 categories: development
 tags: [Water, VirtualWaterTrade, Sustainability]
+project_link: /2025/04/19/virtual-water/
 ---
 
 ## 1. Research Question and Research Gap
