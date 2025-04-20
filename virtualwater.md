@@ -463,3 +463,10 @@ These structures visually demonstrate that the global beer industry is multipola
 In particular, the strength of the connection between Europe and Asia is remarkable, and its strategic position in the global supply chain can be identified.
 
 ---
+
+## 🧾 Summary and Key Insights
+
+This project is an example of analyzing the virtual water trade structure centered on wine and beer through social network analysis (SNA) techniques. Based on FAOSTAT trade data from 1990 to 2023, item filtering, preprocessing, and node/link data were constructed, Since then, major network indicators such as connection strength, centrality, and community structure have been comprehensively analyzed. Network visualization and map-based analysis allowed us to see at a glance the role of key countries and the strategic location of trade flows. As a result, wine had a centralized network centered on traditional European producers, and beer had a multipolar structure involving various countries. In addition, centrality and community analysis have found that certain countries are acting as "hubs" or "intermediaries" in their networks beyond simple trade partners.
+In particular, map-based visualizations provide intuitive understanding of the flow of global trade, effectively revealing key trade routes and interdependencies.
+
+---
