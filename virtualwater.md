@@ -251,7 +251,6 @@ link_merge = pd.merge(items_export, items_import,
     on=["O_code", "O_name", "D_code", "D_name", "item", "year"],
     how='inner')
 
-import numpy as np
 link_merge["Final Value"] = np.where(link_merge["weight_x"] > link_merge["weight_y"],
                                      link_merge["weight_x"], link_merge["weight_y"])
 ``` 
