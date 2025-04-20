@@ -223,7 +223,8 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 - Filter by Export/Import and Items <br>
   - Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
   - Filter the dataset to include only export and import records with positive values.
-<br>
+
+
 ```python
 # Export data
 link2 = link[(link['Element'] == 'Export quantity') & (link['weight'] > 0)]
