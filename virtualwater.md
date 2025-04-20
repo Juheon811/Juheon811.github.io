@@ -186,19 +186,19 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 1. Time Range (1990–2023)  
    - The dataset covers global trade from 1990 to 2023.  
    - This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
-
+<br>
 2. Focus on Selected Items  
    - Two beverage-related items were selected from FAOSTAT trade data:  
      - Wine  
      - Beer of barley, malted  
-
+<br>
 3. Edge Data
    - Based on FAOSTAT’s detailed bilateral trade matrix.  
    - Each trade record includes reporter/partner country, reporter/partner code, year, item, unit, and trade value.  
    - Trade flows were filtered with the following conditions:  
      - Year: 1990–2023  
      - Final Value > 1000 (to retain only meaningful trade relationships)
-
+<br>
 4. Node Data 
    - The following three datasets were merged to construct the node attributes:
 
