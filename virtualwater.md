@@ -283,6 +283,7 @@ node_df
 - Wine (red line): The network density of wine has been steadily increasing since the early 1990s. It shows a continuous trend of increasing overall. In particular, it has shown a sharp increase since 2020, indicating that wine is emerging as a major central item in the virtual water resource trade. This means that wine-producing countries are actively trading with various countries, forming tighter trade networks. <br>
 - Beer (blue line): Beer has seen a rather modest increase since the mid-1990s, maintaining a lower network density than wine. Although it has increased somewhat since 2020, it is still lower than wine. This means that it is an item with relatively less trade connectivity. <br>
 - Overall interpretation:  The marked increase in network density since 2020 for both wine and beer reflects the impact of boosting global trade and improving logistics infrastructure. Wine maintains trade relations with more countries, suggesting it is positioned as a central item in the virtual water flow.
+  
 ---
 
 
@@ -306,6 +307,7 @@ node_df
 - In the 2023 wine export market, Italy, Spain, and France accounted for the majority of global wine exports as traditional wine powerhouses.
 - With major European-focused producers still leading the global market, Australia is at the top of the list and growth in non-European countries can also be seen.
 - In addition, Germany is among the top five countries not only in imports but also in exports, so both production and consumption are actively taking place.
+  
 ---
 
 #### Top 5 Countries by In Degree / Out Degree (1990–2023)
