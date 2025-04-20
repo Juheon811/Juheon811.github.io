@@ -215,7 +215,25 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
        -> Selected item: `Total FDI inflows`, element: `Value US$`
 
    - These attributes add demographic, economic, and investment information to each country node.
+  
 
+#### Data Pre-processing
 
+- Filter by Export/Import and Items <br>
+Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
+Filter the dataset to include only export and import records with positive values.
 
+```python
+# Export data
+link2 = link[(link['Element'] == 'Export quantity') & (link['weight'] > 0)]
+items_export = link2[(link2['item'] == 'Wine') | (link2['item'] == 'Beer of barley, malted')]
+
+# Import data
+link3 = link[(link['Element'] == 'Import quantity') & (link['weight'] > 0)]
+items_import = link3[(link3['item'] == 'Wine') | (link3['item'] == 'Beer of barley, malted')]
+``` 
+
+- Merge Export & Import <br>
+Merge export and import datasets on matching country pairs, items, and years. <br>
+Calculate the Final Value by choosing the larger of export and import values for each trade pair.
 
