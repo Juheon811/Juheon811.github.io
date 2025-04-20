@@ -185,8 +185,8 @@ Node-level information was constructed using population, GDP per capita, and for
 #### Major Characteristics of the Data
 
 1. Time Range (1990–2023)  
-   The dataset covers global trade from 1990 to 2023.  
-   This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
+   - The dataset covers global trade from 1990 to 2023.  
+   - This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
      
 ---
 
@@ -225,9 +225,9 @@ Node-level information was constructed using population, GDP per capita, and for
 #### Data Pre-processing
 
 **1. Link**
-- Filter by Export/Import and Items <br>
-  - Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
-  - Filter the dataset to include only export and import records with positive values.
+Filter by Export/Import and Items <br>
+Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
+Filter the dataset to include only export and import records with positive values.
 
 
 ```python
@@ -241,9 +241,9 @@ items_import = link3[(link3['item'] == 'Wine') | (link3['item'] == 'Beer of barl
 ``` 
 
 
-- Merge Export & Import <br>
-  - Merge export and import datasets on matching country pairs, items, and years. <br>
-  - Calculate the Final Value by choosing the larger of export and import values for each trade pair.
+Merge Export & Import <br>
+Merge export and import datasets on matching country pairs, items, and years. <br>
+Calculate the Final Value by choosing the larger of export and import values for each trade pair.
 
 
 ```python
@@ -257,7 +257,7 @@ link_merge["Final Value"] = np.where(link_merge["weight_x"] > link_merge["weight
 ---
 
 **2. Node**
-- Merge the three datasets
+Merge the three datasets
 
 
 ```python
