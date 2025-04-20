@@ -169,6 +169,25 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 ---
 <br><br>
 
-# 🍷🍺 A Network Analysis of Global Wine and Beer Trade
+## A Network Analysis of Global Wine🍷 and Beer🍺 Trade
 
-## Data Introduction
+
+## 📦 Data Introduction
+
+#### Data Sources
+- The dataset was obtained from the [FAOSTAT](https://www.fao.org/faostat/en/#data) platform.
+- Trade Data:
+  `Trade_DetailedTradeMatrix_E_All_Data_(Normalized).csv`
+  Wine & Beer made from malt
+  Used to construct the edges of the network
+
+  
+- Node Data:
+  - `Population_E_All_Data_(Normalized).csv`
+  -> Selected element: `Total Population - Both sexes`
+  - `Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).csv`
+  -> Selected element: `Value US$ per capita (GDP per Capita)`
+  - `Investment_ForeignDirectInvestment_E_All_Data_(Normalized).csv`
+  -→ Selected item: `Total FDI inflows`, element: `Value US$`
+
+
