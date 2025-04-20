@@ -188,7 +188,7 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
   - `Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).csv`  
     → Selected element: `Value US$ per capita (GDP per Capita)`  
   - `Investment_ForeignDirectInvestment_E_All_Data_(Normalized).csv`  
-    → Selected item: `Total FDI inflows`, element: `Value US$`
+    → Selected item: `Total FDI inflows`, element: `Value US$` <br>
 These datasets were merged to add economic and demographic context to each country (node) in the network.
 
 
