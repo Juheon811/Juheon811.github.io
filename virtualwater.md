@@ -290,7 +290,7 @@ node_df
 
 #### 2023 In Degree / Out Degree
 
-<iframe src="/assets/top5_wine_importers_2023.html" width="100%" height="600"></iframe>
+<iframe src="/assets/top5_wine_importers_2023.html" width="900" height="700"></iframe>
 ---
 
 - As of 2023, Germany, the United Kingdom, and the United States accounted for the largest share of the global wine import market.
@@ -299,7 +299,7 @@ node_df
 
 
 
-<iframe src="/assets/top5_wine_exporters_2023.html" width="100%" height="600"></iframe>
+<iframe src="/assets/top5_wine_exporters_2023.html" width="900" height="700"></iframe>
 ---
 
 - In the 2023 wine export market, Italy, Spain, and France accounted for the majority of global wine exports as traditional wine powerhouses.
