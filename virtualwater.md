@@ -234,7 +234,8 @@ items_export = link2[(link2['item'] == 'Wine') | (link2['item'] == 'Beer of barl
 link3 = link[(link['Element'] == 'Import quantity') & (link['weight'] > 0)]
 items_import = link3[(link3['item'] == 'Wine') | (link3['item'] == 'Beer of barley, malted')]
 ``` 
-<br>
+
+
 - Merge Export & Import <br>
   - Merge export and import datasets on matching country pairs, items, and years. <br>
   - Calculate the Final Value by choosing the larger of export and import values for each trade pair.
