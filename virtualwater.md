@@ -433,3 +433,5 @@ In terms of centrality, in wine, France and Germany appear as major transit stat
 As a result, we can see that wine trade has a strong traditional producer-oriented structure, while beer trade has formed a more open and multipolar global network. This reflects the difference in the production and consumption culture of the two commodities, as well as the logistics infrastructure, and provides important implications for understanding the multifaceted nature of global food trade.
 
 ---
+
+<iframe src="/assets/wine_trade_map_2023.html" width="1200" height="620"></iframe>
