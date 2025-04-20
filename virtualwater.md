@@ -218,12 +218,12 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 ---
 <br><br>
 #### Data Pre-processing
-<br>
+
 **1. Link**
 - Filter by Export/Import and Items <br>
   - Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
   - Filter the dataset to include only export and import records with positive values.
-
+<br>
 ```python
 # Export data
 link2 = link[(link['Element'] == 'Export quantity') & (link['weight'] > 0)]
@@ -233,11 +233,11 @@ items_export = link2[(link2['item'] == 'Wine') | (link2['item'] == 'Beer of barl
 link3 = link[(link['Element'] == 'Import quantity') & (link['weight'] > 0)]
 items_import = link3[(link3['item'] == 'Wine') | (link3['item'] == 'Beer of barley, malted')]
 ``` 
-
+<br>
 - Merge Export & Import <br>
   - Merge export and import datasets on matching country pairs, items, and years. <br>
   - Calculate the Final Value by choosing the larger of export and import values for each trade pair.
-
+<br>
 ```python
 link_merge = pd.merge(items_export, items_import,
     on=["O_code", "O_name", "D_code", "D_name", "item", "year"],
@@ -247,10 +247,11 @@ import numpy as np
 link_merge["Final Value"] = np.where(link_merge["weight_x"] > link_merge["weight_y"],
                                      link_merge["weight_x"], link_merge["weight_y"])
 ``` 
-
+<br>
+---
 **2. Node**
 - Merge the three datasets
-
+<br>
 ```python
 # Merge Population and GDP
 node_df = pop1.merge(macro1, on=["country", "country_code", "Year"], how="inner")
@@ -262,4 +263,4 @@ node_df = node_df.merge(fdi1, on=["country", "country_code", "Year"], how="inner
 node_df = node_df[["country", "country_code", "Year", "population", "GDP", "FDI"]]
 node_df
 ``` 
-
+---
