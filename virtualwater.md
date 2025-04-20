@@ -295,18 +295,14 @@ Overall interpretation:  The marked increase in network density since 2020 for b
 <iframe src="/assets/top5_wine_importers_2023.html" width="850" height="600"></iframe>
 ---
 
-As of 2023, Germany, the United Kingdom, and the United States accounted for the largest share of the global wine import market. <br>
-These countries have a steady demand for imports based on their long wine consumption culture and stable purchasing power. <br>
-The Netherlands and Belgium are also among the top countries, showing that wine consumption is very active in Europe.
+As of 2023, Germany, the United Kingdom, and the United States accounted for the largest share of the global wine import market. These countries have a steady demand for imports based on their long wine consumption culture and stable purchasing power. The Netherlands and Belgium are also among the top countries, showing that wine consumption is very active in Europe.
 
 ---
 
 <iframe src="/assets/top5_wine_exporters_2023.html" width="850" height="600"></iframe>
 ---
 
-In the 2023 wine export market, Italy, Spain, and France accounted for the majority of global wine exports as traditional wine powerhouses. <br>
-With major European-focused producers still leading the global market, Australia is at the top of the list and growth in non-European countries can also be seen. <br>
-In addition, Germany is among the top five countries not only in imports but also in exports, so both production and consumption are actively taking place.
+In the 2023 wine export market, Italy, Spain, and France accounted for the majority of global wine exports as traditional wine powerhouses. With major European-focused producers still leading the global market, Australia is at the top of the list and growth in non-European countries can also be seen. In addition, Germany is among the top five countries not only in imports but also in exports, so both production and consumption are actively taking place.
   
 ---
 
@@ -315,19 +311,14 @@ In addition, Germany is among the top five countries not only in imports but als
 ![Top 5 Wine Importers in 2023](/img/posts/top5winein.png)
 ---
 
-Since the 1990s, Germany and the United Kingdom have established themselves as major consumers of the global wine market with consistently high wine imports. <br>
-The U.S. has emerged as the world's third-largest importer, showing a steep increase since the mid-2000s. <br>
-Belgium and the Netherlands have also maintained steady gains and hold important positions in Europe-focused wine import networks.
+Since the 1990s, Germany and the United Kingdom have established themselves as major consumers of the global wine market with consistently high wine imports. The U.S. has emerged as the world's third-largest importer, showing a steep increase since the mid-2000s. Belgium and the Netherlands have also maintained steady gains and hold important positions in Europe-focused wine import networks.
 
 ---
 
 ![Top 5 Wine Exporters in 2023](/img/posts/top5wineout.png)
 ---
 
-Italy and Spain have maintained their leadership positions for over 30 years, demonstrating their status as traditional wine export powers. <br>
-France also maintains high export volumes as a traditional producer, with major European countries still leading the global supply chain. <br>
-Australia has grown rapidly since the 2000s and has become a representative exporter of non-European countries. <br>
-Germany remains at the top of the list in terms of exports, making it an active country for both production and consumption.
+Italy and Spain have maintained their leadership positions for over 30 years, demonstrating their status as traditional wine export powers. France also maintains high export volumes as a traditional producer, with major European countries still leading the global supply chain. Australia has grown rapidly since the 2000s and has become a representative exporter of non-European countries. Germany remains at the top of the list in terms of exports, making it an active country for both production and consumption.
 
 ---
 
@@ -339,18 +330,14 @@ Germany remains at the top of the list in terms of exports, making it an active 
 <iframe src="/assets/top5_beer_importers_2023.html" width="850" height="600"></iframe>
 ---
 
-In the 2023 beer import market, the U.S. topped the list with overwhelming imports. <br>
-France, the United Kingdom and Italy also saw high imports, meaning that the culture of beer consumption in Europe remains active. <br>
-In particular, the Netherlands is at the top of the list of imports as well as beer exports, showing that it is playing a dual role.
+In the 2023 beer import market, the U.S. topped the list with overwhelming imports. France, the United Kingdom and Italy also saw high imports, meaning that the culture of beer consumption in Europe remains active. In particular, the Netherlands is at the top of the list of imports as well as beer exports, showing that it is playing a dual role.
 
 ---
 
 <iframe src="/assets/top5_beer_exporters_2023.html" width="850" height="600"></iframe>
 ---
 
-Mexico has emerged as a hub of global beer supply, dominating the beer export market in 2023. <br>
-Following this, the Netherlands, Belgium and Germany remain at the top, indicating that European countries are still leading global beer production and exports. <br>
-Ireland is also among the top five countries, solidifying its position as a traditional beer producer.
+Mexico has emerged as a hub of global beer supply, dominating the beer export market in 2023. Following this, the Netherlands, Belgium and Germany remain at the top, indicating that European countries are still leading global beer production and exports. Ireland is also among the top five countries, solidifying its position as a traditional beer producer.
 
 ---
 
@@ -359,18 +346,14 @@ Ireland is also among the top five countries, solidifying its position as a trad
 ![Top 5 Beer Importers in 2023](/img/posts/top5beerin.png)
 ---
 
-Since 1990, the U.S. has steadily increased its beer imports, making it an unrivaled No. 1 spot in 2023. <br>
-France, Britain, Italy and the Netherlands remained at the top, showing stable import flows across the board, although there were slight fluctuations. <br>
-Import trends in European countries, in particular, indicate that the culture of beer consumption in Europe continues to be maintained.
+Since 1990, the U.S. has steadily increased its beer imports, making it an unrivaled No. 1 spot in 2023. France, Britain, Italy and the Netherlands remained at the top, showing stable import flows across the board, although there were slight fluctuations. Import trends in European countries, in particular, indicate that the culture of beer consumption in Europe continues to be maintained.
 
 ---
 
 ![Top 5 Beer Exporters in 2023](/img/posts/top5beerout.png)
 ---
 
-Mexico has rapidly expanded its exports since the early 2000s, emerging as a strong player in the global beer export market since 2010. <br>
-As traditional beer producers, the Netherlands and Belgium maintained their position as major exporters, maintaining steady export volumes. <br>
-Germany and Ireland also showed stable growth and were among the top five countries in 2023.
+Mexico has rapidly expanded its exports since the early 2000s, emerging as a strong player in the global beer export market since 2010. As traditional beer producers, the Netherlands and Belgium maintained their position as major exporters, maintaining steady export volumes. Germany and Ireland also showed stable growth and were among the top five countries in 2023.
 
 ---
 
@@ -384,20 +367,15 @@ To reduce complexity, only the top 30 countries (by connectivity) are shown in e
 ![Wine Degree Centrality](/img/posts/winedegree.png)
 ---
 
-This graph represents the overall connection centrality, and the size of the node represents the total number of connections in that country. <br>
-Major European countries such as France, Germany, Italy and Spain are located at the center of the network, showing active trade activity. <br>
-The larger the nodes, the more countries we are trading wine with, and these countries act as hubs for our global wine network.
+This graph represents the overall connection centrality, and the size of the node represents the total number of connections in that country. Major European countries such as France, Germany, Italy and Spain are located at the center of the network, showing active trade activity. The larger the nodes, the more countries we are trading wine with, and these countries act as hubs for our global wine network.
 
 ---
 
 ![Wine Betweenness Centrality](/img/posts/winebet.png)
 ---
 
-The size of a node is the betweenness centrality, which indicates how important intermediaries one country plays in trade routes between other countries. <br>
-France and Germany appeared to be key transit stations connecting the main routes, showing that they hold strategic positions in the global wine trade. <br>
-Colors represent community structures, and countries with similar trade patterns are tied together in the same color. <br>
-This allows you to identify trade communities formed by regions such as Europe, Asia, and Oceania. <br>
-The thickest lines represent the Top 5 Edges, highlighting the strongest trade connections between country pairs. <br>
+The size of a node is the betweenness centrality, which indicates how important intermediaries one country plays in trade routes between other countries. France and Germany appeared to be key transit stations connecting the main routes, showing that they hold strategic positions in the global wine trade. Colors represent community structures, and countries with similar trade patterns are tied together in the same color. <br>
+This allows you to identify trade communities formed by regions such as Europe, Asia, and Oceania. The thickest lines represent the Top 5 Edges, highlighting the strongest trade connections between country pairs. <br>
 These edges reveal high mutual dependency and help identify the most significant trade routes in the global wine network.
 
 ---
@@ -405,18 +383,14 @@ These edges reveal high mutual dependency and help identify the most significant
 ![Wine In-Degree](/img/posts/wineinde.png)
 ---
 
-Node size represents In-Degree (number of import-oriented connections). <br>
-Germany, France, Canada and the United Kingdom import wine from a number of countries and are at the heart of the import network. <br>
-Community color analysis can identify which trade group the major importing countries belong to, and European countries tend to be mostly in the same community.
+Node size represents In-Degree (number of import-oriented connections). Germany, France, Canada and the United Kingdom import wine from a number of countries and are at the heart of the import network. Community color analysis can identify which trade group the major importing countries belong to, and European countries tend to be mostly in the same community.
 
 ---
 
 ![Wine Out-Degree](/img/posts/wineoutde.png)
 ---
 
-The size of the node means Out-Degree, and major producers such as France, Italy, and Spain appear as large nodes. <br>
-These countries export wine to a variety of countries, and are key to the global supply side network. <br>
-As a result of community analysis, trade connections between European countries are very close, and export-oriented countries share similar patterns with each other.
+The size of the node means Out-Degree, and major producers such as France, Italy, and Spain appear as large nodes. These countries export wine to a variety of countries, and are key to the global supply side network. As a result of community analysis, trade connections between European countries are very close, and export-oriented countries share similar patterns with each other.
 
 ---
 
@@ -425,40 +399,27 @@ As a result of community analysis, trade connections between European countries 
 ![Beer Degree Centrality](/img/posts/beerdegree.png)
 ---
 
-This graph is a network created based on the degree of connection (Degree) of each country. <br>
-The larger the node, the more countries we have beer trade relationships with. <br>
-Germany, the Netherlands, France and the United Kingdom are among the major hub countries with active beer trade, with locations centered on trade networks. <br>
-It can be visually confirmed that they are playing a central role in the global beer trade.
+This graph is a network created based on the degree of connection (Degree) of each country. The larger the node, the more countries we have beer trade relationships with. Germany, the Netherlands, France and the United Kingdom are among the major hub countries with active beer trade, with locations centered on trade networks. It can be visually confirmed that they are playing a central role in the global beer trade.
 
 ---
 
 ![Beer Betweenness Centrality](/img/posts/beerbet.png)
 ---
 
-The size of the node is the betweenness centrality, which shows how important intermediaries one country plays in the trade routes between other countries. <br>
-Germany and the U.K. appeared to be key transit stations connecting the main routes, suggesting they hold strategic positions in the global beer trade. <br>
-Colors represent community structures, and countries that share similar trade patterns are grouped together in the same color. This allows you to understand the distribution of trade groups by region (e.g., Europe, Asia, etc.). <br>
-In particular, the boldest line represents the Top 5 Edges, i.e., the trade relationship between the most interdependent pairs of countries. <br>
-This strong connection could be interpreted as the most important trade route within the global beer network.
+The size of the node is the betweenness centrality, which shows how important intermediaries one country plays in the trade routes between other countries. Germany and the U.K. appeared to be key transit stations connecting the main routes, suggesting they hold strategic positions in the global beer trade. Colors represent community structures, and countries that share similar trade patterns are grouped together in the same color. This allows you to understand the distribution of trade groups by region (e.g., Europe, Asia, etc.). In particular, the boldest lines represent the Top 5 Edges, which show the trade relationships between the most mutually dependent country pairs. This strong connection could be interpreted as the most important trade route within the global beer network.
 
 ---
 
 ![Beer In-Degree](/img/posts/beerinde.png)
 ---
 
-In this visualization, the size of the node represents In-Degree. <br>
-In other words, it is an indicator of how many countries are importing beer from. <br>
-The U.S., France, the U.K., and Italy were the major importers with high In-Degrees. <br>
-Community color analysis also enables visual identification of trade groups to which major importers belong, and can infer regional consumption centers.
+In this visualization, the size of the node represents In-Degree. In other words, it is an indicator of how many countries are importing beer from. The U.S., France, the U.K., and Italy were the major importers with high In-Degrees. Community color analysis also enables visual identification of trade groups to which major importers belong, and can infer regional consumption centers.
 
 ---
 
 ![Beer Out-Degree](/img/posts/beeroutde.png)
 ---
 
-The size of the node represents the Out-Degree (number of export connections). <br>
-Traditional beer export powers such as Germany, Belgium, the Netherlands, and France are represented by large nodes, and they are global supply-oriented countries in that they export beer to various countries. <br>
-The colors represent the community affiliation of each country, suggesting that countries with similar export routes form one trading bloc. <br>
-This allows us to understand the close trade relationship between export-focused countries in Europe.
+The size of the node represents the Out-Degree (number of export connections). Traditional beer export powers such as Germany, Belgium, the Netherlands, and France are represented by large nodes, and they are global supply-oriented countries in that they export beer to various countries. The colors represent the community affiliation of each country, suggesting that countries with similar export routes form one trading bloc. This allows us to understand the close trade relationship between export-focused countries in Europe.
 
 ---
