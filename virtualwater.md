@@ -283,3 +283,22 @@ node_df
 - Wine (red line): The network density of wine has been steadily increasing since the early 1990s. It shows a continuous trend of increasing overall. In particular, it has shown a sharp increase since 2020, indicating that wine is emerging as a major central item in the virtual water resource trade. This means that wine-producing countries are actively trading with various countries, forming tighter trade networks. <br>
 - Beer (blue line): Beer has seen a rather modest increase since the mid-1990s, maintaining a lower network density than wine. Although it has increased somewhat since 2020, it is still lower than wine. This means that it is an item with relatively less trade connectivity. <br>
 - Overall interpretation:  The marked increase in network density since 2020 for both wine and beer reflects the impact of boosting global trade and improving logistics infrastructure. Wine maintains trade relations with more countries, suggesting it is positioned as a central item in the virtual water flow.
+---
+
+#### Wine In Degree / Out Degree
+
+<iframe src="/assets/top5_wine_importers_2023.html" width="100%" height="600"></iframe>
+---
+
+- As of 2023, Germany, the United Kingdom, and the United States accounted for the largest share of the global wine import market.
+- These countries have a steady demand for imports based on their long wine consumption culture and stable purchasing power.
+- The Netherlands and Belgium are also among the top countries, showing that wine consumption is very active in Europe.
+
+
+
+<iframe src="/assets/top5_wine_exporters_2023.html" width="100%" height="600"></iframe>
+---
+
+- In the 2023 wine export market, Italy, Spain, and France accounted for the majority of global wine exports as traditional wine powerhouses.
+- With major European-focused producers still leading the global market, Australia is at the top of the list and growth in non-European countries can also be seen.
+- In addition, Germany is among the top five countries not only in imports but also in exports, so both production and consumption are actively taking place.
