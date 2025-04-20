@@ -176,20 +176,48 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 
 #### Data Sources
 - The dataset was obtained from the [FAOSTAT](https://www.fao.org/faostat/en/#data) platform.
-- Trade Data:
-  `Trade_DetailedTradeMatrix_E_All_Data_(Normalized).csv` <br>
-  Wine & Beer made from malt <br>
-  Used to construct the edges of the network <br>
+- FAOSTAT is an official platform of the Food and Agriculture Organization (FAO) that provides free access to global food and agriculture statistics.
+- It covers over 245 countries and territories and includes long-term data starting from 1961.
+- For this project, I used trade data to analyze virtual water flows related to wine and beer.
+- Node-level information was constructed using population, GDP per capita, and foreign direct investment (FDI) datasets.
 
-  
-- Node Data:  
-  - `Population_E_All_Data_(Normalized).csv`  
-    → Selected element: `Total Population - Both sexes`  
-  - `Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).csv`  
-    → Selected element: `Value US$ per capita (GDP per Capita)`  
-  - `Investment_ForeignDirectInvestment_E_All_Data_(Normalized).csv`  
-    → Selected item: `Total FDI inflows`, element: `Value US$`
+### Major Characteristics of the Data
 
-These datasets were merged to add economic and demographic context to each country (node) in the network.
+1. Time Range (1990–2023)  
+   - The dataset covers global trade from 1990 to 2023.  
+   - This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
+
+2. Focus on Selected Items  
+   - Two beverage-related items were selected from FAOSTAT trade data:  
+     - Wine  
+     - Beer of barley, malted  
+   - These items were chosen due to their strong agricultural water usage and international trade relevance.
+
+3. Edge Data (Trade Flows)  
+   - Based on FAOSTAT’s detailed bilateral trade matrix.  
+   - Each trade record includes reporter/partner country, reporter/partner code, year, item, unit, and trade value.  
+   - Trade flows were filtered with the following conditions:  
+     - Year: 1990–2023  
+     - Final Value > 1000 (to retain only meaningful trade relationships)
+
+4. Node Data (Country-level Attributes)  
+   - The following three datasets were merged to construct the node attributes:
+
+     - `Population_E_All_Data_(Normalized).csv`  
+       -> Selected element: `Total Population - Both sexes`
+
+     - `Macro-Statistics_Key_Indicators_E_All_Data_(Normalized).csv`  
+       -> Selected element: `Value US$ per capita (GDP per Capita)`
+
+     - `Investment_ForeignDirectInvestment_E_All_Data_(Normalized).csv`  
+       -> Selected item: `Total FDI inflows`, element: `Value US$`
+
+   - These attributes add demographic, economic, and investment information to each country node.
+
+5. Two-way Trade Handling  
+   - When two countries traded the same item in both directions, the dataset kept the larger of the two values.  
+   - This ensured that the final edge weights reflect the dominant direction of virtual water flow.
+
+
 
 
