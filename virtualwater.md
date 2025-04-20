@@ -165,3 +165,10 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 - Using Social Network Analysis, this study identifies key structural features of virtual water flows and highlights central players in the trade network.
 - As a result of the analysis, China is a major exporter and the United States is a major importer, serving as a key hub for the virtual water network.
 - In particular, virtual water trade was the most active in the agricultural sector, suggesting that trade strategies in the agricultural sector are important in policy.
+
+---
+<br><br>
+
+# 🍷🍺 A Network Analysis of Global Wine and Beer Trade
+
+## Data Introduction
