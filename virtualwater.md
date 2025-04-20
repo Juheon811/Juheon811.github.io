@@ -177,9 +177,9 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 #### Data Sources
 - The dataset was obtained from the [FAOSTAT](https://www.fao.org/faostat/en/#data) platform.
 - Trade Data:
-  `Trade_DetailedTradeMatrix_E_All_Data_(Normalized).csv`
-  Wine & Beer made from malt
-  Used to construct the edges of the network
+  `Trade_DetailedTradeMatrix_E_All_Data_(Normalized).csv` <br>
+  Wine & Beer made from malt <br>
+  Used to construct the edges of the network <br>
 
   
 - Node Data:  
