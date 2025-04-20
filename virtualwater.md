@@ -434,4 +434,32 @@ As a result, we can see that wine trade has a strong traditional producer-orient
 
 ---
 
-<iframe src="/assets/wine_trade_map_2023.html" width="1200" height="620"></iframe>
+## 🌍 Mapping
+
+A map-based network was formed to visually understand the flow of the world's wine and beer trade. It has reduced complexity and emphasized core trade flows by leaving only the strongest trade connections with the top 10 major country nodes. It is an intuitive visualization that provides a quick understanding of the centrality and interdependence of trade between countries. It provides much more intuitive insights than simple numerical data because it shows the direction and scale of the flow together on the map.
+
+---
+
+#### Global Wine Trade
+
+<iframe src="/assets/wine_trade_map_2023.html" width="850" height="600"></iframe>
+---
+
+The wine trade network centered around Europe is clearly visible.
+Traditional wine-producing countries such as France, Germany and Italy appear as central nodes, and export flows from these countries to various regions are concentrated.
+The routes between some of the countries, with the thickest trade lines, reflect a high trade dependence, and show a scalable trade structure from Europe to North America and Asia.
+In particular, trade between European internal countries is closely conducted, suggesting the possibility of intra-regional trade bloc formation.
+
+---
+
+#### Global Beer Trade
+
+<iframe src="/assets/beer_trade_map_2023.html" width="850" height="600"></iframe>
+---
+
+Beer trade appears in a more decentralized form than wine, showing an active trade flow between Europe, North America, and Asia and Oceania.
+Germany, the United States, and the Netherlands act as central hubs, while non-European countries such as Australia, Singapore, and Thailand also appear as major nodes.
+These structures visually demonstrate that the global beer industry is multipolar around various consumer markets and production bases.
+In particular, the strength of the connection between Europe and Asia is remarkable, and its strategic position in the global supply chain can be identified.
+
+---
