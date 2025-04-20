@@ -6,7 +6,7 @@ permalink: /virtualwater/
 <br><br>
 # Deng et al.(2021): Social network analysis of virtual water trade among major countries in the world
 <br><br>
-# 💡 1. Research Question and Research Gap
+## 💡 1. Research Question and Research Gap
 
 ### **What is the structure of the virtual water trade network between major countries in the world?**
 
@@ -14,7 +14,7 @@ Previous studies have primarily focused on virtual water trade related to **agri
 
 ---
 <br><br>
-# 🌊 2. Introduction
+## 🌊 2. Introduction
 
 ### **Why is virtual water trade important?**
 
@@ -22,13 +22,13 @@ Water is a key resource that supports all industries, agriculture, and daily lif
 
 ---
 <br><br>
-# 🔧 3. Methods and Data Sources
+## 🔧 3. Methods and Data Sources
 
-## 💡 How is *Virtual Water* calculated?
+### 💡 How is *Virtual Water* calculated?
 
 This study estimates inter-country virtual water flows using a **Multi-Regional Input–Output (MRIO) model**.  
 
-### 1. Direct Water Coefficient
+#### Direct Water Coefficient
 
 \\[
 w_i^r = \frac{W_i^r}{X_i^r}
@@ -36,11 +36,11 @@ w_i^r = \frac{W_i^r}{X_i^r}
 
 - \\(W_i^r\\): Water consumed by industry *i* in country *r*  
 - \\(X_i^r\\): Total output of industry *i* in country *r*  
-👉 Indicates **how much water is used to produce one unit of output**
+-> how much water is used to produce one unit of output
 
 ---
 
-### 2. Input–Output Balance Equation
+#### Input–Output Balance Equation
 
 \\[
 AX + Y = X
@@ -49,22 +49,22 @@ AX + Y = X
 - \\(A\\): Input coefficient matrix (inter-industry consumption)  
 - \\(X\\): Total output vector  
 - \\(Y\\): Final demand vector  
-➡️ Ensures that total output equals intermediate + final consumption
+-> Total output equals intermediate + final consumption
 
 ---
 
-### 3. Leontief Inverse Matrix
+#### Leontief Inverse Matrix
 
 \\[
 X = (I - A)^{-1}Y = LY
 \\]
 
 - \\(L = (I - A)^{-1}\\): Leontief inverse matrix  
-➡️ Captures both **direct and indirect** production requirements
+-> Both direct and indirect production requirements
 
 ---
 
-### 4. Virtual Water Trade Matrix
+#### Virtual Water Trade Matrix
 
 \\[
 H = \hat{W} \cdot L \cdot Z
@@ -73,18 +73,18 @@ H = \hat{W} \cdot L \cdot Z
 - \\(\hat{W}\\): Diagonal matrix of direct water coefficients  
 - \\(L\\): Leontief inverse  
 - \\(Z\\): Final goods traded between countries  
-➡️ This matrix estimates **indirect virtual water flows** across borders
+-> estimate indirect virtual water flows across borders
 
 ---
 
-### 5. Virtual Water Network Matrix
+#### Virtual Water Network Matrix
 
 \\[
 T = H
 \\]
 
 - \\(t_{rs}\\): Virtual water *exported* from country *r* to country *s*  
-➡️ **Off-diagonal elements** show bilateral virtual water trade
+-> Off-diagonal elements show bilateral virtual water trade
 
 ---
 
@@ -94,47 +94,47 @@ To analyze the structure of the virtual water trade, this study applies **social
 
 ---
 
-### ✅ Density (Network Connectivity)
+#### Density (Network Connectivity)
 
 \\[
 D = \frac{\sum_{r \neq s} \sum_{s=1}^{m} t_{rs}}{m(m - 1)}
 \\]
 
 - Measures how densely connected the virtual water network is  
-- **Higher values = more active trade across countries**
+- Higher values = more active trade across countries
 
 ---
 
-### ✅ Asymmetry (Trade Imbalance)
+#### Asymmetry (Trade Imbalance)
 
 \\[
 S = \frac{\sum_{r \neq s} \sum_{s=1}^{m} |t_{rs} - t_{sr}|}{m(m - 1)}
 \\]
 
-- Captures the **imbalance** between exports and imports  
+- Capture the imbalance between exports and imports  
 - High values = unidirectional or one-sided trade
 
 ---
 
-### ✅ Out-Degree (Virtual Water Exports)
+#### Out-Degree (Virtual Water Exports)
 
 \\[
 OD_r = \sum_{s \neq r} t_{rs}
 \\]
 
-- Total virtual water **exported** by country *r*  
+- Total virtual water exported by country r 
 - Indicates water-exporting hubs
 
 ---
 
-### ✅ In-Degree (Virtual Water Imports)
+#### In-Degree (Virtual Water Imports)
 
 \\[
 ID_r = \sum_{s \neq r} t_{sr}
 \\]
 
-- Total virtual water **imported** into country *r*  
-- High values suggest **greater water dependency**
+- Total virtual water imported into country r 
+- High values suggest greater water dependency
 
 ---
 
