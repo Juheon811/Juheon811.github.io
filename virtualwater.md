@@ -221,7 +221,7 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
    - These attributes add demographic, economic, and investment information to each country node.
      
 ---
-<br><br>
+
 #### Data Pre-processing
 
 **1. Link**
@@ -273,3 +273,4 @@ node_df
 ``` 
 
 ## Analysis
+<iframe src="/assets/wine_beer_density.html" width="100%" height="600"></iframe>
