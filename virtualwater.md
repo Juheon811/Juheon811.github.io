@@ -356,7 +356,7 @@ node_df
 
 #### Top 5 Countries by In Degree / Out Degree (1990–2023)
 
-![Top 5 Beer Importers in 2023](/assets/top5beerin.png)
+![Top 5 Beer Importers in 2023](/img/posts/top5beerin.png)
 ---
 
 - Since 1990, the U.S. has steadily increased its beer imports, making it an unrivaled No. 1 spot in 2023.
@@ -365,7 +365,7 @@ node_df
 
 ---
 
-![Top 5 Beer Exporters in 2023](/assets/top5beerout.png)
+![Top 5 Beer Exporters in 2023](/img/posts/top5beerout.png)
 ---
 
 - Mexico has rapidly expanded its exports since the early 2000s, emerging as a strong player in the global beer export market since 2010.
