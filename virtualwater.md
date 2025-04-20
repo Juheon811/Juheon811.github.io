@@ -273,4 +273,5 @@ node_df
 ``` 
 
 ## Analysis
-<iframe src="/assets/wine_beer_density.html" width="100%" height="700" style="border:none;"></iframe>
+<iframe src="/assets/wine_beer_density.html" width="800" height="600" style="border:none;"></iframe>
+
