@@ -421,3 +421,15 @@ In this visualization, the size of the node represents In-Degree. In other words
 The size of the node represents the Out-Degree (number of export connections). Traditional beer export powers such as Germany, Belgium, the Netherlands, and France are represented by large nodes, and they are global supply-oriented countries in that they export beer to various countries. The colors represent the community affiliation of each country, suggesting that countries with similar export routes form one trading bloc. This allows us to understand the close trade relationship between export-focused countries in Europe.
 
 ---
+
+### Comparison of Wine and Beer Trade Networks
+
+Both wine and beer networks have been visualized based on the top 30 countries, but they show distinct differences in structural characteristics, composition of central countries, and trade flows. The wine network is very densely connected around Europe, with traditional wine producers such as France, Italy, Germany, and Spain at the center of the network. They have a strong influence on exports, while Germany, the United Kingdom, and the United States are at the center of In-Degree as major importers. In the case of wine, the distinction between exporting and importing countries is relatively clear.
+
+On the other hand, the beer network has a more decentralized structure and includes not only Europe, but also various regional countries such as the United States, Mexico, and China. Germany, the Netherlands, and the United Kingdom are strong exporters and at the same time record high imports, with active two-way trade. Germany, in particular, occupies a central position in both exports and imports, showing a greater emphasis on the role of intermediary than in the wine network.
+
+In terms of centrality, in wine, France and Germany appear as major transit stations connecting trade routes between countries, with high betweenness centrality. Germany and the U.K. play similar roles in beer networks, but as a whole, various countries tend to be dispersed as intermediaries. The community structure is also different, with wine networks having more diverse communities while European countries form one dense community, and countries in Asia and the Americas also forming distinct groups.
+
+As a result, we can see that wine trade has a strong traditional producer-oriented structure, while beer trade has formed a more open and multipolar global network. This reflects the difference in the production and consumption culture of the two commodities, as well as the logistics infrastructure, and provides important implications for understanding the multifaceted nature of global food trade.
+
+---
