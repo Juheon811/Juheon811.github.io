@@ -274,8 +274,12 @@ node_df
 ---
 
 ## 📈 Analysis
+---
+#### Density Plot
+
 <iframe src="/assets/wine_beer_density.html" width="950" height="700" style="border:none;"></iframe>
-<br>
+---
+
 - Wine (red line): The network density of wine has been steadily increasing since the early 1990s. It shows a continuous trend of increasing overall. In particular, it has shown a sharp increase since 2020, indicating that wine is emerging as a major central item in the virtual water resource trade. This means that wine-producing countries are actively trading with various countries, forming tighter trade networks. <br>
 - Beer (blue line): Beer has seen a rather modest increase since the mid-1990s, maintaining a lower network density than wine. Although it has increased somewhat since 2020, it is still lower than wine. This means that it is an item with relatively less trade connectivity. <br>
 - Overall interpretation:  The marked increase in network density since 2020 for both wine and beer reflects the impact of boosting global trade and improving logistics infrastructure. Wine maintains trade relations with more countries, suggesting it is positioned as a central item in the virtual water flow.
