@@ -185,8 +185,8 @@ Node-level information was constructed using population, GDP per capita, and for
 #### Major Characteristics of the Data
 
 1. Time Range (1990–2023)  
-   - The dataset covers global trade from 1990 to 2023.  
-   - This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
+   The dataset covers global trade from 1990 to 2023.  
+   This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
      
 ---
 
