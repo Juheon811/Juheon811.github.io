@@ -191,16 +191,15 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
    - Two beverage-related items were selected from FAOSTAT trade data:  
      - Wine  
      - Beer of barley, malted  
-   - These items were chosen due to their strong agricultural water usage and international trade relevance.
 
-3. Edge Data (Trade Flows)  
+3. Edge Data
    - Based on FAOSTAT’s detailed bilateral trade matrix.  
    - Each trade record includes reporter/partner country, reporter/partner code, year, item, unit, and trade value.  
    - Trade flows were filtered with the following conditions:  
      - Year: 1990–2023  
      - Final Value > 1000 (to retain only meaningful trade relationships)
 
-4. Node Data (Country-level Attributes)  
+4. Node Data 
    - The following three datasets were merged to construct the node attributes:
 
      - `Population_E_All_Data_(Normalized).csv`  
@@ -213,10 +212,6 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
        -> Selected item: `Total FDI inflows`, element: `Value US$`
 
    - These attributes add demographic, economic, and investment information to each country node.
-
-5. Two-way Trade Handling  
-   - When two countries traded the same item in both directions, the dataset kept the larger of the two values.  
-   - This ensured that the final edge weights reflect the dominant direction of virtual water flow.
 
 
 
