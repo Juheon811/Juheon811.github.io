@@ -224,7 +224,7 @@ Node-level information was constructed using population, GDP per capita, and for
 
 #### Data Pre-processing
 
-**1. Link**
+**1. Link** <br>
 Filter by Export/Import and Items <br>
 Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
 Filter the dataset to include only export and import records with positive values.
@@ -256,7 +256,7 @@ link_merge["Final Value"] = np.where(link_merge["weight_x"] > link_merge["weight
 ``` 
 ---
 
-**2. Node**
+**2. Node** <br>
 Merge the three datasets
 
 
