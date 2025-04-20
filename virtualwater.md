@@ -173,26 +173,26 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 
 
 ## 📦 Data Introduction
-
+---
 #### Data Sources
 - The dataset was obtained from the [FAOSTAT](https://www.fao.org/faostat/en/#data) platform.
 - FAOSTAT is an official platform of the Food and Agriculture Organization (FAO) that provides free access to global food and agriculture statistics.
 - It covers over 245 countries and territories and includes long-term data starting from 1961.
 - For this project, I used trade data to analyze virtual water flows related to wine and beer.
 - Node-level information was constructed using population, GDP per capita, and foreign direct investment (FDI) datasets.
-
+---
 #### Major Characteristics of the Data
 
 1. Time Range (1990–2023)  
    - The dataset covers global trade from 1990 to 2023.  
    - This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
-
+---
 
 2. Focus on Selected Items  
    - Two beverage-related items were selected from FAOSTAT trade data:  
      - Wine  
      - Beer of barley, malted  
-
+---
 
 3. Edge Data
    - Based on FAOSTAT’s detailed bilateral trade matrix.  
@@ -200,8 +200,8 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
    - Trade flows were filtered with the following conditions:  
      - Year: 1990–2023  
      - Final Value > 1000 (to retain only meaningful trade relationships)
-    
-      
+---
+
 4. Node Data 
    - The following three datasets were merged to construct the node attributes:
 
@@ -215,11 +215,11 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
        -> Selected item: `Total FDI inflows`, element: `Value US$`
 
    - These attributes add demographic, economic, and investment information to each country node.
-  
-
+---
+<br><br>
 #### Data Pre-processing
-
-1. Link
+<br>
+**1. Link**
 - Filter by Export/Import and Items <br>
   - Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
   - Filter the dataset to include only export and import records with positive values.
@@ -248,7 +248,7 @@ link_merge["Final Value"] = np.where(link_merge["weight_x"] > link_merge["weight
                                      link_merge["weight_x"], link_merge["weight_y"])
 ``` 
 
-2. Node
+**2. Node**
 - Merge the three datasets
 
 ```python
