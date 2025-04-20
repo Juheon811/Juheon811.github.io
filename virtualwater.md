@@ -180,18 +180,21 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 - It covers over 245 countries and territories and includes long-term data starting from 1961.
 - For this project, I used trade data to analyze virtual water flows related to wine and beer.
 - Node-level information was constructed using population, GDP per capita, and foreign direct investment (FDI) datasets.
+  
 ---
 #### Major Characteristics of the Data
 
 1. Time Range (1990–2023)  
    - The dataset covers global trade from 1990 to 2023.  
    - This allows for a long-term analysis of how virtual water flows have changed over time, especially in the trade of wine and beer.
+     
 ---
 
 2. Focus on Selected Items  
    - Two beverage-related items were selected from FAOSTAT trade data:  
      - Wine  
-     - Beer of barley, malted  
+     - Beer of barley, malted
+       
 ---
 
 3. Edge Data
@@ -200,6 +203,7 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
    - Trade flows were filtered with the following conditions:  
      - Year: 1990–2023  
      - Final Value > 1000 (to retain only meaningful trade relationships)
+       
 ---
 
 4. Node Data 
@@ -215,6 +219,7 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
        -> Selected item: `Total FDI inflows`, element: `Value US$`
 
    - These attributes add demographic, economic, and investment information to each country node.
+     
 ---
 <br><br>
 #### Data Pre-processing
