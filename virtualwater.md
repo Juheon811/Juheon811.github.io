@@ -272,3 +272,4 @@ node_df = node_df[["country", "country_code", "Year", "population", "GDP", "FDI"
 node_df
 ``` 
 
+## Analysis
