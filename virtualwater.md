@@ -237,7 +237,8 @@ items_import = link3[(link3['item'] == 'Wine') | (link3['item'] == 'Beer of barl
 - Merge Export & Import <br>
   - Merge export and import datasets on matching country pairs, items, and years. <br>
   - Calculate the Final Value by choosing the larger of export and import values for each trade pair.
-<br>
+
+
 ```python
 link_merge = pd.merge(items_export, items_import,
     on=["O_code", "O_name", "D_code", "D_name", "item", "year"],
@@ -247,11 +248,12 @@ import numpy as np
 link_merge["Final Value"] = np.where(link_merge["weight_x"] > link_merge["weight_y"],
                                      link_merge["weight_x"], link_merge["weight_y"])
 ``` 
-<br>
 ---
+
 **2. Node**
 - Merge the three datasets
-<br>
+
+
 ```python
 # Merge Population and GDP
 node_df = pop1.merge(macro1, on=["country", "country_code", "Year"], how="inner")
@@ -263,4 +265,4 @@ node_df = node_df.merge(fdi1, on=["country", "country_code", "Year"], how="inner
 node_df = node_df[["country", "country_code", "Year", "population", "GDP", "FDI"]]
 node_df
 ``` 
----
+
