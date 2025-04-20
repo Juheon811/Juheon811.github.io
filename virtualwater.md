@@ -374,9 +374,7 @@ This graph represents the overall connection centrality, and the size of the nod
 ![Wine Betweenness Centrality](/img/posts/winebet.png)
 ---
 
-The size of a node is the betweenness centrality, which indicates how important intermediaries one country plays in trade routes between other countries. France and Germany appeared to be key transit stations connecting the main routes, showing that they hold strategic positions in the global wine trade. Colors represent community structures, and countries with similar trade patterns are tied together in the same color. <br>
-This allows you to identify trade communities formed by regions such as Europe, Asia, and Oceania. The thickest lines represent the Top 5 Edges, highlighting the strongest trade connections between country pairs. <br>
-These edges reveal high mutual dependency and help identify the most significant trade routes in the global wine network.
+The size of a node is the betweenness centrality, which indicates how important intermediaries one country plays in trade routes between other countries. France and Germany appeared to be key transit stations connecting the main routes, showing that they hold strategic positions in the global wine trade. Colors represent community structures, and countries with similar trade patterns are tied together in the same color. This allows you to identify trade communities formed by regions such as Europe, Asia, and Oceania. The thickest lines represent the Top 5 Edges, highlighting the strongest trade connections between country pairs. These edges reveal high mutual dependency and help identify the most significant trade routes in the global wine network.
 
 ---
 
