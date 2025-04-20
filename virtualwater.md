@@ -138,22 +138,7 @@ ID_r = \sum_{s \neq r} t_{sr}
 
 ---
 
-## 🌍 5. Data Source
+## 🎯 5. Result and Interpretation
 
-The analysis uses the **EORA Global MRIO Database**:
-
-- 🧭 **Countries**: 190  
-- 🏭 **Sectors**: 26 industries  
-- 📅 **Years**: 1990–2015  
-- 💧 **Water Types**: Green, Blue, and Grey water  
-- 🎯 **Focus**: 2006–2015, **G20 countries** (excluding the EU)
-
-🔗 [EORA Official Site](https://worldmrio.com/)
-
-➡️ The data provides water use by sector and country, enabling detailed mapping of **virtual water embedded in trade**.
-
----
-
-🧩 **In summary**, this methodology quantifies the hidden water flows behind global trade  
-and visualizes them as a **network**, enabling analysis of structure, dependencies, and imbalance.
+Global virtual water trade has continuously increased from 2006 to 2015. Both virtual water exports and imports increased significantly from 2006 to 2015, showing a clear growth in global trade among major countries.
 
