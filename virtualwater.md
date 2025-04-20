@@ -258,6 +258,7 @@ node_df = pop1.merge(macro1, on=["country", "country_code", "Year"], how="inner"
 # Merge with FDI data
 node_df = node_df.merge(fdi1, on=["country", "country_code", "Year"], how="inner")
 
+# Choose final columns
 node_df = node_df[["country", "country_code", "Year", "population", "GDP", "FDI"]]
 node_df
 ``` 
