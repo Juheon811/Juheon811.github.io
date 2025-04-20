@@ -181,7 +181,7 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 - For this project, I used trade data to analyze virtual water flows related to wine and beer.
 - Node-level information was constructed using population, GDP per capita, and foreign direct investment (FDI) datasets.
 
-### Major Characteristics of the Data
+#### Major Characteristics of the Data
 
 1. Time Range (1990–2023)  
    - The dataset covers global trade from 1990 to 2023.  
