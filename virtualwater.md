@@ -153,18 +153,18 @@ This indicates that these countries acted as central suppliers in the global vir
 **<Network by In-Degree (2015)>**  
 ![In-Degree Network](/img/posts/fig3.png)
 
-- The In-Degree network focuses on countries with high virtual water imports.
-- The United States and Japan had the biggest consumers, shown by the largest node sizes and thick incoming links.
-- These countries had strong dependencies on foreign water resources embedded in traded goods.
+The In-Degree network focuses on countries with high virtual water imports.
+The United States and Japan had the biggest consumers, shown by the largest node sizes and thick incoming links.
+These countries had strong dependencies on foreign water resources embedded in traded goods.
 
 ---
 
 ## 📍 6. Conclusions
 
-- Virtual water trade can be an important way to reduce water resource differences between countries around the world
-- Using Social Network Analysis, this study identifies key structural features of virtual water flows and highlights central players in the trade network.
-- As a result of the analysis, China is a major exporter and the United States is a major importer, serving as a key hub for the virtual water network.
-- In particular, virtual water trade was the most active in the agricultural sector, suggesting that trade strategies in the agricultural sector are important in policy.
+Virtual water trade can be an important way to reduce water resource differences between countries around the world
+Using Social Network Analysis, this study identifies key structural features of virtual water flows and highlights central players in the trade network.
+As a result of the analysis, China is a major exporter and the United States is a major importer, serving as a key hub for the virtual water network.
+In particular, virtual water trade was the most active in the agricultural sector, suggesting that trade strategies in the agricultural sector are important in policy.
 
 ---
 <br><br>
@@ -175,11 +175,11 @@ This indicates that these countries acted as central suppliers in the global vir
 ## 📦 Data Introduction
 ---
 #### Data Sources
-- The dataset was obtained from the [FAOSTAT](https://www.fao.org/faostat/en/#data) platform.
-- FAOSTAT is an official platform of the Food and Agriculture Organization (FAO) that provides free access to global food and agriculture statistics.
-- It covers over 245 countries and territories and includes long-term data starting from 1961.
-- For this project, I used trade data to analyze virtual water flows related to wine and beer.
-- Node-level information was constructed using population, GDP per capita, and foreign direct investment (FDI) datasets.
+The dataset was obtained from the [FAOSTAT](https://www.fao.org/faostat/en/#data) platform.
+FAOSTAT is an official platform of the Food and Agriculture Organization (FAO) that provides free access to global food and agriculture statistics.
+It covers over 245 countries and territories and includes long-term data starting from 1961.
+For this project, I used trade data to analyze virtual water flows related to wine and beer.
+Node-level information was constructed using population, GDP per capita, and foreign direct investment (FDI) datasets.
   
 ---
 #### Major Characteristics of the Data
