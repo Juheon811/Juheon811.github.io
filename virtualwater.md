@@ -285,6 +285,7 @@ node_df
 - Overall interpretation:  The marked increase in network density since 2020 for both wine and beer reflects the impact of boosting global trade and improving logistics infrastructure. Wine maintains trade relations with more countries, suggesting it is positioned as a central item in the virtual water flow.
 ---
 
+
 #### Wine
 ---
 
