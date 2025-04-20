@@ -220,8 +220,8 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 #### Data Pre-processing
 
 - Filter by Export/Import and Items <br>
-Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
-Filter the dataset to include only export and import records with positive values.
+  - Focus only on two beverage products: Wine and Beer made from barley, malted. <br>
+  - Filter the dataset to include only export and import records with positive values.
 
 ```python
 # Export data
@@ -234,6 +234,16 @@ items_import = link3[(link3['item'] == 'Wine') | (link3['item'] == 'Beer of barl
 ``` 
 
 - Merge Export & Import <br>
-Merge export and import datasets on matching country pairs, items, and years. <br>
-Calculate the Final Value by choosing the larger of export and import values for each trade pair.
+  - Merge export and import datasets on matching country pairs, items, and years. <br>
+  - Calculate the Final Value by choosing the larger of export and import values for each trade pair.
+
+```python
+link_merge = pd.merge(items_export, items_import,
+    on=["O_code", "O_name", "D_code", "D_name", "item", "year"],
+    how='inner')
+
+import numpy as np
+link_merge["Final Value"] = np.where(link_merge["weight_x"] > link_merge["weight_y"],
+                                     link_merge["weight_x"], link_merge["weight_y"])
+``` 
 
