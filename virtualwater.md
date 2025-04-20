@@ -373,3 +373,92 @@ As traditional beer producers, the Netherlands and Belgium maintained their posi
 Germany and Ireland also showed stable growth and were among the top five countries in 2023.
 
 ---
+
+## 🧠 Network Visualization
+
+To reduce complexity, only the top 30 countries (by connectivity) are shown in each network. Node size and color help highlight each country's role and trading patterns in the global wine and beer trade. These visualizations allow us to better understand trade hubs, key intermediaries, and regional trading communities.
+
+---
+#### Wine Trade Network
+
+![Wine Degree Centrality](/img/posts/winedegree.png)
+---
+
+This graph represents the overall connection centrality, and the size of the node represents the total number of connections in that country. <br>
+Major European countries such as France, Germany, Italy and Spain are located at the center of the network, showing active trade activity. <br>
+The larger the nodes, the more countries we are trading wine with, and these countries act as hubs for our global wine network.
+
+---
+
+![Wine Betweenness Centrality](/img/posts/winebet.png)
+---
+
+The size of a node is the betweenness centrality, which indicates how important intermediaries one country plays in trade routes between other countries. <br>
+France and Germany appeared to be key transit stations connecting the main routes, showing that they hold strategic positions in the global wine trade. <br>
+Colors represent community structures, and countries with similar trade patterns are tied together in the same color. <br>
+This allows you to identify trade communities formed by regions such as Europe, Asia, and Oceania. <br>
+The thickest lines represent the Top 5 Edges, highlighting the strongest trade connections between country pairs. <br>
+These edges reveal high mutual dependency and help identify the most significant trade routes in the global wine network.
+
+---
+
+![Wine In-Degree](/img/posts/wineinde.png)
+---
+
+Node size represents In-Degree (number of import-oriented connections). <br>
+Germany, France, Canada and the United Kingdom import wine from a number of countries and are at the heart of the import network. <br>
+Community color analysis can identify which trade group the major importing countries belong to, and European countries tend to be mostly in the same community.
+
+---
+
+![Wine Out-Degree](/img/posts/wineoutde.png)
+---
+
+The size of the node means Out-Degree, and major producers such as France, Italy, and Spain appear as large nodes. <br>
+These countries export wine to a variety of countries, and are key to the global supply side network. <br>
+As a result of community analysis, trade connections between European countries are very close, and export-oriented countries share similar patterns with each other.
+
+---
+
+#### Beer Trade Network
+
+![Beer Degree Centrality](/img/posts/beerdegree.png)
+---
+
+This graph is a network created based on the degree of connection (Degree) of each country. <br>
+The larger the node, the more countries we have beer trade relationships with. <br>
+Germany, the Netherlands, France and the United Kingdom are among the major hub countries with active beer trade, with locations centered on trade networks. <br>
+It can be visually confirmed that they are playing a central role in the global beer trade.
+
+---
+
+![Beer Betweenness Centrality](/img/posts/beerbet.png)
+---
+
+The size of the node is the betweenness centrality, which shows how important intermediaries one country plays in the trade routes between other countries. <br>
+Germany and the U.K. appeared to be key transit stations connecting the main routes, suggesting they hold strategic positions in the global beer trade. <br>
+Colors represent community structures, and countries that share similar trade patterns are grouped together in the same color. This allows you to understand the distribution of trade groups by region (e.g., Europe, Asia, etc.). <br>
+In particular, the boldest line represents the Top 5 Edges, i.e., the trade relationship between the most interdependent pairs of countries. <br>
+This strong connection could be interpreted as the most important trade route within the global beer network.
+
+---
+
+![Beer In-Degree](/img/posts/beerinde.png)
+---
+
+In this visualization, the size of the node represents In-Degree. <br>
+In other words, it is an indicator of how many countries are importing beer from. <br>
+The U.S., France, the U.K., and Italy were the major importers with high In-Degrees. <br>
+Community color analysis also enables visual identification of trade groups to which major importers belong, and can infer regional consumption centers.
+
+---
+
+![Beer Out-Degree](/img/posts/beeroutde.png)
+---
+
+The size of the node represents the Out-Degree (number of export connections). <br>
+Traditional beer export powers such as Germany, Belgium, the Netherlands, and France are represented by large nodes, and they are global supply-oriented countries in that they export beer to various countries. <br>
+The colors represent the community affiliation of each country, suggesting that countries with similar export routes form one trading bloc. <br>
+This allows us to understand the close trade relationship between export-focused countries in Europe.
+
+---
