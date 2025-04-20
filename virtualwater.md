@@ -299,7 +299,7 @@ node_df
 - These countries have a steady demand for imports based on their long wine consumption culture and stable purchasing power.
 - The Netherlands and Belgium are also among the top countries, showing that wine consumption is very active in Europe.
 
-
+---
 
 <iframe src="/assets/top5_wine_exporters_2023.html" width="850" height="600"></iframe>
 ---
@@ -312,4 +312,64 @@ node_df
 
 #### Top 5 Countries by In Degree / Out Degree (1990–2023)
 
+![Top 5 Wine Importers in 2023](/img/posts/top5winein.png)
+---
 
+- Since the 1990s, Germany and the United Kingdom have established themselves as major consumers of the global wine market with consistently high wine imports.
+- The U.S. has emerged as the world's third-largest importer, showing a steep increase since the mid-2000s.
+- Belgium and the Netherlands have also maintained steady gains and hold important positions in Europe-focused wine import networks.
+
+---
+
+![Top 5 Wine Exporters in 2023](/img/posts/top5wineout.png)
+---
+
+- Italy and Spain have maintained their leadership positions for over 30 years, demonstrating their status as traditional wine export powers.
+- France also maintains high export volumes as a traditional producer, with major European countries still leading the global supply chain.
+- Australia has grown rapidly since the 2000s and has become a representative exporter of non-European countries.
+- Germany remains at the top of the list in terms of exports, making it an active country for both production and consumption.
+
+---
+
+## Beer
+---
+
+#### 2023 In Degree / Out Degree
+
+<iframe src="/assets/top5_beer_importers_2023.html" width="850" height="600"></iframe>
+---
+
+- In the 2023 beer import market, the U.S. topped the list with overwhelming imports.
+- France, the United Kingdom and Italy also saw high imports, meaning that the culture of beer consumption in Europe remains active.
+- In particular, the Netherlands is at the top of the list of imports as well as beer exports, showing that it is playing a dual role.
+
+---
+
+<iframe src="/assets/top5_beer_exporters_2023.html" width="850" height="600"></iframe>
+---
+
+- Mexico has emerged as a hub of global beer supply, dominating the beer export market in 2023.
+- Following this, the Netherlands, Belgium and Germany remain at the top, indicating that European countries are still leading global beer production and exports.
+- Ireland is also among the top five countries, solidifying its position as a traditional beer producer.
+
+---
+
+#### Top 5 Countries by In Degree / Out Degree (1990–2023)
+
+![Top 5 Beer Importers in 2023](/assets/top5beerin.png)
+---
+
+- Since 1990, the U.S. has steadily increased its beer imports, making it an unrivaled No. 1 spot in 2023.
+- France, Britain, Italy and the Netherlands remained at the top, showing stable import flows across the board, although there were slight fluctuations.
+- Import trends in European countries, in particular, indicate that the culture of beer consumption in Europe continues to be maintained.
+
+---
+
+![Top 5 Beer Exporters in 2023](/assets/top5beerout.png)
+---
+
+- Mexico has rapidly expanded its exports since the early 2000s, emerging as a strong player in the global beer export market since 2010.
+- As traditional beer producers, the Netherlands and Belgium maintained their position as major exporters, maintaining steady export volumes.
+- Germany and Ireland also showed stable growth and were among the top five countries in 2023.
+
+---
