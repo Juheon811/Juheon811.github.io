@@ -145,9 +145,9 @@ Global virtual water trade has continuously increased from 2006 to 2015. Both vi
 **<Network by Out-Degree (2015)>**  
 ![Out-Degree Network](/img/posts/fig2.png)
 
-- The Out-Degree network shows countries that exported large amounts of virtual water to others.
-- China and India had the largest outflows, shown by the largest node sizes and thick outbound links.
-- This indicates that these countries acted as central suppliers in the global virtual water trade network.
+The Out-Degree network shows countries that exported large amounts of virtual water to others.
+China and India had the largest outflows, shown by the largest node sizes and thick outbound links.
+This indicates that these countries acted as central suppliers in the global virtual water trade network.
 
 
 **<Network by In-Degree (2015)>**  
