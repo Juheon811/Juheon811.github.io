@@ -5,7 +5,7 @@ title: 'Community Analysis in California Counties'
 date: 2025-05-14 15:56:00
 categories: community analysis
 tags: Social network Community Data-analysis
-featured_image: '/img/posts/02_weathercast-1130x864-2x.png'
+featured_image: '/img/posts/california.png'
 project_link: 'http://github.com/jamigibbs/weathercast'
 button_icon: 'bar-chart'
 button_text: 'Visit Project'
