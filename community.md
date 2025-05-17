@@ -45,7 +45,7 @@ Each network was partitioned into communities using the **Louvain method** for m
   - **CD**: Difference in case rates
 
 ---
-
+<br><br>
 ## 🔧 4. Network Analysis & Statistical Tests
 
 ### Community Detection Algorithms
