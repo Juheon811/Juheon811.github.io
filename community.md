@@ -26,11 +26,11 @@ The COVID-19 pandemic has highlighted the impact of interregional movement on th
 
 Five networks were constructed at the county level in the contiguous U.S.:
 
-- **Commutes** (LODES data, 2015)
-- **Trips** (SafeGraph GPS data, Jan–Feb 2020)
-- **Migration** (ACS migration estimates, 2013–2017)
-- **Twitter** (Co-mention network, 2014–2015)
-- **Facebook** (Social Connectedness Index)
+- **Commutes** 
+- **Trips** 
+- **Migration**
+- **Twitter** 
+- **Facebook** 
 
 Each network was partitioned into communities using the **Louvain method** for modularity maximization.
 
@@ -47,19 +47,12 @@ Each network was partitioned into communities using the **Louvain method** for m
 ---
 <br><br>
 ## 🔧 4. Network Analysis & Statistical Tests
-
+<br>
 ### 1. Community Detection Algorithms
 To group counties into meaningful regions, five community detection algorithms were tested: Fast Greedy, InfoMap, Louvain, REDCAP, and WalkTrap. Among them, the Louvain method performed best, showing the highest modularity (Q) in all networks Modularity measures how well a network is divided into separate communities. A high Q value means nodes are mostly connected within their own group, with fewer links to other groups. This shows clear boundaries, which helps when studying things like disease spread. A low Q value means the network is messy, with weak or unclear community structure
 
-**Modularity (Q)**
-
-\\[
-Q = \sum (e_{\mu\mu} - b_{\mu}^2)
-\\]
-
-Higher Q implies more well-separated communities, ideal for defining policy regions.
-
 ---
+<br>
 
 ### 2. Case Spread Metrics
 
@@ -68,6 +61,7 @@ Higher Q implies more well-separated communities, ideal for defining policy regi
 - **CDw / CDb**: Within/between region case-rate differences
 
 ---
+<br>
 
 ### 3. Statistical Analysis
 
