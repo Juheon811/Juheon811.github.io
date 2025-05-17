@@ -53,9 +53,9 @@ To group counties into meaningful regions, five community detection algorithms w
 
 **Modularity (Q)**
 
-\[
+\\[
 Q = \sum (e_{\mu\mu} - b_{\mu}^2)
-\]
+\\]
 
 Higher Q implies more well-separated communities, ideal for defining policy regions.
 
