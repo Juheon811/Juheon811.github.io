@@ -68,6 +68,8 @@ Higher Q implies more well-separated communities, ideal for defining policy regi
 
 To check how well each type of region (based on human networks like commuting, social media, etc.) explains the spread of COVID-19, the study used three main statistical methods:
 
+---
+
 **Permutation Test**
 This test checks if the differences in case count (C), case rate (CR), and case rate difference (CD) inside and between regions are meaningful, or just happened by chance. The method randomly changes the region boundaries 1,000 times to create a "baseline" of what random results would look like. Then it compares the real results to this random baseline. If the real results are very different, the region boundaries actually reflect real disease spread patterns.
 
