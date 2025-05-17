@@ -20,7 +20,7 @@ The COVID-19 pandemic has highlighted the impact of interregional movement on th
 
 ---
 <br><br>
-## 🔧 3. Methods and Data Sources
+## 🌐 3. Data and Methodology
 
 ### 📦 Human-Network Datasets
 
@@ -46,9 +46,12 @@ Each network was partitioned into communities using the **Louvain method** for m
 
 ---
 
-## 🔧 3. Network Analysis & Statistical Tests
+## 🔧 4. Network Analysis & Statistical Tests
 
-### Modularity (Q)
+### Community Detection Algorithms
+To group counties into meaningful regions, five community detection algorithms were tested: Fast Greedy, InfoMap, Louvain, REDCAP, and WalkTrap. Among them, the Louvain method performed best, showing the highest modularity (Q) in all networks Modularity measures how well a network is divided into separate communities. A high Q value means nodes are mostly connected within their own group, with fewer links to other groups. This shows clear boundaries, which helps when studying things like disease spread. A low Q value means the network is messy, with weak or unclear community structure
+
+**Modularity (Q)**
 
 \[
 Q = \sum (e_{\mu\mu} - b_{\mu}^2)
