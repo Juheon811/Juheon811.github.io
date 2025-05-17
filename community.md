@@ -7,4 +7,4 @@ permalink: /community/
 
 #### Data Pre-processing
 
-**1. Link** <br>
+**1. Link** 
