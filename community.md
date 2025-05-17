@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: inner
 title: "Community Clusters and Socioeconomic Disparities in California"
 permalink: /community/
 ---
