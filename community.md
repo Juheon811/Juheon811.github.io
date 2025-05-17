@@ -8,7 +8,7 @@ permalink: /community/
 <br><br>
 ## 💡 1. Research Question and Research Gap
 
-### To what extent do human mobility-based regions serve as more effective geographic units for mitigating the spread of COVID-19 than administrative boundaries?
+#### To what extent do human mobility-based regions serve as more effective geographic units for mitigating the spread of COVID-19 than administrative boundaries?
 
 Administrative units (state boundaries) often fail to capture the actual scope of human activity. This study defines functional regions by applying community detection algorithms to networks of human movement and social connections (such as commutes, GPS-based trips, and social media ties), and compares how effectively these alternative boundaries mitigate the spread of infectious diseases.
 
