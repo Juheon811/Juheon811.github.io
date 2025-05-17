@@ -48,7 +48,7 @@ Each network was partitioned into communities using the **Louvain method** for m
 
 ## 🔧 3. Network Analysis & Statistical Tests
 
-### 🔍 Modularity (Q)
+### Modularity (Q)
 
 \[
 Q = \sum (e_{\mu\mu} - b_{\mu}^2)
@@ -58,23 +58,23 @@ Higher Q implies more well-separated communities, ideal for defining policy regi
 
 ---
 
-### 🔎 Case Spread Metrics
+### Case Spread Metrics
 
 - **CRw**: Within-region case rate (should be high)
 - **CRb**: Between-region case rate (should be low)
 - **CDw / CDb**: Within/between region case-rate differences
 
-### 🔬 Statistical Analysis
+### Statistical Analysis
 
 To check how well each type of region (based on human networks like commuting, social media, etc.) explains the spread of COVID-19, the study used three main statistical methods:
 
-🧪 **Permutation Test**
+**Permutation Test**
 This test checks if the differences in case count (C), case rate (CR), and case rate difference (CD) inside and between regions are meaningful, or just happened by chance. The method randomly changes the region boundaries 1,000 times to create a "baseline" of what random results would look like. Then it compares the real results to this random baseline. If the real results are very different, the region boundaries actually reflect real disease spread patterns.
 
-🔁 **Granger Causality Test**
+**Granger Causality Test**
 This test looks at whether case rates in one county can predict case rates in a neighboring county over time. If past case data in one place helps guess future data in the next county, it may mean the disease spread across counties. If the connection is strong (with p < 0.001), it means that there's a possible causal link. This helps check if the regions follow real infection patterns over time.
 
-🧪 **Kolmogorov–Smirnov (KS) Test**
+**Kolmogorov–Smirnov (KS) Test**
 The KS test compares how different types of regions (like commute-based vs Twitter-based vs state boundaries) show changes in infection rates over time. It measures how far apart the distributions of infection rates are inside and between regions. A bigger difference means the region boundary does a better job of separating places with different infection patterns.
 
 
