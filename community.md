@@ -242,7 +242,7 @@ Based on these results, the Louvain algorithm was selected for dividing communit
 
 This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas (e.g., LA, Bay Area).The Louvain algorithm works in a way that maximizes **Modularity**, in which case the highest modularity value was recorded (Q ≈ 0.3). This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas.
 
-<img src="/img/posts/M1.png" width="300"/>
+<img src="/img/posts/M1.png" style="width:500px !important; height:auto;"/>
 
 ---
 
@@ -250,7 +250,7 @@ This map clearly separates Southern, Central, and Northern California, and each 
 
 The Leiden algorithm formed relatively more granular compartments. However, some communities are located in geographically dispersed locations and lack spatial continuity. It is difficult to interpret as a real policy unit because there are many cases where counties of the same color are far from each other. Furthermore, counties marked with grey (N/A) on the map are not part of any community, suggesting that the algorithm is not fully aware of their connectivity. Given that these unclassified regions are included, the Leiden algorithm may exclude some counties or cause incomplete community configurations
 
-<img src="/img/posts/M2.png" style="width:300px !important; height:auto;"/>
+<img src="/img/posts/M2.png" style="width:500px !important; height:auto;"/>
 
 ---
 
@@ -258,7 +258,7 @@ The Leiden algorithm formed relatively more granular compartments. However, some
 
 Since the algorithm divides the network based on edge betweenness, it works by iterating the segmentation while removing central nodes with many connections. The result is over-divided into a total of 39 communities, which shows that the algorithm tends to over-divide complex structures. Some communities are composed of several counties that are separated from each other, resulting in a significant drop in geographic continuity. This means that the internal connectivity is not strong and the distinction between communities is unclear, indicating that it does not reflect the practical community structure well. Therefore, Girvan-Newman reveals the limitations that it is not suitable for complex real-world network structures.
 
-<img src="/img/posts/M3.png" width="430"/>
+<img src="/img/posts/M3.png" style="width:630px !important; height:auto;"/>
 
 ---
 
@@ -268,7 +268,7 @@ Since the algorithm divides the network based on edge betweenness, it works by i
 
 This is a logarithmic scale map of the total population by county. The darker the green, the greater the population, and the greater the concentration of the population in Southern California (e.g., LA, San Diego) and the Bay Area. The Louvain community boundaries (Red, Blue, and Violet) somewhat correspond to the distribution of the population, but they do not match perfectly, raising the need for a regional reset.
 
-<img src="/img/posts/a2.png" width="600"/>
+<img src="/img/posts/a2.png" style="width:550px !important; height:auto;"/>
 
 ---
 
@@ -276,7 +276,7 @@ This is a logarithmic scale map of the total population by county. The darker th
 
 A map of median income by county. High-income areas are marked in dark brown, and high-income areas concentrated around the San Francisco Bay Area are prominent. While the Louvain community boundary has well grouped some high-income areas into one community, there are cases where some low-income and high-income areas are included in the same community, indicating that there is a limit to setting boundaries that reflect income differences.
 
-<img src="/img/posts/a3.png" width="600"/>
+<img src="/img/posts/a3.png" style="width:550px !important; height:auto;"/>
 
 ---
 
