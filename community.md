@@ -217,3 +217,23 @@ Riverside, Orange, San Diego, and San Bernardino Counties, all located in Southe
 <br><br>
 
 ## 💡 Algorithms
+
+By comparing several community detection algorithms, the most effective way to divide regions within California was evaluated. The algorithms used in the comparison include Girvan–Newman (GN), Louvain, and Leiden. Each algorithm explores the network structure differently, and their performance was compared based on Modularity (Q).
+
+
+The graph above shows the modularity (Q) values calculated after applying each algorithm. Modularity quantifies how well a network distinguishes between internal and external regional structures—higher values indicate clearer community boundaries.
+<br>
+**1. Girvan–Newman**: Produced the lowest modularity. Although it generates many divisions due to its tree-based structure, the regional separation is weak.
+
+**2. Leiden**: A faster and more efficient algorithm than Louvain, but in this dataset, it resulted in relatively low modularity.
+
+**3. Louvain**: Achieved the highest modularity (Q ≈ 0.3), effectively capturing strong internal connectivity and weak external links.
+
+Based on these results, the Louvain algorithm was selected for dividing communities in California. The following map illustrates the regional boundaries derived from this approach.
+
+![Algorithms Comparision](/img/posts/G1.png)
+
+---
+
+
+
