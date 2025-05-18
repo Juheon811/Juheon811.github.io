@@ -300,7 +300,7 @@ Community 2: The interior central region of California covers major cities such 
 
 Community 1 has a significantly higher white population than other communities. In particular, one county includes outliers with a white population of more than 3.5 million. On the other hand, Community 0 and 2 show lower overall values, and the population distribution is also relatively narrow. This suggests that Community 1 includes counties with large populations and a high percentage of white people.
 
-<img src="/img/posts/White1.png" width="600"/>
+<img src="/img/posts/Asian1.png" width="600"/>
 
 ---
 
@@ -316,7 +316,7 @@ The black population is also highest in Community 1, but it is not as extreme a 
 
 In terms of Asian population distribution, Community 1 also has the highest distribution range and there are many high outliers. This seems to be because it includes metropolitan areas such as Bay Area and Los Angeles. Communities 0 and 2 show a relatively low and uniform distribution, which can be interpreted as an area with a small or evenly distributed Asian population.
 
-<img src="/img/posts/Asian1.png" width="600"/>
+<img src="/img/posts/White1.png" width="600"/>
 
 ---
 
