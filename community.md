@@ -242,7 +242,7 @@ Based on these results, the Louvain algorithm was selected for dividing communit
 
 This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas (e.g., LA, Bay Area).The Louvain algorithm works in a way that maximizes **Modularity**, in which case the highest modularity value was recorded (Q ≈ 0.3). This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas.
 
-<img src="/img/posts/M1.png" width="500"/>
+<img src="/img/posts/M1.png" width="300"/>
 
 ---
 
@@ -250,7 +250,7 @@ This map clearly separates Southern, Central, and Northern California, and each 
 
 The Leiden algorithm formed relatively more granular compartments. However, some communities are located in geographically dispersed locations and lack spatial continuity. It is difficult to interpret as a real policy unit because there are many cases where counties of the same color are far from each other. Furthermore, counties marked with grey (N/A) on the map are not part of any community, suggesting that the algorithm is not fully aware of their connectivity. Given that these unclassified regions are included, the Leiden algorithm may exclude some counties or cause incomplete community configurations
 
-<img src="/img/posts/M2.png" width="500"/>
+<img src="/img/posts/M2.png" width="300"/>
 
 ---
 
@@ -258,7 +258,7 @@ The Leiden algorithm formed relatively more granular compartments. However, some
 
 Since the algorithm divides the network based on edge betweenness, it works by iterating the segmentation while removing central nodes with many connections. The result is over-divided into a total of 39 communities, which shows that the algorithm tends to over-divide complex structures. Some communities are composed of several counties that are separated from each other, resulting in a significant drop in geographic continuity. This means that the internal connectivity is not strong and the distinction between communities is unclear, indicating that it does not reflect the practical community structure well. Therefore, Girvan-Newman reveals the limitations that it is not suitable for complex real-world network structures.
 
-<img src="/img/posts/M3.png" width="640"/>
+<img src="/img/posts/M3.png" width="430"/>
 
 ---
 
@@ -338,15 +338,15 @@ The Mann-Whitney U test and Kolmogorov-Smirnov (KS) test were used together in t
 
 #### White
 
-Community 0 vs 1
+**Community 0 vs 1**
 There is a significant difference between the two groups (p<0.001). The KS-statistic value (0.805) indicates that the form of the distribution is very different.
 
 
-Community 0 vs 2
+**Community 0 vs 2**
 No statistically significant difference (p ≈ 0.94). White population distribution between the two communities is similar.
 
 
-Community 1 vs 2
+**Community 1 vs 2**
 A distinct difference exists (p < 0.001). KS-statistic is also a very large value of 0.909.
 
 
@@ -359,15 +359,15 @@ A distinct difference exists (p < 0.001). KS-statistic is also a very large valu
 
 #### Black
 
-Community 0 vs 1
+**Community 0 vs 1**
 Significant differences exist (p < 0.001). The two groups are markedly different in the Black population distribution.
 
 
-Community 0 vs 2
+**Community 0 vs 2**
 No significant difference (p ≈ 0.24). Black population distribution similar.
 
 
-Community 1 vs 2
+**Community 1 vs 2**
 Significant difference (p < 0.001). KS-statistic is also very large, 0.833.
 
 
@@ -379,13 +379,13 @@ Significant difference (p < 0.001). KS-statistic is also very large, 0.833.
 
 #### Asian
 
-Community 0 vs 1
+**Community 0 vs 1**
 The distribution is very different, and the difference is also significant (p < 0.001). KS-statistic 0.902.
 
-Community 0 vs 2
+**Community 0 vs 2**
 No significant difference (p ≈ 0.70). Distribution is also similar.
 
-Community 1 vs 2
+**Community 1 vs 2**
 A very significant difference (p < 0.001), a completely different distribution with KS-statistic = 1.000.
 
 -> The Asian population also has a markedly large number of Community 1. Community 0 and 2 have little difference in terms of the Asian population.
