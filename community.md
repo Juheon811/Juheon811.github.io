@@ -264,7 +264,7 @@ Since the algorithm divides the network based on edge betweenness, it works by i
 
 #### Choropleth Maps
 
-**<Total Population>**
+**Total Population**
 
 This is a logarithmic scale map of the total population by county. The darker the green, the greater the population, and the greater the concentration of the population in Southern California (e.g., LA, San Diego) and the Bay Area. The Louvain community boundaries (Red, Blue, and Violet) somewhat correspond to the distribution of the population, but they do not match perfectly, raising the need for a regional reset.
 
@@ -272,7 +272,7 @@ This is a logarithmic scale map of the total population by county. The darker th
 
 ---
 
-**<Income>**
+**Income**
 
 A map of median income by county. High-income areas are marked in dark brown, and high-income areas concentrated around the San Francisco Bay Area are prominent. While the Louvain community boundary has well grouped some high-income areas into one community, there are cases where some low-income and high-income areas are included in the same community, indicating that there is a limit to setting boundaries that reflect income differences.
 
