@@ -336,6 +336,8 @@ Community 2 shows the lowest ranges and medians for all three races. Counties wi
 
 The Mann-Whitney U test and Kolmogorov-Smirnov (KS) test were used together in this analysis to more precisely compare the difference in population composition between communities divided by the Louvain algorithm. The Mann-Whitney U test is a nonparametric test that checks whether the difference in median value between two groups is statistically significant, and is useful even when the population is small or the distribution is skewed because it is calculated on a ranking basis without assuming a normal distribution. On the other hand, the KS test evaluates the similarity of the overall distribution form by using the maximum difference between the cumulative distribution functions of the two distributions, and is effective when the mean or median values are similar, but there may be differences in distribution width or tail. Therefore, by using the two tests together, not only the simple difference in location but also the structural difference in the overall distribution can be identified, so that the statistical difference in race composition between communities can be evaluated more reliably.
 
+---
+
 #### White
 
 **Community 0 vs 1** <br>
@@ -353,7 +355,7 @@ A distinct difference exists (p < 0.001). KS-statistic is also a very large valu
 -> Community 1 has a very large white population compared to other communities. Community 0 and 2 are relatively similar.
 
 
-![White](/img/posts/White.png)
+<img src="/img/posts/White.png" style="width:300px !important; height:auto;"/>
 
 ---
 
@@ -373,7 +375,7 @@ Significant difference (p < 0.001). KS-statistic is also very large, 0.833.
 
 -> Community 1 also has a larger Black population than other groups. Community 0 and 2 are similar in distribution.
 
-![Black](/img/posts/Black.png)
+<img src="/img/posts/Black.png" style="width:300px !important; height:auto;"/>
 
 ---
 
@@ -390,7 +392,7 @@ A very significant difference (p < 0.001), a completely different distribution w
 
 -> The Asian population also has a markedly large number of Community 1. Community 0 and 2 have little difference in terms of the Asian population.
 
-![Asian](/img/posts/Asian.png)
+<img src="/img/posts/Asian.png" style="width:300px !important; height:auto;"/>
 
 ---
 
@@ -401,3 +403,6 @@ In many cases, KS statistics are high, so it can be important to consider that t
 
 ---
 
+## 🧾 Summary and Key Insights
+
+Through this study, it was confirmed that functional communities based on county-to-county movement patterns in California reflect more distinct socioeconomic characteristics and structures than traditional administrative boundaries. In particular, Community 1, identified by the Louvain algorithm, stood out from other regions in terms of racial diversity and population size—likely due to the dense demographic structure and unique social dynamics of Southern metropolitan areas, including Los Angeles and San Diego. In contrast, Communities 0 and 2 tended to have smaller populations, more uniform racial compositions, and included more isolated or low-density areas. The analysis of socioeconomic indicators revealed that Community 0 had the highest levels of income and education, largely attributable to the inclusion of the San Francisco Bay Area and other affluent northern regions. Community 2 consisted mainly of rural or inland mid-sized counties, characterized by lower income, lower education levels, and sparse populations. These patterns suggest that functional boundaries based on real human movement and interaction may provide a more meaningful regional classification than simple geographic proximity. These findings suggest that movement-based communities can serve as more practical units for policy-making, urban planning, and the allocation of social services than conventional administrative divisions. For instance, efforts to prevent disease transmission or reduce regional inequality could be more accurately targeted when using these functional community boundaries. Future research could expand on this approach by incorporating longitudinal analysis of how communities evolve over time and integrating additional socioeconomic variables. This would further enhance the explanatory power and practical value of community-based spatial analysis.
