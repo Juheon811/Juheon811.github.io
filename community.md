@@ -141,3 +141,29 @@ Includes in-migration, out-migration, net, and gross flow between counties
 #### Data Pre-processing
 
 **1. Link** 
+
+Read Excel file from the "California" sheet and keep only the first 9 columns.
+
+```python
+link = pd.read_excel('county-to-county-2016-2020-ins-outs-nets-gross.xlsx', sheet_name='California', skiprows=2)
+
+link = link.iloc[:, 0:9]
+
+link.columns = [
+    'state_code_a',
+    'county_code_a',
+    'state_code_b',
+    'county_code_b',
+    'state_name_a',
+    'county_name_a',
+    'state_name_b',
+    'county_name_b',
+    'weight'
+]
+```
+
+Filter out flows with weight less than or equal to 50 to reduce noise
+
+```python
+link = link[(link['state_name_a'] == 'California') & (link['state_name_b'] == 'California') & (link['weight'] > 50)]
+```
