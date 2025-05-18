@@ -222,7 +222,8 @@ By comparing several community detection algorithms, the most effective way to d
 
 
 The graph above shows the modularity (Q) values calculated after applying each algorithm. Modularity quantifies how well a network distinguishes between internal and external regional structures—higher values indicate clearer community boundaries.
-<br>
+
+
 **1. Girvan–Newman**: Produced the lowest modularity. Although it generates many divisions due to its tree-based structure, the regional separation is weak.
 
 **2. Leiden**: A faster and more efficient algorithm than Louvain, but in this dataset, it resulted in relatively low modularity.
