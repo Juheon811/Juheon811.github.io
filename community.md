@@ -116,7 +116,6 @@ Taken together, the analysis shows that commuting-based regions performed best a
 # Community Detection California
 
 ## 📦 Data Introduction
----
 
 #### Data Sources
 
