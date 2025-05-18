@@ -262,3 +262,34 @@ Since the algorithm divides the network based on edge betweenness, it works by i
 
 ---
 
+#### Choropleth Maps
+
+**<Total Population>**
+
+This is a logarithmic scale map of the total population by county. The darker the green, the greater the population, and the greater the concentration of the population in Southern California (e.g., LA, San Diego) and the Bay Area. The Louvain community boundaries (Red, Blue, and Violet) somewhat correspond to the distribution of the population, but they do not match perfectly, raising the need for a regional reset.
+
+<img src="/img/posts/a2.png" width="500"/>
+
+---
+
+**<Income>**
+
+A map of median income by county. High-income areas are marked in dark brown, and high-income areas concentrated around the San Francisco Bay Area are prominent. While the Louvain community boundary has well grouped some high-income areas into one community, there are cases where some low-income and high-income areas are included in the same community, indicating that there is a limit to setting boundaries that reflect income differences.
+
+<img src="/img/posts/a3.png" width="500"/>
+
+---
+
+#### Louvain Communities with MSA Boundaries (California)
+
+Community 0: A community centered around Northern and coastal areas of California, including the San Francisco Bay Area, Sacramento, Santa Rosa, and more. With strong connectivity between metropolitan cities and a relatively uniform network structure in the surrounding areas, functional cohesion is high.
+
+
+Community 1: The region centered around Southeastern California, including Riverside, San Bernardino, and San Diego. While the big cities are adjacent, they have high internal connectivity, acting as a single unified regional unit. They are characterized by high population density and active mobility.
+
+
+Community 2: The interior central region of California covers major cities such as Fresno, Bakersfield, and Visalia, but also covers some of the northern low-density areas. Though geographically dispersed, it forms an independent network internally, so it focuses on intra-regional connections rather than inter-regional interactions.
+
+<img src="/img/posts/a1.png" width="500"/>
+
+---
