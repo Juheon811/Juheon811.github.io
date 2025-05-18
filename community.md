@@ -268,7 +268,7 @@ Since the algorithm divides the network based on edge betweenness, it works by i
 
 This is a logarithmic scale map of the total population by county. The darker the green, the greater the population, and the greater the concentration of the population in Southern California (e.g., LA, San Diego) and the Bay Area. The Louvain community boundaries (Red, Blue, and Violet) somewhat correspond to the distribution of the population, but they do not match perfectly, raising the need for a regional reset.
 
-<img src="/img/posts/a2.png" width="500"/>
+<img src="/img/posts/a2.png" width="600"/>
 
 ---
 
@@ -276,7 +276,7 @@ This is a logarithmic scale map of the total population by county. The darker th
 
 A map of median income by county. High-income areas are marked in dark brown, and high-income areas concentrated around the San Francisco Bay Area are prominent. While the Louvain community boundary has well grouped some high-income areas into one community, there are cases where some low-income and high-income areas are included in the same community, indicating that there is a limit to setting boundaries that reflect income differences.
 
-<img src="/img/posts/a3.png" width="500"/>
+<img src="/img/posts/a3.png" width="600"/>
 
 ---
 
@@ -294,6 +294,63 @@ Community 2: The interior central region of California covers major cities such 
 
 ---
 
-## 🔍 Explore Communities by Race
+## 🔍 Explore Communities by Race (Boxplot)
 
-1. 
+#### White
+
+Community 1 has a significantly higher white population than other communities. In particular, one county includes outliers with a white population of more than 3.5 million. On the other hand, Community 0 and 2 show lower overall values, and the population distribution is also relatively narrow. This suggests that Community 1 includes counties with large populations and a high percentage of white people.
+
+<img src="/img/posts/White1.png" width="600"/>
+
+---
+
+#### Black
+
+The black population is also highest in Community 1, but it is not as extreme a difference as the white population. Community 0 has many outliers, and it shows various values. Community 2 has an overall consistent distribution at a low level. This means that the black population is concentrated in some of the major counties in Community 1.
+
+<img src="/img/posts/Black1.png" width="600"/>
+
+---
+
+#### Asian
+
+In terms of Asian population distribution, Community 1 also has the highest distribution range and there are many high outliers. This seems to be because it includes metropolitan areas such as Bay Area and Los Angeles. Communities 0 and 2 show a relatively low and uniform distribution, which can be interpreted as an area with a small or evenly distributed Asian population.
+
+<img src="/img/posts/Asian1.png" width="600"/>
+
+---
+
+#### Comparison of race distribution among communities (comprehensive interpretation)
+
+Community 1 has the highest racial population size overall. It has the largest median and distribution range among all three races (white, black, and Asian), and it also includes millions of outliers, especially for whites and Asians. This is consistent with the fact that Community 1 includes large urban areas and densely populated areas (e.g., LA, Bay Area).
+
+
+Community 0 tends to be relatively evenly distributed among different races. Outliers exist in some cases, but overall variance is not large, and there is a low median for all three races. This is likely a structure that includes a large number of medium-sized cities or suburbs.
+
+
+Community 2 shows the lowest ranges and medians for all three races. Counties with smaller populations themselves are clustered, and the distribution by race is also limited. This means that they contain relatively geographically isolated or sparsely populated areas.
+
+---
+
+📊 Statistical Analysis
+
+#### White
+
+![White](/img/posts/White.png)
+
+
+---
+
+#### Black
+
+
+![Black](/img/posts/Black.png)
+
+---
+
+#### Asian
+
+
+![Asian](/img/posts/Asian.png)
+
+---
