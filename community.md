@@ -167,3 +167,38 @@ Filter out flows with weight less than or equal to 50 to reduce noise
 ```python
 link = link[(link['state_name_a'] == 'California') & (link['state_name_b'] == 'California') & (link['weight'] > 50)]
 ```
+
+---
+
+**2. Node** 
+
+Filter for California counties only (Geo_STATE == 6)
+
+```python
+node = node[node['Geo_STATE'] == 6]
+```
+
+Select only the columns required to compare community-level differences in population, race, education, income, and commuting patterns.
+
+```python
+node = node[[
+    'Geo_FIPS',
+    'Geo_QName', 
+    'Geo_STATE',
+    'Geo_COUNTY',
+    'SE_A00001_001',  # Total population
+    'SE_A03001_002',  # White Alone
+    'SE_A03001_003',  # Black or African American Alone
+    'SE_A03001_005',  # Asian Alone
+    'SE_A00002_002',  # Population density
+    'SE_A12001_005',  # Bachelor's degree
+    'SE_A17005_003',  # Unemployed
+    'SE_A14006_001',  # Median household income
+    'SE_A09003_001'   # Average commute time
+]]
+```
+
+---
+
+## 📈 Analysis
+---
