@@ -98,7 +98,7 @@ Figure 2 visualizes the regional boundaries that divide the mainland United Stat
 
 According to Table 3, the commuting-based regions exhibited the highest number of within-region infections (Cw) and the largest differences in infection rates between regions (CDb), effectively capturing a structure in which disease transmission remained confined within boundaries. In contrast, although the migration-based regions had the highest CDb values due to clear separations between regions, the internal coherence was weaker, as reflected in the relatively small within-region infection rate differences (CDw). The Facebook-based regions showed minimal differences in infection rates both within and between regions and had lower Cw values, indicating limited effectiveness as functional boundaries.
 
-![Table3](/img/posts/p2.png)
+![Table3](/img/posts/p3.png)
 
 ---
 
@@ -106,7 +106,7 @@ This pattern was also supported by the permutation test results in Table 4. For 
 
 Table 5 further evaluated temporal transmission dynamics using Granger causality and the Kolmogorov–Smirnov (KS) test. In the commuting regions, Granger causality was high within regions (CRw) but low between regions (CRb), indicating that infections tended to propagate internally rather than across boundaries. Twitter regions demonstrated a similar temporal trend but with weaker spatial separation. The KS test also showed the largest D-statistic values for commuting and Twitter-based regions, highlighting a clear difference in infection rate distributions inside versus across regional boundaries.
 
-![Table4&5](/img/posts/p3.png)
+![Table4&5](/img/posts/p2.png)
 
 Taken together, the analysis shows that commuting-based regions performed best as functional units for delineating the spread of infectious diseases. Trip- and state-based regions also showed moderate boundary effectiveness, while Facebook-based and random regions were ineffective in structurally separating transmission patterns. These findings provide empirical support for the use of human mobility-based functional regions as an alternative policy unit in epidemic response planning.
 
