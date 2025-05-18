@@ -200,9 +200,7 @@ node = node[[
 
 ---
 
-**3. California Network**
-
-🧭 California County-to-County Migration Network
+## 🧭 California County-to-County Migration Network
 
 The network displays the strongest migration links among California’s 58 counties, rather than the full set of connections. <br>
 
@@ -215,5 +213,4 @@ Riverside, Orange, San Diego, and San Bernardino Counties, all located in Southe
 
 ![California](/img/posts/ca.png)
 
-## 📈 Analysis
 ---
