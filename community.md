@@ -85,6 +85,32 @@ The KS test compares how different types of regions (like commute-based vs Twitt
 
 ---
 
+<br><br>
+## 🎯 5. Result and Interpretation
+
+Figure 2 visualizes the regional boundaries that divide the mainland United States in six different ways. In addition to the existing state boundaries, functional regions were generated using the Louvain algorithm based on networks derived from commuting, migration, travel, Twitter, and Facebook data. The commuting network resulted in the most granular division with 75 regions, while the Twitter and migration networks produced broader partitions with 26 and 28 regions.
+
+
+![Figure2](/img/posts/p1.png)
+
+---
+
+
+According to Table 3, the commuting-based regions exhibited the highest number of within-region infections (Cw) and the largest differences in infection rates between regions (CDb), effectively capturing a structure in which disease transmission remained confined within boundaries. In contrast, although the migration-based regions had the highest CDb values due to clear separations between regions, the internal coherence was weaker, as reflected in the relatively small within-region infection rate differences (CDw). The Facebook-based regions showed minimal differences in infection rates both within and between regions and had lower Cw values, indicating limited effectiveness as functional boundaries.
+
+![Table3](/img/posts/p2.png)
+
+---
+
+This pattern was also supported by the permutation test results in Table 4. For the commuting, migration, and trip-based regions, the actual Cw values were significantly higher than the expected values under random assignment (p < 0.001), while CDw values were consistently lower—suggesting that these regions formed tightly connected internal structures. In contrast, Facebook-based and random regions showed few statistically significant differences, confirming that they did not function as effective transmission boundaries.
+
+Table 5 further evaluated temporal transmission dynamics using Granger causality and the Kolmogorov–Smirnov (KS) test. In the commuting regions, Granger causality was high within regions (CRw) but low between regions (CRb), indicating that infections tended to propagate internally rather than across boundaries. Twitter regions demonstrated a similar temporal trend but with weaker spatial separation. The KS test also showed the largest D-statistic values for commuting and Twitter-based regions, highlighting a clear difference in infection rate distributions inside versus across regional boundaries.
+
+![Table4&5](/img/posts/p3.png)
+
+Taken together, the analysis shows that commuting-based regions performed best as functional units for delineating the spread of infectious diseases. Trip- and state-based regions also showed moderate boundary effectiveness, while Facebook-based and random regions were ineffective in structurally separating transmission patterns. These findings provide empirical support for the use of human mobility-based functional regions as an alternative policy unit in epidemic response planning.
+
+
 #### Data Pre-processing
 
 **1. Link** 
