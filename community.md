@@ -242,8 +242,7 @@ Based on these results, the Louvain algorithm was selected for dividing communit
 
 This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas (e.g., LA, Bay Area).The Louvain algorithm works in a way that maximizes **Modularity**, in which case the highest modularity value was recorded (Q ≈ 0.3). This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas.
 
-![Louvain](/img/posts/M1.png)
-
+<img src="/img/posts/M1.png" width="600"/>
 ---
 
 #### Leiden Map
