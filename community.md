@@ -214,3 +214,6 @@ Riverside, Orange, San Diego, and San Bernardino Counties, all located in Southe
 ![California](/img/posts/ca.png)
 
 ---
+<br><br>
+
+## 💡 Algorithms
