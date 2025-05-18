@@ -32,6 +32,8 @@ Five networks were constructed at the county level in the contiguous U.S.:
 - **Twitter** 
 - **Facebook** 
 
+Nodes represent U.S. counties.
+Edges represent human connections (e.g., mobility flows or social media ties) between counties.
 Each network was partitioned into communities using the **Louvain method** for modularity maximization.
 
 ---
@@ -55,7 +57,7 @@ To group counties into meaningful regions, five community detection algorithms w
 ---
 <br>
 
-### 2. Case Spread Metrics
+### 2. Node and Edge
 
 - **CRw**: Within-region case rate (should be high)
 - **CRb**: Between-region case rate (should be low)
