@@ -120,20 +120,20 @@ Taken together, the analysis shows that commuting-based regions performed best a
 
 #### Data Sources
 
-**County shapefile**  
+**1. County shapefile**  
 `COUNTY_2019_US_SL050_Coast_Clipped.shp`  <br>
 Used for visualizing county-level community partitions on a choropleth map
 
-**MSA shapefile (Metropolitan Statistical Areas)**  
+**2. MSA shapefile (Metropolitan Statistical Areas)**  
 `CBSA_MSA_2019_US_SL310_Coast_Clipped.shp`   
 Used to compare community-detected regions with official administrative boundaries
 
-**Socioeconomic data**  
+**3. Socioeconomic data**  
 `R13859119_SL050.csv` with data dictionary `R13859119.txt`  
 Includes variables such as population, income, education, unemployment, and more  
 Aggregated by community cluster to analyze group differences
 
-**Migration flow data**  
+**4. Migration flow data**  
 `county-to-county-2016-2020-ins-outs-nets.xlsx`  
 Includes in-migration, out-migration, net, and gross flow between counties  
 
