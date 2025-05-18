@@ -232,7 +232,7 @@ The graph above shows the modularity (Q) values calculated after applying each a
 
 Based on these results, the Louvain algorithm was selected for dividing communities in California. The following map illustrates the regional boundaries derived from this approach.
 
-![Algorithms Comparision](/img/posts/G1.png)
+<img src="/img/posts/G1.png" width="550"/>
 
 ---
 
