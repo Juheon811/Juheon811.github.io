@@ -293,3 +293,7 @@ Community 2: The interior central region of California covers major cities such 
 <img src="/img/posts/a1.png" width="500"/>
 
 ---
+
+## 🔍 Explore Communities by Race
+
+1. 
