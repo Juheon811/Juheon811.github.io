@@ -108,9 +108,37 @@ Table 5 further evaluated temporal transmission dynamics using Granger causality
 
 ![Table4&5](/img/posts/p2.png)
 
-Taken together, the analysis shows that commuting-based regions performed best as functional units for delineating the spread of infectious diseases. Trip- and state-based regions also showed moderate boundary effectiveness, while Facebook-based and random regions were ineffective in structurally separating transmission patterns. These findings provide empirical support for the use of human mobility-based functional regions as an alternative policy unit in epidemic response planning.
+Taken together, the analysis shows that commuting-based regions performed best as functional units for delineating the spread of infectious diseases. Trip- and state-based regions also showed moderate boundary effectiveness, while Facebook-based and random regions were ineffective in structurally separating transmission patterns.
 
+---
+<br><br>
 
+# Community Detection California
+
+## 📦 Data Introduction
+---
+
+#### Data Sources
+
+**County shapefile**  
+`COUNTY_2019_US_SL050_Coast_Clipped.shp`  <br>
+Used for visualizing county-level community partitions on a choropleth map
+
+**MSA shapefile (Metropolitan Statistical Areas)**  
+`CBSA_MSA_2019_US_SL310_Coast_Clipped.shp`   
+Used to compare community-detected regions with official administrative boundaries
+
+**Socioeconomic data**  
+`R13859119_SL050.csv` with data dictionary `R13859119.txt`  
+Includes variables such as population, income, education, unemployment, and more  
+Aggregated by community cluster to analyze group differences
+
+**Migration flow data**  
+`county-to-county-2016-2020-ins-outs-nets.xlsx`  
+Includes in-migration, out-migration, net, and gross flow between counties  
+
+---
+<br><br>
 #### Data Pre-processing
 
 **1. Link** 
