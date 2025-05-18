@@ -340,7 +340,7 @@ The Mann-Whitney U test and Kolmogorov-Smirnov (KS) test were used together in t
 
 #### White
 
-<img src="/img/posts/White.png" style="width:300px !important; height:auto;"/>
+<img src="/img/posts/White.png" style="width:350px !important; height:auto;"/>
 
 **Community 0 vs 1** <br>
 There is a significant difference between the two groups (p<0.001). The KS-statistic value (0.805) indicates that the form of the distribution is very different.
@@ -360,7 +360,7 @@ A distinct difference exists (p < 0.001). KS-statistic is also a very large valu
 
 #### Black
 
-<img src="/img/posts/Black.png" style="width:300px !important; height:auto;"/>
+<img src="/img/posts/Black.png" style="width:350px !important; height:auto;"/>
 
 **Community 0 vs 1** <br>
 Significant differences exist (p < 0.001). The two groups are markedly different in the Black population distribution.
@@ -381,7 +381,7 @@ Significant difference (p < 0.001). KS-statistic is also very large, 0.833.
 
 #### Asian
 
-<img src="/img/posts/Asian.png" style="width:300px !important; height:auto;"/>
+<img src="/img/posts/Asian.png" style="width:350px !important; height:auto;"/>
 
 **Community 0 vs 1** <br>
 The distribution is very different, and the difference is also significant (p < 0.001). KS-statistic 0.902.
@@ -397,9 +397,7 @@ A very significant difference (p < 0.001), a completely different distribution w
 ---
 
 #### Comprehensive conclusion
-Community 1 shows distinct differences from other groups in all of the White, Black, and Asian populations, and can be seen as the largest and most diverse region. <br>
-Community 0 and 2 have a similar distribution for each race, and are generally interpreted as small and highly homogeneous areas. <br>
-In many cases, KS statistics are high, so it can be important to consider that the difference in distribution shape itself is large in addition to the simple average. <br>
+Community 1 shows distinct differences from other groups in all of the White, Black, and Asian populations, and can be seen as the largest and most diverse region. Community 0 and 2 have a similar distribution for each race, and are generally interpreted as small and highly homogeneous areas. In many cases, KS statistics are high, so it can be important to consider that the difference in distribution shape itself is large in addition to the simple average.
 
 ---
 
