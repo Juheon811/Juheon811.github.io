@@ -32,8 +32,8 @@ Five networks were constructed at the county level in the contiguous U.S.:
 - **Twitter** 
 - **Facebook** 
 
-Nodes represent U.S. counties.
-Edges represent human connections (e.g., mobility flows or social media ties) between counties.
+Nodes represent U.S. counties. <br>
+Edges represent human connections (e.g., mobility flows or social media ties) between counties. <br>
 Each network was partitioned into communities using the **Louvain method** for modularity maximization.
 
 ---
