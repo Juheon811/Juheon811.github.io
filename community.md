@@ -200,5 +200,19 @@ node = node[[
 
 ---
 
+**3. California Network**
+
+🧭 California County-to-County Migration Network
+
+The network displays the strongest migration links among California’s 58 counties, rather than the full set of connections. <br>
+
+Los Angeles County appears as the largest node by far, indicating that it serves as the most active migration hub within California <br>
+→ It plays a central role with high volumes of both in-migration and out-migration
+<br>
+Riverside, Orange, San Diego, and San Bernardino Counties, all located in Southern California, are densely connected around Los Angeles <br>
+→ This reflects strong migration flows within the greater metropolitan area
+
+
+
 ## 📈 Analysis
 ---
