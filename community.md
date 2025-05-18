@@ -258,7 +258,7 @@ The Leiden algorithm formed relatively more granular compartments. However, some
 
 Since the algorithm divides the network based on edge betweenness, it works by iterating the segmentation while removing central nodes with many connections. The result is over-divided into a total of 39 communities, which shows that the algorithm tends to over-divide complex structures. Some communities are composed of several counties that are separated from each other, resulting in a significant drop in geographic continuity. This means that the internal connectivity is not strong and the distinction between communities is unclear, indicating that it does not reflect the practical community structure well. Therefore, Girvan-Newman reveals the limitations that it is not suitable for complex real-world network structures.
 
-<img src="/img/posts/M3.png" width="560"/>
+<img src="/img/posts/M3.png" width="640"/>
 
 ---
 
