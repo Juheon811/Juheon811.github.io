@@ -242,14 +242,15 @@ Based on these results, the Louvain algorithm was selected for dividing communit
 
 This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas (e.g., LA, Bay Area).The Louvain algorithm works in a way that maximizes **Modularity**, in which case the highest modularity value was recorded (Q ≈ 0.3). This map clearly separates Southern, Central, and Northern California, and each community has a geographically continuous and interpretable boundary structure. It is highly likely to be utilized as a policy unit, especially with clear divisions centered around metropolitan areas.
 
-<img src="/img/posts/M1.png" width="600"/>
+<img src="/img/posts/M1.png" width="500"/>
+
 ---
 
 #### Leiden Map
 
 The Leiden algorithm formed relatively more granular compartments. However, some communities are located in geographically dispersed locations and lack spatial continuity. It is difficult to interpret as a real policy unit because there are many cases where counties of the same color are far from each other. Furthermore, counties marked with grey (N/A) on the map are not part of any community, suggesting that the algorithm is not fully aware of their connectivity. Given that these unclassified regions are included, the Leiden algorithm may exclude some counties or cause incomplete community configurations
 
-![Leiden](/img/posts/M2.png)
+<img src="/img/posts/M2.png" width="500"/>
 
 ---
 
@@ -257,7 +258,7 @@ The Leiden algorithm formed relatively more granular compartments. However, some
 
 Since the algorithm divides the network based on edge betweenness, it works by iterating the segmentation while removing central nodes with many connections. The result is over-divided into a total of 39 communities, which shows that the algorithm tends to over-divide complex structures. Some communities are composed of several counties that are separated from each other, resulting in a significant drop in geographic continuity. This means that the internal connectivity is not strong and the distinction between communities is unclear, indicating that it does not reflect the practical community structure well. Therefore, Girvan-Newman reveals the limitations that it is not suitable for complex real-world network structures.
 
-![Girvan–Newman Map](/img/posts/M3.png)
+<img src="/img/posts/M3.png" width="500"/>
 
 ---
 
