@@ -250,7 +250,7 @@ This map clearly separates Southern, Central, and Northern California, and each 
 
 The Leiden algorithm formed relatively more granular compartments. However, some communities are located in geographically dispersed locations and lack spatial continuity. It is difficult to interpret as a real policy unit because there are many cases where counties of the same color are far from each other. Furthermore, counties marked with grey (N/A) on the map are not part of any community, suggesting that the algorithm is not fully aware of their connectivity. Given that these unclassified regions are included, the Leiden algorithm may exclude some counties or cause incomplete community configurations
 
-<img src="/img/posts/M2.png" width="300"/>
+<img src="/img/posts/M2.png" style="width:300px !important; height:auto;"/>
 
 ---
 
