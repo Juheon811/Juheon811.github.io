@@ -332,17 +332,46 @@ Community 2 shows the lowest ranges and medians for all three races. Counties wi
 
 ---
 
-📊 Statistical Analysis
+## 📊 Statistical Analysis (Mann-Whitney U & Kolmogorov-Smirnov)
+
+The Mann-Whitney U test and Kolmogorov-Smirnov (KS) test were used together in this analysis to more precisely compare the difference in population composition between communities divided by the Louvain algorithm. The Mann-Whitney U test is a nonparametric test that checks whether the difference in median value between two groups is statistically significant, and is useful even when the population is small or the distribution is skewed because it is calculated on a ranking basis without assuming a normal distribution. On the other hand, the KS test evaluates the similarity of the overall distribution form by using the maximum difference between the cumulative distribution functions of the two distributions, and is effective when the mean or median values are similar, but there may be differences in distribution width or tail. Therefore, by using the two tests together, not only the simple difference in location but also the structural difference in the overall distribution can be identified, so that the statistical difference in race composition between communities can be evaluated more reliably.
 
 #### White
 
-![White](/img/posts/White.png)
+Community 0 vs 1
+There is a significant difference between the two groups (p<0.001). The KS-statistic value (0.805) indicates that the form of the distribution is very different.
 
+
+Community 0 vs 2
+No statistically significant difference (p ≈ 0.94). White population distribution between the two communities is similar.
+
+
+Community 1 vs 2
+A distinct difference exists (p < 0.001). KS-statistic is also a very large value of 0.909.
+
+
+-> Community 1 has a very large white population compared to other communities. Community 0 and 2 are relatively similar.
+
+
+![White](/img/posts/White.png)
 
 ---
 
 #### Black
 
+Community 0 vs 1
+Significant differences exist (p < 0.001). The two groups are markedly different in the Black population distribution.
+
+
+Community 0 vs 2
+No significant difference (p ≈ 0.24). Black population distribution similar.
+
+
+Community 1 vs 2
+Significant difference (p < 0.001). KS-statistic is also very large, 0.833.
+
+
+-> Community 1 also has a larger Black population than other groups. Community 0 and 2 are similar in distribution.
 
 ![Black](/img/posts/Black.png)
 
@@ -350,7 +379,25 @@ Community 2 shows the lowest ranges and medians for all three races. Counties wi
 
 #### Asian
 
+Community 0 vs 1
+The distribution is very different, and the difference is also significant (p < 0.001). KS-statistic 0.902.
+
+Community 0 vs 2
+No significant difference (p ≈ 0.70). Distribution is also similar.
+
+Community 1 vs 2
+A very significant difference (p < 0.001), a completely different distribution with KS-statistic = 1.000.
+
+-> The Asian population also has a markedly large number of Community 1. Community 0 and 2 have little difference in terms of the Asian population.
 
 ![Asian](/img/posts/Asian.png)
 
 ---
+
+#### Comprehensive conclusion
+Community 1 shows distinct differences from other groups in all of the White, Black, and Asian populations, and can be seen as the largest and most diverse region. <br>
+Community 0 and 2 have a similar distribution for each race, and are generally interpreted as small and highly homogeneous areas. <br>
+In many cases, KS statistics are high, so it can be important to consider that the difference in distribution shape itself is large in addition to the simple average. <br>
+
+---
+
