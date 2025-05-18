@@ -338,15 +338,15 @@ The Mann-Whitney U test and Kolmogorov-Smirnov (KS) test were used together in t
 
 #### White
 
-**Community 0 vs 1**
+**Community 0 vs 1** <br>
 There is a significant difference between the two groups (p<0.001). The KS-statistic value (0.805) indicates that the form of the distribution is very different.
 
 
-**Community 0 vs 2**
+**Community 0 vs 2** <br>
 No statistically significant difference (p ≈ 0.94). White population distribution between the two communities is similar.
 
 
-**Community 1 vs 2**
+**Community 1 vs 2** <br>
 A distinct difference exists (p < 0.001). KS-statistic is also a very large value of 0.909.
 
 
@@ -359,15 +359,15 @@ A distinct difference exists (p < 0.001). KS-statistic is also a very large valu
 
 #### Black
 
-**Community 0 vs 1**
+**Community 0 vs 1** <br>
 Significant differences exist (p < 0.001). The two groups are markedly different in the Black population distribution.
 
 
-**Community 0 vs 2**
+**Community 0 vs 2** <br>
 No significant difference (p ≈ 0.24). Black population distribution similar.
 
 
-**Community 1 vs 2**
+**Community 1 vs 2** <br>
 Significant difference (p < 0.001). KS-statistic is also very large, 0.833.
 
 
@@ -379,13 +379,13 @@ Significant difference (p < 0.001). KS-statistic is also very large, 0.833.
 
 #### Asian
 
-**Community 0 vs 1**
+**Community 0 vs 1** <br>
 The distribution is very different, and the difference is also significant (p < 0.001). KS-statistic 0.902.
 
-**Community 0 vs 2**
+**Community 0 vs 2** <br>
 No significant difference (p ≈ 0.70). Distribution is also similar.
 
-**Community 1 vs 2**
+**Community 1 vs 2** <br>
 A very significant difference (p < 0.001), a completely different distribution with KS-statistic = 1.000.
 
 -> The Asian population also has a markedly large number of Community 1. Community 0 and 2 have little difference in terms of the Asian population.
