@@ -290,7 +290,7 @@ Community 1: The region centered around Southeastern California, including River
 
 Community 2: The interior central region of California covers major cities such as Fresno, Bakersfield, and Visalia, but also covers some of the northern low-density areas. Though geographically dispersed, it forms an independent network internally, so it focuses on intra-regional connections rather than inter-regional interactions.
 
-<img src="/img/posts/a1.png" style="width:530px !important; height:auto;"/>
+<img src="/img/posts/a1.png" style="width:470px !important; height:auto;"/>
 
 ---
 
