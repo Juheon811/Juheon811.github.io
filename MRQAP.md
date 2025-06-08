@@ -171,9 +171,9 @@ var_diff_mat6 = variable('SE_A17005_003') # Unemployed
 
 ## 📏 County-to-County Distance Matrix
 
-```python
 Calculate the distance between counties using the centroids of their geographic boundaries.
 
+```python
 # distance to network
 county['centroid'] = county.geometry.centroid
 
