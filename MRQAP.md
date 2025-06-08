@@ -136,8 +136,8 @@ nx.set_node_attributes(g, degree_dict, 'degree')
 
 🔽 Dependent Variable (Migration Flows)
 The dependent variable is a 58×58 matrix showing how many people moved between each pair of counties in California from 2016 to 2020.
-To focus on meaningful movements, we removed flows of 50 people or fewer.
-This matrix was created from the migration network using nx.to_numpy_array().
+To focus on meaningful movements, flows of 50 people or fewer were removed.
+The matrix was created from the migration network using nx.to_numpy_array().
 In total, it captures over 1.17 million migration events.
 
 🔼 Independent Variables (Attribute Differences)
@@ -203,3 +203,18 @@ for i in range(len(all_nodes)):
 ---
 <br><br>
 ## 📈 MR-QAP Results and Interpretation
+
+```python
+independent_networks = [dist_mat, var_diff_mat, var_diff_mat2, var_diff_mat3, var_diff_mat4, var_diff_mat5, var_diff_mat6]
+
+print("MRQAP results:")
+print(f"R^2: {r_2:.4f}")
+print(f"R^2 based on permutation: {r_2_p.mean():.4f}")
+print("-" * 20)
+for i, beta in enumerate(betas):
+    print(f"Independent var {i+1}'s coeff (Beta): {beta:.4f}")
+    print(f"Independent var {i+1}'s p-value: {p_values[i]:.4f}")
+    print("-" * 20)
+```
+
+![F1](/img/posts/mp1.png)
