@@ -6,7 +6,7 @@ date: 2025-06-01 15:56:00
 categories: community-analysis
 tags: MRQAP social-network-analysis california migration
 featured_image: '/img/posts/california.png'
-project_link: '/community/'
+project_link: '/MRQAP/'
 button_icon: 'bar-chart'
 button_text: 'Visit Project'
 lead_text: "Analyzing what drives internal migration across California’s counties using social network regression."
