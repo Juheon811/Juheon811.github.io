@@ -216,11 +216,13 @@ for i, beta in enumerate(betas):
     print(f"Independent var {i+1}'s p-value: {p_values[i]:.4f}")
     print("-" * 20)
 ```
+<div style="display: flex; gap: 20px; align-items: flex-start;">
 
-<img src="/img/posts/mp1.png" style="width:400px !important; height:auto;"/>
+  <img src="/img/posts/mp1.png" style="width: 50%; height: auto;" />
 
-<img src="/img/posts/mp3.png" style="width:350px !important; height:auto;"/>
+  <img src="/img/posts/mp3.png" style="width: 45%; height: auto;" />
 
+</div>
 
 The MR-QAP results show that 5 out of the 7 independent variables had a significant effect on migration between counties. First, distance and median income were not significant, with high p-values of 0.9820 and 0.9670. This means that people do not move simply because counties are closer or richer.On the other hand, total population difference had a significant negative effect (β = –0.0030, p = 0.0030), which means that people are more likely to move between counties with similar population sizes. Differences in racial composition—White, Black, and Asian—also had significant effects. This suggests that people tend to move between counties that have similar racial makeup.The unemployment rate difference was also significant (β = 0.0357, p = 0.0320), showing that counties with similar job market conditions are more connected through migration. In summary, the analysis suggests that migration in California is more influenced by social similarity—such as population size, race, and unemployment—than by physical distance or income level. These patterns are important to consider in planning and policymaking at the regional level.
 
