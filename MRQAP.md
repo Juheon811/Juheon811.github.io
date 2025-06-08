@@ -28,39 +28,55 @@ Used to compare differences between counties.
 Filtered for California-only flows (weight > 50).  
 Used to build the migration network for MR-QAP.
 
+---
+<br><br>
 #### Data Pre-processing
 
-```python
-# 1. Link (Migration Network)
+**1. Link** 
 
-# Read the "California" sheet from the Excel file and select the first 9 columns
+Read the "California" sheet from the Excel file and select the first 9 columns
+
+```python
 link = pd.read_excel('county-to-county-2016-2020-ins-outs-nets-gross.xlsx', sheet_name='California', skiprows=2)
 link = link.iloc[:, 0:9]
 link.columns = [
     'O_state_cd', 'O_county_cd', 'D_state_cd', 'D_county_cd',
     'O_state_nm', 'O_county_nm', 'D_state_nm', 'D_county_nm', 'weight'
 ]
+```
 
-# Filter only within-California migration flows greater than 50
+Filter only within-California migration flows greater than 50
+
+```python
 link2 = link[
     (link['O_state_nm'] == 'California') &
     (link['D_state_nm'] == 'California') &
     (link['weight'] > 50)
 ]
+```
 
-# Convert code columns to integer type
+Convert code columns to integer type
+
+```python
 link2['O_state_cd'] = link2['O_state_cd'].astype(int)
 link2['O_county_cd'] = link2['O_county_cd'].astype(int)
 link2['D_state_cd'] = link2['D_state_cd'].astype(int)
 link2['D_county_cd'] = link2['D_county_cd'].astype(int)
+```
 
-# 2. Node (Socioeconomic Attributes)
 
-# Load socioeconomic data and filter for California counties
+**2. Node** 
+
+Load socioeconomic data and filter for California counties
+
+```python
 node = pd.read_csv('R13859119_SL050.csv')
 node = node[node['Geo_STATE'] == 6]
+```
 
-# Select relevant variables
+Select relevant variables
+
+```python
 node2 = node[[
     'Geo_FIPS',
     'Geo_QName',
@@ -76,6 +92,6 @@ node2 = node[[
     'SE_A14006_001',  # Median household income
     'SE_A09003_001'   # Average commute time
 ]]
-markdown
-복사
-편집
+```
+
+---
