@@ -220,7 +220,7 @@ for i, beta in enumerate(betas):
 
   <img src="/img/posts/mp1.png" style="width: 55%; height: auto;" />
 
-  <img src="/img/posts/mp3.png" style="width: 45%; height: auto;" />
+  <img src="/img/posts/mp3.png" style="width: 44%; height: auto;" />
 
 </div>
 
