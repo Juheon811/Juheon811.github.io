@@ -103,3 +103,103 @@ node2 = node[[
 ```
 
 ---
+<br><br>
+## 🧭 California County-to-County Migration Network
+
+The migration network is built using filtered flow data between counties.  
+Only flows with more than 50 people are included to reduce noise.
+
+
+Create the directed weighted graph
+
+```python
+g = nx.from_pandas_edgelist(link2, source='O_county_cd', target='D_county_cd', edge_attr='weight')
+```
+
+Add node attributes
+
+```python
+node_attr = node2.set_index('Geo_COUNTY').to_dict('index')
+nx.set_node_attributes(g, node_attr)
+```
+
+Calculate degree
+
+```python
+degree_dict = dict(g.degree(weight='weight'))
+nx.set_node_attributes(g, degree_dict, 'degree')
+```
+
+---
+<br><br>
+## 📐 Preparing the MR-QAP Model
+
+🔽 Dependent Variable (Migration Flows)
+The dependent variable is a 58×58 matrix showing how many people moved between each pair of counties in California from 2016 to 2020.
+To focus on meaningful movements, we removed flows of 50 people or fewer.
+This matrix was created from the migration network using nx.to_numpy_array().
+In total, it captures over 1.17 million migration events.
+
+🔼 Independent Variables (Attribute Differences)
+The independent variables are also 58×58 matrices.
+Each one shows how different two counties are in a specific attribute, such as income, population, race, or unemployment.
+
+```python
+def variable(var):
+    var_diff_mat = np.zeros((n_nodes, n_nodes))
+    for i, node1 in enumerate(ordered_nodes):
+        for j, node2 in enumerate(ordered_nodes):
+            if var in g.nodes[node1] and var in g.nodes[node2]:
+                var1 = g.nodes[node1][var]
+                var2 = g.nodes[node2][var]
+                var_diff = abs(var1 - var2)
+                var_diff_mat[i, j] = var_diff
+            else:
+                var_diff_mat[i, j] = np.nan
+    return var_diff_mat
+
+var_diff_mat = variable('SE_A14006_001')  # Median household income
+var_diff_mat2 = variable('SE_A00001_001') # Total population
+var_diff_mat3 = variable('SE_A03001_002') # White Alone
+var_diff_mat4 = variable('SE_A03001_003') # Black or African American Alone
+var_diff_mat5 = variable('SE_A03001_005') # Asian Alone
+var_diff_mat6 = variable('SE_A17005_003') # Unemployed
+```
+
+---
+<br><br>
+
+## 📏 County-to-County Distance Matrix
+
+```python
+Calculate the distance between counties using the centroids of their geographic boundaries.
+
+# distance to network
+county['centroid'] = county.geometry.centroid
+
+# an empty graph
+dist = nx.Graph()
+
+# save each polygon as a node and get the centroid as an attribute
+for index, row in county.iterrows():
+    node_id = row['COUNTYFP'] 
+    centroid = row['centroid']
+    dist.add_node(node_id, geometry=row['geometry'], centroid=(centroid.x, centroid.y))
+
+# Compute distance between every pair and save it as an edge
+all_nodes = list(dist.nodes())
+for i in range(len(all_nodes)):
+    for j in range(i + 1, len(all_nodes)):
+        node1 = all_nodes[i]
+        node2 = all_nodes[j]
+
+        centroid1 = Point(dist.nodes[node1]['centroid'])
+        centroid2 = Point(dist.nodes[node2]['centroid'])
+
+        distance = centroid1.distance(centroid2)
+        dist.add_edge(node1, node2, weight=distance)
+```
+
+---
+<br><br>
+## 📈 MR-QAP Results and Interpretation
