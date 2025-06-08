@@ -217,4 +217,4 @@ for i, beta in enumerate(betas):
     print("-" * 20)
 ```
 
-![F1](/img/posts/mp1.png)
+<img src="/img/posts/mp1.png" style="width:350px !important; height:auto;"/>
