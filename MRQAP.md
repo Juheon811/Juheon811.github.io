@@ -218,3 +218,5 @@ for i, beta in enumerate(betas):
 ```
 
 <img src="/img/posts/mp1.png" style="width:350px !important; height:auto;"/>
+
+<img src="/img/posts/mp3.png" style="width:350px !important; height:auto;"/>
