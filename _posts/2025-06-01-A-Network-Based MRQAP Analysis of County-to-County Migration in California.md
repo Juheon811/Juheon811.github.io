@@ -1,6 +1,6 @@
 ---
 layout: inner
-position: left
+position: right
 title: "A Network-Based MRQAP Analysis of County-to-County Migration in California"
 date: 2025-06-01 15:56:00
 categories: community-analysis
