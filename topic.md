@@ -41,7 +41,7 @@ Each document is processed by an LLM to extract multiple meaningful keyphrases. 
 ### 🔹 Step 2: Hallucination Verification  
 A coherence score based on cosine similarity is calculated to assess how well each keyphrase aligns with the document content. Keyphrases with low scores are identified as "AI hallucinations" and removed, leaving only contextually valid and reliable terms for further analysis.
 
-### 🔹 Step 3: Hierarchical Clustering (Main & Sub-Topics)  
+### 🔹 Step 3: Clustering (Main & Sub-Topics)  
 Refined keyphrases are grouped using a K-Means clustering algorithm.  
 
 Clustering is conducted in two stages:
