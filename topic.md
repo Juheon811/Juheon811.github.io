@@ -98,14 +98,14 @@ For each sub-cluster, the LLM is prompted again to analyze compressed content an
 
 ---
 
-## 🧾 7. Conclusion (Closing Thoughts)
+## 🧾 7. Conclusion
 
 - **QualIT** integrates the semantic understanding of LLMs with the structural power of clustering algorithms, delivering **more coherent and diverse topics** than traditional methods like LDA and BERTopic.  
 - Especially useful in **qualitative text analysis** scenarios where interpretability and depth matter.  
 - Future directions may include:
   - **Multilingual support**
   - **Efficiency improvements**
-  - **Advanced clustering (e.g., HDBSCAN)**
+  - **Advanced clustering**
 
 QualIT is not just an automation tool, but a powerful assistant for researchers and practitioners seeking to uncover meaningful insights from large-scale unstructured text data.
 
