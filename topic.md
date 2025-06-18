@@ -139,8 +139,7 @@ This table shows how often **human evaluators (4 total)** agreed on categorizing
 ## 📦 1. Dataset and Preprocessing
 
 ### 🔹 Source
-Video_Games.jsonl` from Amazon Reviews dataset <br>
-Each line contains fields like `rating`, `text`, `verified_purchase`, etc.
+Video_Games.jsonl from Amazon Reviews dataset <br>
 
 ### 🔹 Preprocessing
 Filtered only 1-star reviews with `helpful_votes >= 1` <br>
