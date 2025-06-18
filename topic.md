@@ -326,6 +326,7 @@ unique_words_count = len(set(all_words))
 diversity_bertopic = unique_words_count / total_words_count
 
 print(f"BERTopic Diversity Score (N={top_n_words}): {diversity_bertopic:.4f}")
+```
 
 #### 🔍 Interpretation
 BERTopic's coherence score was 0.3478, which is higher than the LDA, indicating that the key words in each topic are more semantically related. The Diversity Score was 0.7211, which means that about 72% of the top words in the entire topic were unique words. This figure is somewhat lower than the LDA, but it can contribute to increasing semantic association and consistency by overlapping some words between topics. Overall, BERTopic is interpreted as effectively balancing the interpretability of topics with the distinction between topics.
