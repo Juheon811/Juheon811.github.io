@@ -64,23 +64,53 @@ For each sub-cluster, the LLM is prompted again to analyze compressed content an
 - **Topic Coherence**: Measures how semantically similar the top-ranked words in each topic are.  
 - **Topic Diversity**: The percentage of unique words across all topic outputs (from 0 to 1).
 
-### 🔹 Summary of Results  
 
-| Model     | Avg. Coherence | Avg. Diversity |
-|-----------|----------------|----------------|
-| LDA       | 51.4%          | 72.7%          |
-| BERTopic  | 61.0%          | 86.3%          |
-| **QualIT**| **64.4%**      | **93.7%**      |
+![Table3&5](/img/posts/topic2.png)
 
-- QualIT achieved the **highest average coherence and diversity** across all models.  
-- The **best performance occurred at 20 topics**, which matches the ground-truth structure of the dataset.  
-- Human evaluators manually categorized topic word lists into 20 predefined classes, showing that QualIT produced **the clearest and most interpretable topics**.
 
-| Evaluation Criteria        | LDA  | BERTopic | **QualIT** |
-|---------------------------|------|----------|------------|
-| At least 2 evaluators agreed | 50%  | 45%      | **80%**    |
-| At least 3 evaluators agreed | 25%  | 25%      | **50%**    |
-| All 4 evaluators agreed      | 20%  | 20%      | **35%**    |
+### 🔹 Table 3: Topic Coherence & Diversity by Number of Topics
+
+This table compares the performance of three topic modeling methods — **LDA**, **BERTopic**, and **QualIT** — in terms of **Topic Coherence** and **Topic Diversity**, evaluated across different numbers of topics (10 to 50).
+
+#### ✅ LDA
+- Best coherence: **57.0%** at 20 topics  
+- Best diversity: **79.1%** at 40 topics  
+- Average performance: **51.4%** coherence, **72.7%** diversity  
+- **Takeaway**: As a traditional approach, LDA shows the lowest scores overall in both coherence and diversity.
+
+#### ✅ BERTopic
+- Best coherence: **65.0%** at 20 topics  
+- Best diversity: **88.8%** at 40 topics  
+- Average performance: **61.0%** coherence, **86.3%** diversity  
+- **Takeaway**: With embedding-based clustering, BERTopic outperforms LDA and offers moderate diversity and coherence.
+
+#### ✅ QualIT
+- Best coherence: **70.0%** at 20 topics  
+- Best diversity: **95.5%** at 20 topics  
+- Average performance: **64.4%** coherence, **93.7%** diversity  
+- **Takeaway**: QualIT consistently performs the best across all topic counts. It is especially optimized for 20 topics, which matches the dataset’s ground-truth structure.
+
+> 📌 **Summary**: QualIT demonstrates the most coherent and diverse topic modeling performance among the three models, especially when using 20 topics.
+
+---
+
+### 👥 Table 4: Human Evaluation Agreement
+
+This table shows how often **human evaluators (4 total)** agreed on categorizing topic outputs from each model into one of the 20 ground-truth classes.
+
+#### ✅ QualIT
+- 80% agreement with at least 2 evaluators  
+- 50% agreement with at least 3 evaluators  
+- 35% full agreement (all 4 evaluators)  
+- **Takeaway**: QualIT provides topic outputs that are much clearer and easier for humans to interpret and classify consistently.
+
+#### ✅ BERTopic & LDA
+- LDA: 50% (2 evaluators), 25% (3 evaluators), 20% (all 4)  
+- BERTopic: 45%, 25%, 20% respectively  
+- **Takeaway**: Both LDA and BERTopic yield lower agreement scores, indicating more ambiguous or inconsistent topic groupings.
+
+> ✅ **Summary**: Human evaluators found QualIT’s topic outputs significantly easier to interpret, with higher agreement across all levels, supporting the model’s interpretability and clarity.
+
 
 ---
 <br><br>
