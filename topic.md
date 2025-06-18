@@ -76,19 +76,19 @@ This table compares the performance of three topic modeling methods — **LDA**,
 - Best coherence: **57.0%** at 20 topics  
 - Best diversity: **79.1%** at 40 topics  
 - Average performance: **51.4%** coherence, **72.7%** diversity  
-- **Takeaway**: As a traditional approach, LDA shows the lowest scores overall in both coherence and diversity.
+- As a traditional approach, LDA shows the lowest scores overall in both coherence and diversity.
 
 #### ✅ BERTopic
 - Best coherence: **65.0%** at 20 topics  
 - Best diversity: **88.8%** at 40 topics  
 - Average performance: **61.0%** coherence, **86.3%** diversity  
-- **Takeaway**: With embedding-based clustering, BERTopic outperforms LDA and offers moderate diversity and coherence.
+- With embedding-based clustering, BERTopic outperforms LDA and offers moderate diversity and coherence.
 
 #### ✅ QualIT
 - Best coherence: **70.0%** at 20 topics  
 - Best diversity: **95.5%** at 20 topics  
 - Average performance: **64.4%** coherence, **93.7%** diversity  
-- **Takeaway**: QualIT consistently performs the best across all topic counts. It is especially optimized for 20 topics, which matches the dataset’s ground-truth structure.
+- QualIT consistently performs the best across all topic counts. It is especially optimized for 20 topics, which matches the dataset’s ground-truth structure.
 
 > 📌 **Summary**: QualIT demonstrates the most coherent and diverse topic modeling performance among the three models, especially when using 20 topics.
 
@@ -102,15 +102,12 @@ This table shows how often **human evaluators (4 total)** agreed on categorizing
 - 80% agreement with at least 2 evaluators  
 - 50% agreement with at least 3 evaluators  
 - 35% full agreement (all 4 evaluators)  
-- **Takeaway**: QualIT provides topic outputs that are much clearer and easier for humans to interpret and classify consistently.
+- QualIT provides topic outputs that are much clearer and easier for humans to interpret and classify consistently.
 
 #### ✅ BERTopic & LDA
 - LDA: 50% (2 evaluators), 25% (3 evaluators), 20% (all 4)  
 - BERTopic: 45%, 25%, 20% respectively  
-- **Takeaway**: Both LDA and BERTopic yield lower agreement scores, indicating more ambiguous or inconsistent topic groupings.
-
-> ✅ **Summary**: Human evaluators found QualIT’s topic outputs significantly easier to interpret, with higher agreement across all levels, supporting the model’s interpretability and clarity.
-
+- Both LDA and BERTopic yield lower agreement scores, indicating more ambiguous or inconsistent topic groupings.
 
 ---
 <br><br>
@@ -137,5 +134,4 @@ This table shows how often **human evaluators (4 total)** agreed on categorizing
   - **Efficiency improvements**
   - **Advanced clustering**
 
-QualIT is not just an automation tool, but a powerful assistant for researchers and practitioners seeking to uncover meaningful insights from large-scale unstructured text data.
 
