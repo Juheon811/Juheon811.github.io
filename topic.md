@@ -330,4 +330,65 @@ print(f"BERTopic Diversity Score (N={top_n_words}): {diversity_bertopic:.4f}")
 
 #### 🔍 Interpretation
 BERTopic's coherence score was 0.3478, which is higher than the LDA, indicating that the key words in each topic are more semantically related. The Diversity Score was 0.7211, which means that about 72% of the top words in the entire topic were unique words. This figure is somewhat lower than the LDA, but it can contribute to increasing semantic association and consistency by overlapping some words between topics. Overall, BERTopic is interpreted as effectively balancing the interpretability of topics with the distinction between topics.
+
+---
+<br><br>
+
+## LLM
+
+**1. Extract keywords**
+
+```python
+# GPT 
+def gpt_prompt(prompt):
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+    data = {
+        "model": "gpt-3.5-turbo", 
+        "messages": [
+            {"role": "system", "content": "You extract keywords for analyzing customer reviews"},
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.3 #control creativity
+    }
+    response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=data)
+    response.raise_for_status()
+    result = response.json()["choices"][0]["message"]["content"].strip()
+    result = " ".join(result.splitlines()).strip()
+    if any(bad in result.lower() for bad in ["text"]):
+        return "LLM Error"
+    return result
 ```
+
+```python
+# Prompt
+def extract_keyphrases(text, index=None, total=None):
+    if index is not None and total is not None:
+        print(f"{index + 1} / {total}")
+
+    prompt = f"""Analyze the following customer review and extract 5 to 10 key phrases that best represent the core topics, features, sentiments, and experiences mentioned in the review.
+
+    Key phrases should capture the main subjects, specific product or service attributes, common issues, or positive aspects.
+
+    Guidelines:
+    - Each extracted phrase must clearly represent a specific point or idea from the review.
+    - Formulate them as meaningful noun phrases, not just single words or a list of adjectives or verbs.
+    - For example: "poor battery life", "excellent customer support", "difficult assembly process".
+    - Output should be a single line, with key phrases separated by commas.
+    - DO NOT include explanatory sentences, standalone adjectives, adverbs, verbs, or full sentences.
+    - DO NOT infer or hallucinate meanings not present in the review.
+    - Only include key phrases that are explicitly stated or strongly implied in the review text.
+    - The extracted key phrases will be used for subsequent document clustering and topic summarization.
+
+    [Customer Review]
+    {text}
+
+    Key Phrases:"""
+    #return gemini_prompt(prompt)
+    return gpt_prompt(prompt)
+```
+
+
+** 2. Halluciation check **
