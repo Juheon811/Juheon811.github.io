@@ -433,3 +433,6 @@ The LLM-based model had the highest coherence score of 0.4068, which was the hig
 | **LDA**       | 0.3003              | 0.9625               |
 | **BERTopic**  | 0.3478              | 0.7211               |
 | **LLM (QualIT)** | 0.4068       | 0.8400           |
+
+#### 🔍 Interpretation
+The table shows that LLM (QualIT) outperforms the other models in topic coherence, meaning it generates more semantically consistent topics. While LDA achieves the highest diversity score, indicating broader coverage of unique words, it lacks semantic depth. BERTopic offers a good balance but falls between the two in both metrics. Overall, LLM is the most effective model in terms of producing both meaningful and distinguishable topics.
