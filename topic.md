@@ -146,3 +146,50 @@ Filtered only 1-star reviews with `helpful_votes >= 1` <br>
 Text length between 20 and 200 characters <br>
 Removed stopwords, applied lemmatization <br>
 Final dataset prepared for topic modeling
+
+1. Preprocess Text Data
+
+```python
+def preprocess_text(text):
+    text = re.sub('\s+', ' ', text)  # Remove extra spaces
+    text = re.sub('\S*@\S*\s?', '', text)  # Remove emails
+    text = re.sub('\'', '', text)  # Remove apostrophes
+    text = re.sub('[^a-zA-Z]', ' ', text)  # Remove non-alphabet characters
+    text = text.lower()  # Convert to lowercase
+    return text
+```
+
+2. Tokenize and Remove Stopwords
+
+```python
+# Download NLTK stopwords
+nltk.download('stopwords')
+stop_words = stopwords.words('english')
+
+# Tokenize and remove stopwords
+def tokenize(text):
+    tokens = gensim.utils.simple_preprocess(text, deacc=True)
+    tokens = [token for token in tokens if token not in stop_words]
+    return tokens
+```
+
+3.  Lemmatize Tokens
+```python
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet')
+
+
+lemmatizer = WordNetLemmatizer()
+
+def extract_lemmas(tokens):
+    return [lemmatizer.lemmatize(token) for token in tokens]
+```
+4.   Create Dictionary and Corpus
+```python
+# Create dictionary and corpus
+id2word = corpora.Dictionary(df['lemmas'])
+texts = df['lemmas']
+corpus = [id2word.doc2bow(text) for text in texts]
+```
