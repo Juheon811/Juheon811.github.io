@@ -131,5 +131,19 @@ This table shows how often **human evaluators (4 total)** agreed on categorizing
   - **Multilingual support**
   - **Efficiency improvements**
   - **Advanced clustering**
+ 
+---
+<br><br>
+# A Comparative Study in Topic Modeling
 
+## 📦 1. Dataset and Preprocessing
 
+### 🔹 Source
+Video_Games.jsonl` from Amazon Reviews dataset <br>
+Each line contains fields like `rating`, `text`, `verified_purchase`, etc.
+
+### 🔹 Preprocessing
+Filtered only 1-star reviews with `helpful_votes >= 1` <br>
+Text length between 20 and 200 characters <br>
+Removed stopwords, applied lemmatization <br>
+Final dataset prepared for topic modeling
