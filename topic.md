@@ -198,7 +198,7 @@ corpus = [id2word.doc2bow(text) for text in texts]
 <br><br>
 ## 🧠 2. Topic Modeling with LDA, BERTopic, and QualIT
 
-### LDA
+## LDA
 ```python
 lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
                                             id2word=id2word,
@@ -254,7 +254,7 @@ Diversity Score (N=20): 0.9625
 <br><br>
 
 
-### BERTopic
+## BERTopic
 
 ```python
 nlp = spacy.load("en_core_web_sm")
@@ -282,3 +282,5 @@ model = BERTopic(verbose=True,
                 )
 topics, probs = model.fit_transform(df.text)
 ```
+
+![topic](/img/posts/topic3.png)
