@@ -50,3 +50,62 @@ Clustering is conducted in two stages:
 - **Sub-Topics**: Within each main topic, a second clustering step is applied to extract more detailed and specific themes.  
 
 For each sub-cluster, the LLM is prompted again to analyze compressed content and generate representative sub-topics.
+
+---
+<br><br>
+## ✅ 5. Experimental Setup & Results
+
+### 🔹 Dataset and Model Configuration  
+- The experiments were conducted using the **20 NewsGroups** dataset, which contains approximately 20,000 news articles categorized into 20 topics.  
+- **LDA** and **BERTopic** were run with default parameters, while the **LLM-based method (QualIT)** used the **Claude-2.1** model.  
+  - Key parameters: `top_k = 50`, `top_p = 0` (optimized for document-level semantic coherence)
+
+### 🔹 Evaluation Metrics  
+- **Topic Coherence**: Measures how semantically similar the top-ranked words in each topic are.  
+- **Topic Diversity**: The percentage of unique words across all topic outputs (from 0 to 1).
+
+### 🔹 Summary of Results  
+
+| Model     | Avg. Coherence | Avg. Diversity |
+|-----------|----------------|----------------|
+| LDA       | 51.4%          | 72.7%          |
+| BERTopic  | 61.0%          | 86.3%          |
+| **QualIT**| **64.4%**      | **93.7%**      |
+
+- QualIT achieved the **highest average coherence and diversity** across all models.  
+- The **best performance occurred at 20 topics**, which matches the ground-truth structure of the dataset.  
+- Human evaluators manually categorized topic word lists into 20 predefined classes, showing that QualIT produced **the clearest and most interpretable topics**.
+
+| Evaluation Criteria        | LDA  | BERTopic | **QualIT** |
+|---------------------------|------|----------|------------|
+| At least 2 evaluators agreed | 50%  | 45%      | **80%**    |
+| At least 3 evaluators agreed | 25%  | 25%      | **50%**    |
+| All 4 evaluators agreed      | 20%  | 20%      | **35%**    |
+
+---
+
+## ⚠️ 6. Limitations & Future Work
+
+- **Processing Time**  
+  - QualIT takes approximately **2–3 hours** per run  
+  - BERTopic completes in about **30 minutes**  
+  → Reducing runtime is essential for large-scale deployments.
+
+- **Clustering Algorithm Improvements**  
+  - Currently uses **K-Means**, which requires predefined cluster numbers  
+  - **HDBSCAN**, used in BERTopic, may provide more adaptive and nuanced topic boundaries  
+  - Future work may explore replacing K-Means with HDBSCAN to improve granularity and accuracy
+
+---
+
+## 🧾 7. Conclusion (Closing Thoughts)
+
+- **QualIT** integrates the semantic understanding of LLMs with the structural power of clustering algorithms, delivering **more coherent and diverse topics** than traditional methods like LDA and BERTopic.  
+- Especially useful in **qualitative text analysis** scenarios where interpretability and depth matter.  
+- Future directions may include:
+  - **Multilingual support**
+  - **Efficiency improvements**
+  - **Advanced clustering (e.g., HDBSCAN)**
+
+QualIT is not just an automation tool, but a powerful assistant for researchers and practitioners seeking to uncover meaningful insights from large-scale unstructured text data.
+
