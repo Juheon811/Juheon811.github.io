@@ -193,3 +193,94 @@ id2word = corpora.Dictionary(df['lemmas'])
 texts = df['lemmas']
 corpus = [id2word.doc2bow(text) for text in texts]
 ```
+
+---
+<br><br>
+## 🧠 2. Topic Modeling with LDA, BERTopic, and QualIT
+
+### LDA
+```python
+lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
+                                            id2word=id2word,
+                                            num_topics=20, 
+                                            random_state=100,
+                                            update_every=1,
+                                            chunksize=100,
+                                            passes=10,
+                                            alpha='auto',
+                                            per_word_topics=True)
+```
+
+from gensim.models import CoherenceModel
+
+**Compute coherence score**
+
+```python
+coherence_model_lda = CoherenceModel(model=lda_model, texts=df['lemmas'], dictionary=id2word, coherence='c_v')
+
+coherence_lda = coherence_model_lda.get_coherence()
+print('\nCoherence Score: ', coherence_lda)
+```
+
+Coherence Score:  0.30031160118766986
+
+**Compute diversity score**
+
+```python
+top_n_words = 20
+topic_words = []
+
+for i in range(lda_model.num_topics):
+    words_with_probs = lda_model.show_topic(i, topn=top_n_words)
+    words = [word for word, prob in words_with_probs]
+    topic_words.append(words)
+
+# top n words from every topic to a list
+all_words_in_topics = [word for topic in topic_words for word in topic]
+total_words_count = len(all_words_in_topics)
+unique_words_count = len(set(all_words_in_topics))
+
+# diversity score
+diversity_score = unique_words_count / total_words_count
+
+print(f"Total words across all topics: {total_words_count}")
+print(f"Unique words across all topics: {unique_words_count}")
+print(f"Diversity Score (N={top_n_words}): {diversity_score:.4f}")
+```
+
+Total words across all topics: 400  <br>
+Unique words across all topics: 385 <br>
+Diversity Score (N=20): 0.9625
+
+---
+<br><br>
+
+
+### BERTopic
+
+```python
+nlp = spacy.load("en_core_web_sm")
+
+def spacy_tokenizer(text):
+    return [token.lemma_ for token in nlp(text) if not token.is_stop and not token.is_punct and not token.is_space]
+
+
+english_stopwords = stopwords.words('english')
+vectorizer_model = CountVectorizer(tokenizer = spacy_tokenizer,
+                                   stop_words=english_stopwords, 
+                                   min_df=5, 
+                                   max_df=0.9, 
+                                   ngram_range=(1, 1))
+```
+
+```python
+model = BERTopic(verbose=True, 
+                 embedding_model='all-MiniLM-L6-v2',  # all-MiniLM-L12-v2, paraphrase-MiniLM-L12-v2
+                 vectorizer_model=vectorizer_model, 
+                 language='english', 
+                 nr_topics = 20,
+                 top_n_words = 20,
+                 calculate_probabilities=True
+                )
+topics, probs = model.fit_transform(df.text)
+```
