@@ -5,7 +5,7 @@ title: "Multi-Model Comparison of Topic Modeling: LDA, BERTopic, and LLM-Enhance
 date: 2025-06-17 15:56:00
 categories: topic-modeling
 tags: topic-modeling lda bertopic llm
-featured_image: '/img/posts/topic.jpg'
+featured_image: '/img/posts/topic1.png'
 project_link: '/topic/'
 button_icon: 'bar-chart'
 button_text: 'Visit Project'
