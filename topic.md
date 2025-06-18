@@ -250,6 +250,9 @@ Total words across all topics: 400  <br>
 Unique words across all topics: 385 <br>
 Diversity Score (N=20): 0.9625
 
+#### 🔍 Interpretation
+Topic coherence is moderate, which indicates that the most frequent words in each topic are somewhat semantically related.The high diversity score (96.25%) shows that across the top 20 topics, most keywords are unique, with little redundancy.However, many keywords are still general-purpose words like game, buy, use, play, which lack contextual nuance.
+
 ---
 <br><br>
 
@@ -284,3 +287,46 @@ topics, probs = model.fit_transform(df.text)
 ```
 
 ![topic](/img/posts/topic3.png)
+
+
+BERTopic was configured to extract 20 topics using BERT embeddings and CountVectorizer. It produced clusters with clear keyword groupings, and representative documents were extracted per topic. Topics such as: "game", "play", "buy", "money" – indicate general purchasing experiences. "price", "$", "scam", "worth" – highlight value dissatisfaction. "headset", "sound", "hear" – show technical product malfunctions.
+
+```python
+top_n_words = 20
+topic_words = []
+
+
+# model.get_topics() gives us a dictionary {topic_id: [(word1, score1), ...]}
+topics_dict = model.get_topics() # (words, score) are given
+
+for topic_id, words_and_scores in topics_dict.items():
+    if topic_id == -1: # -1: outlier
+        continue
+    words = [word for word, score in words_and_scores[:top_n_words]]
+    topic_words.append(words)
+
+texts_for_coherence = df['lemmas'].tolist() 
+dictionary = Dictionary(texts_for_coherence)
+corpus = [dictionary.doc2bow(text) for text in texts_for_coherence]
+
+# Coherence Score
+coherence_model_bertopic = CoherenceModel(topics=topic_words,
+                                          texts=texts_for_coherence,
+                                          dictionary=dictionary,
+                                          corpus=corpus,
+                                          coherence='c_v')
+coherence_bertopic = coherence_model_bertopic.get_coherence()
+print(f"BERTopic Coherence Score (N={top_n_words}): {coherence_bertopic:.4f}")
+
+# Diversity Score
+all_words = [word for topic in topic_words for word in topic]
+
+total_words_count = len(all_words)
+unique_words_count = len(set(all_words))
+diversity_bertopic = unique_words_count / total_words_count
+
+print(f"BERTopic Diversity Score (N={top_n_words}): {diversity_bertopic:.4f}")
+
+#### 🔍 Interpretation
+BERTopic's coherence score was 0.3478, which is higher than the LDA, indicating that the key words in each topic are more semantically related. The Diversity Score was 0.7211, which means that about 72% of the top words in the entire topic were unique words. This figure is somewhat lower than the LDA, but it can contribute to increasing semantic association and consistency by overlapping some words between topics. Overall, BERTopic is interpreted as effectively balancing the interpretability of topics with the distinction between topics.
+```
