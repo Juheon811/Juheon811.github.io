@@ -211,44 +211,12 @@ lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
                                             per_word_topics=True)
 ```
 
-**Compute coherence score**
-
-```python
-coherence_model_lda = CoherenceModel(model=lda_model, texts=df['lemmas'], dictionary=id2word, coherence='c_v')
-
-coherence_lda = coherence_model_lda.get_coherence()
-print('\nCoherence Score: ', coherence_lda)
-```
-
-Coherence Score:  0.30031160118766986
-
-**Compute diversity score**
-
-```python
-top_n_words = 20
-topic_words = []
-
-for i in range(lda_model.num_topics):
-    words_with_probs = lda_model.show_topic(i, topn=top_n_words)
-    words = [word for word, prob in words_with_probs]
-    topic_words.append(words)
-
-# top n words from every topic to a list
-all_words_in_topics = [word for topic in topic_words for word in topic]
-total_words_count = len(all_words_in_topics)
-unique_words_count = len(set(all_words_in_topics))
-
-# diversity score
-diversity_score = unique_words_count / total_words_count
-
-print(f"Total words across all topics: {total_words_count}")
-print(f"Unique words across all topics: {unique_words_count}")
-print(f"Diversity Score (N={top_n_words}): {diversity_score:.4f}")
-```
-
+**coherence** <br>
+LDA Coherence Score:  0.30031160118766986 <br>
+**Diversity** <br>
 Total words across all topics: 400  <br>
 Unique words across all topics: 385 <br>
-Diversity Score (N=20): 0.9625
+LDA Diversity Score (N=20): 0.9625
 
 #### 🔍 Interpretation
 Topic coherence is moderate, which indicates that the most frequent words in each topic are somewhat semantically related.The high diversity score (96.25%) shows that across the top 20 topics, most keywords are unique, with little redundancy.However, many keywords are still general-purpose words like game, buy, use, play, which lack contextual nuance.
@@ -291,42 +259,8 @@ topics, probs = model.fit_transform(df.text)
 
 BERTopic was configured to extract 20 topics using BERT embeddings and CountVectorizer. It produced clusters with clear keyword groupings, and representative documents were extracted per topic. Topics such as: "game", "play", "buy", "money" – indicate general purchasing experiences. "price", "$", "scam", "worth" – highlight value dissatisfaction. "headset", "sound", "hear" – show technical product malfunctions.
 
-```python
-top_n_words = 20
-topic_words = []
-
-
-# model.get_topics() gives us a dictionary {topic_id: [(word1, score1), ...]}
-topics_dict = model.get_topics() # (words, score) are given
-
-for topic_id, words_and_scores in topics_dict.items():
-    if topic_id == -1: # -1: outlier
-        continue
-    words = [word for word, score in words_and_scores[:top_n_words]]
-    topic_words.append(words)
-
-texts_for_coherence = df['lemmas'].tolist() 
-dictionary = Dictionary(texts_for_coherence)
-corpus = [dictionary.doc2bow(text) for text in texts_for_coherence]
-
-# Coherence Score
-coherence_model_bertopic = CoherenceModel(topics=topic_words,
-                                          texts=texts_for_coherence,
-                                          dictionary=dictionary,
-                                          corpus=corpus,
-                                          coherence='c_v')
-coherence_bertopic = coherence_model_bertopic.get_coherence()
-print(f"BERTopic Coherence Score (N={top_n_words}): {coherence_bertopic:.4f}")
-
-# Diversity Score
-all_words = [word for topic in topic_words for word in topic]
-
-total_words_count = len(all_words)
-unique_words_count = len(set(all_words))
-diversity_bertopic = unique_words_count / total_words_count
-
-print(f"BERTopic Diversity Score (N={top_n_words}): {diversity_bertopic:.4f}")
-```
+BERTopic Coherence Score (N=20): 0.3478
+BERTopic Diversity Score (N=20): 0.7211
 
 #### 🔍 Interpretation
 BERTopic's coherence score was 0.3478, which is higher than the LDA, indicating that the key words in each topic are more semantically related. The Diversity Score was 0.7211, which means that about 72% of the top words in the entire topic were unique words. This figure is somewhat lower than the LDA, but it can contribute to increasing semantic association and consistency by overlapping some words between topics. Overall, BERTopic is interpreted as effectively balancing the interpretability of topics with the distinction between topics.
@@ -390,5 +324,102 @@ def extract_keyphrases(text, index=None, total=None):
     return gpt_prompt(prompt)
 ```
 
+**2. Halluciation check**
+```python
+results = []
+model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L6-v2")
 
-** 2. Halluciation check **
+
+for idx, row in sub_df.iterrows():
+    text = str(row['text'])  # original text or pre-processed text
+    keyphrases = str(row['Keywords']).split(',')
+
+    # embedding
+    text_embedding = model.encode(text, normalize_embeddings=True)
+    kp_embeddings = model.encode(keyphrases, normalize_embeddings=True)
+
+    # similarity score
+    sims = [np.dot(text_embedding, kp) for kp in kp_embeddings]
+    sims_score = np.mean(sims)
+
+    # filtering
+    valid_kps = [kp for kp, score in zip(keyphrases, sims) if score >= 0.10]  # control threshold 
+
+    results.append({
+        'original_keyphrases': keyphrases,
+        'coherence_score': sims_score,
+        'valid_keyphrases': valid_kps,
+    })
+```
+
+**3. clustering**
+```python
+def embed_text(text):
+    try:
+        return model.encode(str(text), normalize_embeddings=True)
+    except:
+        return np.zeros(model.get_sentence_embedding_dimension())
+
+# embed text
+sub_df['embedding'] = sub_df['valid_keyphrases'].apply(embed_text)
+embeddings = np.vstack(sub_df['embedding'].values)
+
+# K-Means clustering
+n_clusters = 5  # of clusters
+kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+sub_df['cluster'] = kmeans.fit_predict(embeddings)
+sub_df['cluster'].value_counts().sort_index()
+
+# 5. aggregate keywords by cluster
+cluster_docs = (
+    sub_df[sub_df["cluster"] != -1]
+      .explode("valid_keyphrases")               
+      .groupby("cluster")["valid_keyphrases"]
+      .apply(lambda s: " ".join(s.astype(str)))   
+      .to_dict()
+)
+
+
+# 6. top keywords by cluster
+vectorizer = TfidfVectorizer(max_features=1000)
+top_terms_per_cluster = {}
+
+for cluster_id, text in cluster_docs.items():
+    tfidf = vectorizer.fit_transform([text])
+    feature_array = np.array(vectorizer.get_feature_names_out())
+    tfidf_sorting = np.argsort(tfidf.toarray()).flatten()[::-1]
+    top_terms = feature_array[tfidf_sorting][:20]
+    top_terms_per_cluster[cluster_id] = top_terms.tolist()
+
+# 7. result
+print("\n Top keywords by cluster:\n")
+for cid, terms in top_terms_per_cluster.items():
+    print(f"Cluster {cid}: {' / '.join(terms)}")
+```
+
+### Top keywords by cluster:
+
+- **Cluster 0**  
+  `in`, `charged`, `plugged`, `pre`, `money`, `edition`, `fire`, `not`, `all`, `stars`,  
+  `switch`, `issue`, `work`, `hazard`, `didn`, `does`, `dlc`, `hot`, `digital`, `fully`
+
+- **Cluster 1**  
+  `xbox`, `waste`, `problems`, `one`, `cent`, `better`, `of`, `working`, `way`, `live`,  
+  `hell`, `for`, `fps`, `frustration`, `get`, `go`, `ignored`, `mac`, `in`, `false`
+
+- **Cluster 2**  
+  `not`, `headset`, `worth`, `it`, `issue`, `of`, `card`, `to`, `cord`, `disappointment`,  
+  `this`, `resolution`, `genitalia`, `connect`, `stick`, `cards`, `on`, `overspending`, `customization`, `cut`
+
+- **Cluster 3**  
+  `game`, `of`, `time`, `the`, `games`, `waste`, `money`, `issue`, `play`, `not`,  
+  `in`, `experience`, `compatibility`, `playing`, `player`, `copy`, `online`, `connection`, `for`, `buy`
+
+- **Cluster 4**  
+  `issue`, `not`, `working`, `disappointed`, `malfunction`, `compatibility`, `product`, `with`, `amazon`, `game`,  
+  `arrival`, `missing`, `be`, `failure`, `doesn`, `open`, `returning`, `disconnects`, `disk`, `do`
+
+
+LLM Coherence Score (avg): 0.4068
+LLM Diversity Score (N=20): 0.8400
+
