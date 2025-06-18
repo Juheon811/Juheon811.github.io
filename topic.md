@@ -259,7 +259,7 @@ topics, probs = model.fit_transform(df.text)
 
 BERTopic was configured to extract 20 topics using BERT embeddings and CountVectorizer. It produced clusters with clear keyword groupings, and representative documents were extracted per topic. Topics such as: "game", "play", "buy", "money" – indicate general purchasing experiences. "price", "$", "scam", "worth" – highlight value dissatisfaction. "headset", "sound", "hear" – show technical product malfunctions.
 
-BERTopic Coherence Score (N=20): 0.3478
+BERTopic Coherence Score (N=20): 0.3478  <br>
 BERTopic Diversity Score (N=20): 0.7211
 
 #### 🔍 Interpretation
@@ -420,6 +420,8 @@ for cid, terms in top_terms_per_cluster.items():
   `arrival`, `missing`, `be`, `failure`, `doesn`, `open`, `returning`, `disconnects`, `disk`, `do`
 
 
-LLM Coherence Score (avg): 0.4068
+LLM Coherence Score (avg): 0.4068 <br>
 LLM Diversity Score (N=20): 0.8400
 
+#### 🔍 Interpretation
+The LLM-based model had the highest coherence score of 0.4068, which was the highest among the three models. This means that the keywords in each topic are most meaningfully linked to the document. The diversity score of 0.84 is also high, showing that the keywords across the entire topic are properly distributed. Although it is somewhat lower than the LDA, LLM is designed to meaningfully utilize overlapping keywords by extracting context-based keyphrases and removing "Hallucination."
