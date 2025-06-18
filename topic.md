@@ -425,3 +425,11 @@ LLM Diversity Score (N=20): 0.8400
 
 #### 🔍 Interpretation
 The LLM-based model had the highest coherence score of 0.4068, which was the highest among the three models. This means that the keywords in each topic are most meaningfully linked to the document. The diversity score of 0.84 is also high, showing that the keywords across the entire topic are properly distributed. Although it is somewhat lower than the LDA, LLM is designed to meaningfully utilize overlapping keywords by extracting context-based keyphrases and removing "Hallucination."
+
+## 📊 3. Coherence & Diversity Score Comparison
+
+| Model         | Coherence Score  | Diversity Score  |
+|---------------|---------------------|----------------------|
+| **LDA**       | 0.3003              | 0.9625               |
+| **BERTopic**  | 0.3478              | 0.7211               |
+| **LLM (QualIT)** | 0.4068       | 0.8400           |
