@@ -31,4 +31,22 @@ Topic modeling is a representative NLP technique for automatically extracting la
 - **BERTopic**: Utilizes embedding vectors and HDBSCAN-based clustering  
 - **QualIT (LLM-based approach)**: Based on Claude-2.1 with parameters `top_k=50`, `top_p=0`  
 
-## 
+---
+<br><br>
+## 🔍 4. LLM-Enhanced Topic Modeling Method
+
+### 🔹 Step 1: Extract Keyphrases  
+Each document is processed by an LLM to extract multiple meaningful keyphrases. Unlike traditional models (e.g., LDA, BERTopic) that assume a single topic per document, this step captures multiple thematic cues within one text. The extracted phrases serve as essential features for topic classification.
+
+### 🔹 Step 2: Hallucination Verification  
+A coherence score based on cosine similarity is calculated to assess how well each keyphrase aligns with the document content. Keyphrases with low scores are identified as "AI hallucinations" and removed, leaving only contextually valid and reliable terms for further analysis.
+
+### 🔹 Step 3: Hierarchical Clustering (Main & Sub-Topics)  
+Refined keyphrases are grouped using a K-Means clustering algorithm.  
+
+Clustering is conducted in two stages:
+
+- **Main Topics**: Documents with similar keyphrase patterns are grouped to identify overarching themes.  
+- **Sub-Topics**: Within each main topic, a second clustering step is applied to extract more detailed and specific themes.  
+
+For each sub-cluster, the LLM is prompted again to analyze compressed content and generate representative sub-topics.
