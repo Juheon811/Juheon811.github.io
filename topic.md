@@ -90,8 +90,6 @@ This table compares the performance of three topic modeling methods — **LDA**,
 - Average performance: **64.4%** coherence, **93.7%** diversity  
 - QualIT consistently performs the best across all topic counts. It is especially optimized for 20 topics, which matches the dataset’s ground-truth structure.
 
-> 📌 **Summary**: QualIT demonstrates the most coherent and diverse topic modeling performance among the three models, especially when using 20 topics.
-
 ---
 
 ### 👥 Table 4: Human Evaluation Agreement
