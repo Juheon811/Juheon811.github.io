@@ -2,7 +2,7 @@
 layout: inner
 position: left
 title: "Multi-Model Comparison of Topic Modeling: LDA, BERTopic, and LLM-Enhanced Clustering"
-date: 2025-06-017 15:56:00
+date: 2025-06-17 15:56:00
 categories: topic-modeling
 tags: topic-modeling lda bertopic llm
 featured_image: '/img/posts/topic.png'
