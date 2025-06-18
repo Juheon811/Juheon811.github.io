@@ -211,8 +211,6 @@ lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
                                             per_word_topics=True)
 ```
 
-from gensim.models import CoherenceModel
-
 **Compute coherence score**
 
 ```python
