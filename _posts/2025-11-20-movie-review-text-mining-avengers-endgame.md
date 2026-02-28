@@ -1,6 +1,6 @@
 ---
 layout: inner
-position: right
+position: left
 title: "Movie Review Text Mining: Sentiment Analysis of Avengers: Endgame"
 date: 2025-12-01 21:00:00
 categories: data-analysis nlp
