@@ -311,11 +311,11 @@ The bar chart below presents the top 30 most frequent words in Korean reviews.
   <img src="/img/posts/kbar.png" width="650">
 </p>
 
-Unlike the U.S. reviews, where highly intense evaluative words dominated, Korean reviews show a mix of evaluative and descriptive expressions.
+Unlike the U.S. reviews, where highly intense evaluative words such as *best* and *perfect* dominate clearly, Korean reviews show a balance between strong emotional terms and contextual expressions.
 
-Words such as *재밌다* (fun), *좋다* (good), and *감동* (emotion) appear frequently, but many neutral or contextual terms like *시간* (time), *마지막* (last), and *시리즈* (series) are also prominent.
+Words such as *재밌다* (fun), *좋다* (good), *최고* (the best), and *감동* (emotion) appear frequently, indicating clear positive sentiment. At the same time, experiential words like *시간* (time), *마지막* (last), and *시리즈* (series) are also prominent.
 
-This suggests that Korean reviewers often describe their viewing experience in a more contextual and narrative way rather than relying solely on strong evaluative adjectives.
+This suggests that Korean reviewers express emotion clearly, but often within a broader narrative or situational context rather than relying solely on intensifiers.
 
 ---
 
@@ -329,6 +329,6 @@ To complement the frequency distribution, a word cloud was generated to visualiz
 
 The word cloud highlights emotional terms such as *재밌다*, *좋다*, and *감동*, but it also emphasizes relational and experiential words like *보다* (to watch), *시리즈* (series), and *시간* (time).
 
-Compared to the U.S. reviews, the overall tone appears slightly less dominated by extreme evaluative words and more balanced between emotion and narrative context.
+Compared to the U.S. reviews, Korean reviews still contain strong emotional expressions, but these words coexist with contextual and narrative terms.
 
-This visual pattern suggests that emotional expression in Korean reviews may be embedded within storytelling and experiential description rather than expressed through highly intensified vocabulary alone.
+This pattern suggests that emotional expression in Korean reviews is often intertwined with storytelling and experiential reflection rather than expressed purely through intensifiers.
