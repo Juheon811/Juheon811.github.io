@@ -181,9 +181,7 @@ The bar chart below presents the top 30 most frequent words in U.S. reviews.
   <img src="/img/posts/ubar.png" width="650">
 </p>
 
-Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* dominate the ranking.
-
-This indicates that American reviewers frequently rely on direct and high-intensity emotional vocabulary.
+Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* dominate the ranking. This indicates that American reviewers frequently rely on direct and high-intensity emotional vocabulary.
 
 ---
 
@@ -195,9 +193,7 @@ To complement the frequency distribution, a word cloud was generated to visualiz
   <img src="/img/posts/ucloud.png" width="650">
 </p>
 
-The visual dominance of words like *best*, *time*, *great*, and *perfect* reinforces the observation that positivity is expressed explicitly and emphatically.
-
-While the bar chart provides precise rankings, the word cloud highlights the emotional intensity embedded in word choice.
+The visual dominance of words like *best*, *time*, *great*, and *perfect* reinforces the observation that positivity is expressed explicitly and emphatically. While the bar chart provides precise rankings, the word cloud highlights the emotional intensity embedded in word choice.
 
 ---
 
@@ -245,9 +241,5 @@ Neutral → score = 0
   <img src="/img/posts/uchart.png" width="650">
 </p>
 
-The overwhelming dominance of positive reviews indicates that American audiences expressed strong approval of the film.
-
-This result aligns closely with the earlier word frequency analysis, where highly evaluative terms such as *best*, *perfect*, *great*, and *amazing* appeared frequently.
-
-This shows that American reviewers tend to express their emotions strongly and directly.
+The overwhelming dominance of positive reviews indicates that American audiences expressed strong approval of the film. This result aligns closely with the earlier word frequency analysis, where highly evaluative terms such as *best*, *perfect*, *great*, and *amazing* appeared frequently. This shows that American reviewers tend to express their emotions strongly and directly.
 
