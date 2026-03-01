@@ -175,7 +175,7 @@ df["clean_review"] = df["review"].apply(full_preprocess)
 
 The bar chart below presents the top 30 most frequent words in U.S. reviews.
 
-<p align="center">
+<p align="left">
   <img src="/img/posts/ubar.png" width="650">
 </p>
 
@@ -189,7 +189,9 @@ This indicates that American reviewers frequently rely on direct and high-intens
 
 To complement the frequency distribution, a word cloud was generated to visualize important words.
 
-![U.S. Word Frequency](/img/posts/ucloud.png)
+<p align="left">
+  <img src="/img/posts/ucloud.png" width="650">
+</p>
 
 The visual dominance of words like *best*, *time*, *great*, and *perfect* reinforces the observation that positivity is expressed explicitly and emphatically.
 
