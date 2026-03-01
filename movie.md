@@ -174,7 +174,7 @@ df["clean_review"] = df["review"].apply(full_preprocess)
 
 The bar chart below presents the top 30 most frequent words in U.S. reviews.
 
-![U.S. Word Frequency](/img/posts/usa_bar.png)
+![U.S. Word Frequency](/img/posts/usa bar.png)
 
 Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* dominate the ranking.
 
