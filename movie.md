@@ -171,6 +171,8 @@ def full_preprocess(text):
 df["clean_review"] = df["review"].apply(full_preprocess)
 ```
 
+---
+
 ### 🔹Word Frequency Analysis (U.S. Reviews)
 
 The bar chart below presents the top 30 most frequent words in U.S. reviews.
