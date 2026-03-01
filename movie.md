@@ -369,3 +369,24 @@ def classify(score):
 
 df_kor["sentiment"] = df_kor["sentiment_score"].apply(classify)
 ```
+
+Reviews were categorized based on compound score:
+
+Positive → score > 0
+
+Negative → score < 0
+
+Neutral → score = 0
+
+---
+
+### 🔹 Sentiment Distribution (Korean Reviews)
+
+<p align="left">
+  <img src="/img/posts/kchart.png" width="650">
+</p>
+
+The sentiment distribution reveals a noticeably different pattern from the U.S. results. Unlike the U.S. reviews, where positive sentiment overwhelmingly dominated, Korean reviews show a much larger proportion of neutral classifications. Although positive reviews still form a substantial portion, the high neutral ratio suggests that Korean audiences often express their opinions in a more subtle and context-dependent manner rather than through strongly polarized wording.
+
+
+
