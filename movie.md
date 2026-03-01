@@ -198,7 +198,7 @@ To quantify emotional polarity in U.S. reviews, I applied **VADER (Valence Aware
 
 VADER computes a compound sentiment score ranging from -1 (most negative) to +1 (most positive).
 
-<br>
+
 #### Compute Sentiment Scores
 
 ```python
