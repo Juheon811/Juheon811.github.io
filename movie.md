@@ -142,6 +142,7 @@ def remove_stopwords(text):
     ]
     return tokens
 ```
+
 3. Normalization & Lemmatization
 
 ```python
@@ -159,6 +160,7 @@ def normalize_and_lemmatize(tokens):
 ```
 
 4. Final Pipeline
+
 ```python
 def full_preprocess(text):
     text = clean_text(text)
@@ -168,6 +170,26 @@ def full_preprocess(text):
 
 df["clean_review"] = df["review"].apply(full_preprocess)
 ```
+## 📊 Word Frequency Analysis (U.S. Reviews)
 
+The bar chart below presents the top 30 most frequent words in U.S. reviews.
+
+![U.S. Word Frequency](/img/posts/usa_bar.png)
+
+Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* dominate the ranking.
+
+This indicates that American reviewers frequently rely on direct and high-intensity emotional vocabulary.
+
+---
+
+## ☁️ Lexical Emphasis Visualization
+
+To complement the frequency distribution, a word cloud was generated to visualize important words.
+
+[Word Cloud Image]
+
+The visual dominance of words like *best*, *time*, *great*, and *perfect* reinforces the observation that positivity is expressed explicitly and emphatically.
+
+While the bar chart provides precise rankings, the word cloud highlights the emotional intensity embedded in word choice.
 
 
