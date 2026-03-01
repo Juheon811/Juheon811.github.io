@@ -7,7 +7,7 @@ permalink: /movie/
 
 ---
 <br><br>
-## 1️⃣ Introduction
+## 🎥 1. Introduction
 
 *Avengers: Endgame* was one of the most globally successful films of the last decade.  
 Both Korean and American audiences rated the movie extremely highly.
@@ -15,22 +15,17 @@ Both Korean and American audiences rated the movie extremely highly.
 - 🇺🇸 **Rotten Tomatoes (U.S.)**: 8.4 / 10  
 - 🇰🇷 **Naver Movie (Korea)**: 9.5 / 10  
 
-At first glance, the conclusion seems simple —  
-both countries loved the movie.
+At first glance, the conclusion seems simple -> Both countries loved the movie.
 
 But here’s the real question 👇
 
-> If both countries gave similarly high ratings,  
-> will the emotional tone of their review texts also look similar?
+> If both countries gave similarly high ratings, does a high rating always mean strong positive emotion in text?
 
-In other words,  
-does a high rating always mean strong positive emotion in text?
-
-This project investigates that question using Natural Language Processing (NLP) 🧠
+This project investigates that question using Natural Language Processing (NLP)
 
 ---
 <br><br>
-## 2️⃣ Research Objective
+## 🎯 2. Research Objective
 
 The goal of this project is to analyze and compare movie reviews of *Avengers: Endgame* from the United States and Korea using text mining techniques.
 
@@ -49,7 +44,7 @@ it is about **how emotion is linguistically encoded across cultures.**
 
 ---
 <br><br>
-## 3️⃣ Theoretical Background
+## 📚 3. Theoretical Background
 
 ### 3.1 ⭐ Star Ratings vs Textual Sentiment
 
@@ -90,7 +85,7 @@ a model may struggle to detect it accurately.
 
 ---
 <br><br>
-## 4️⃣ Data Collection 📦
+## 📦 4. Data Collection 📦
 
 To explore this question, I collected movie review data from two major platforms:
 
