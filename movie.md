@@ -239,7 +239,7 @@ Neutral → score = 0
 
 ---
 
-### Sentiment Distribution (U.S. Reviews)
+### 🔹 Sentiment Distribution (U.S. Reviews)
 
 <p align="left">
   <img src="/img/posts/uchart.png" width="650">
