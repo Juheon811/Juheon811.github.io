@@ -302,8 +302,6 @@ def normalize_and_tokenize(text):
 
 ---
 
----
-
 ### 🔹 Word Frequency Analysis (Korean Reviews)
 
 The bar chart below presents the top 30 most frequent words in Korean reviews.
