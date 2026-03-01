@@ -100,7 +100,7 @@ All reviews were manually collected from publicly available sources and stored i
 ---
 <br><br>
 
-## USA
+## 🟥 USA
 
 ### 🔹Data Processing
 
@@ -199,4 +199,41 @@ The visual dominance of words like *best*, *time*, *great*, and *perfect* reinfo
 
 While the bar chart provides precise rankings, the word cloud highlights the emotional intensity embedded in word choice.
 
+---
 
+### 🔹 Sentiment Analysis (VADER)
+
+To quantify emotional polarity in U.S. reviews, I applied **VADER (Valence Aware Dictionary and sEntiment Reasoner)** — a lexicon-based sentiment analysis model designed for social and review text.
+
+VADER computes a compound sentiment score ranging from -1 (most negative) to +1 (most positive).
+
+
+
+#### Compute Sentiment Scores
+
+```python
+# Sentiment Analysis (VADER)
+sia = SentimentIntensityAnalyzer()
+
+# Calculate sentiment scores (VADER compound score for each cleaned review)
+df["sentiment_score"] = df["clean_review"].apply(lambda x: sia.polarity_scores(x)["compound"])
+
+def classify(score):
+    if score > 0:
+        return "positive"
+    elif score < 0:
+        return "negative"
+    else:
+        return "neutral"
+
+# Apply classification to each sentiment score
+df["sentiment"] = df["sentiment_score"].apply(classify)
+```
+
+Reviews were categorized based on compound score:
+
+Positive → score > 0
+
+Negative → score < 0
+
+Neutral → score = 0
