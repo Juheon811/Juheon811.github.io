@@ -241,7 +241,7 @@ Neutral → score = 0
 
 ### Sentiment Distribution (U.S. Reviews)
 
-<p align="center">
+<p align="left">
   <img src="/img/posts/uchart.png" width="650">
 </p>
 
@@ -249,6 +249,5 @@ The overwhelming dominance of positive reviews indicates that American audiences
 
 This result aligns closely with the earlier word frequency analysis, where highly evaluative terms such as *best*, *perfect*, *great*, and *amazing* appeared frequently.
 
-In other words, positivity in U.S. reviews is not subtle. It is expressed directly and explicitly through strong lexical choices.
+This shows that American reviewers tend to express their emotions strongly and directly.
 
-This reinforces the idea that emotional polarity in American review texts tends to be encoded with high intensity.
