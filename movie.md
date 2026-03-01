@@ -174,7 +174,7 @@ df["clean_review"] = df["review"].apply(full_preprocess)
 
 The bar chart below presents the top 30 most frequent words in U.S. reviews.
 
-![U.S. Word Frequency](/img/posts/usa bar.png)
+![U.S. Word Frequency](/img/posts/ubar.png)
 
 Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* dominate the ranking.
 
@@ -186,7 +186,7 @@ This indicates that American reviewers frequently rely on direct and high-intens
 
 To complement the frequency distribution, a word cloud was generated to visualize important words.
 
-[Word Cloud Image]
+![U.S. Word Frequency](/img/posts/ucloud.png)
 
 The visual dominance of words like *best*, *time*, *great*, and *perfect* reinforces the observation that positivity is expressed explicitly and emphatically.
 
