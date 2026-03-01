@@ -311,11 +311,8 @@ The bar chart below presents the top 30 most frequent words in Korean reviews.
   <img src="/img/posts/kbar.png" width="650">
 </p>
 
-Unlike the U.S. reviews, where highly intense evaluative words such as *best* and *perfect* dominate clearly, Korean reviews show a balance between strong emotional terms and contextual expressions.
 
-Words such as *재밌다* (fun), *좋다* (good), *최고* (the best), and *감동* (emotion) appear frequently, indicating clear positive sentiment. At the same time, experiential words like *시간* (time), *마지막* (last), and *시리즈* (series) are also prominent.
-
-This suggests that Korean reviewers express emotion clearly, but often within a broader narrative or situational context rather than relying solely on intensifiers.
+Words such as *재밌다* (fun), *좋다* (good), *최고* (the best), and *감동* (emotion) appear frequently, indicating clear positive sentiment. At the same time, experiential words like *시간* (time), *마지막* (last), and *시리즈* (series) are also prominent. This suggests that Korean reviewers express emotion clearly, but often within a broader narrative or situational context rather than relying solely on intensifiers.
 
 ---
 
@@ -327,8 +324,48 @@ To complement the frequency distribution, a word cloud was generated to visualiz
   <img src="/img/posts/kcloud.png" width="650">
 </p>
 
-The word cloud highlights emotional terms such as *재밌다*, *좋다*, and *감동*, but it also emphasizes relational and experiential words like *보다* (to watch), *시리즈* (series), and *시간* (time).
+The word cloud highlights emotional terms such as *재밌다*, *좋다*, and *감동*, but it also emphasizes relational and experiential words like *보다* (to watch), *시리즈* (series), and *시간* (time). Compared to the U.S. reviews, Korean reviews still contain strong emotional expressions, but these words coexist with contextual and narrative terms. This pattern suggests that emotional expression in Korean reviews is often intertwined with storytelling and experiential reflection rather than expressed purely through intensifiers.
 
-Compared to the U.S. reviews, Korean reviews still contain strong emotional expressions, but these words coexist with contextual and narrative terms.
+---
 
-This pattern suggests that emotional expression in Korean reviews is often intertwined with storytelling and experiential reflection rather than expressed purely through intensifiers.
+### 🔹 Sentiment Analysis (KNU Sentiment Lexicon)
+
+To quantify emotional polarity in Korean reviews, I applied a **lexicon-based sentiment analysis approach** using the KNU Korean Sentiment Lexicon.
+
+The KNU lexicon was constructed from a large Korean lexical database using deep learning-based classification of dictionary definitions.
+
+Unlike VADER, this method does not generate a normalized compound score. Instead, it computes the overall sentiment score by summing the polarity values of all matched sentiment words within each review.
+
+---
+
+#### Compute Sentiment Scores
+
+```python
+# Load the sentiment lexicon
+knu_lex = pd.read_csv("knu_sentiment_lexicon.csv")
+
+# Convert lexicon into dictionary
+sentiment_dict = dict(zip(knu_lex["word"], knu_lex["polarity"]))
+
+# Function to calculate sentiment score
+def get_sentiment_score(text):
+    tokens = okt.morphs(text)
+    score = 0
+    for word in tokens:
+        if word in sentiment_dict:
+            score += sentiment_dict[word]
+    return score
+
+# Apply sentiment scoring
+df_kor["sentiment_score"] = df_kor["clean_review"].apply(get_sentiment_score)
+
+def classify(score):
+    if score > 0:
+        return "positive"
+    elif score < 0:
+        return "negative"
+    else:
+        return "neutral"
+
+df_kor["sentiment"] = df_kor["sentiment_score"].apply(classify)
+```
