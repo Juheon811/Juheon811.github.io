@@ -101,9 +101,9 @@ All reviews were manually collected from publicly available sources and stored i
 <br><br>
 
 ## 🟥 USA
-
+<br>
 ### 🔹Data Processing
-
+<br>
 #### 1. Preprocess Text Data 
 
 ```python
@@ -118,7 +118,7 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text)        # fix many spaces to one
     text = text.strip().lower()             # cut side spaces and lowercase
 ```
-
+<br>
 #### 2. Remove Stopword and Domain-Specific Word
 
 ```python
@@ -142,7 +142,7 @@ def remove_stopwords(text):
     ]
     return tokens
 ```
-
+<br>
 #### 3. Normalization & Lemmatization
 
 ```python
@@ -158,7 +158,7 @@ def normalize_and_lemmatize(tokens):
 
     return tokens
 ```
-
+<br>
 #### 4. Final Pipeline
 
 ```python
@@ -173,6 +173,7 @@ df["clean_review"] = df["review"].apply(full_preprocess)
 
 ---
 
+<br>
 ### 🔹Word Frequency Analysis (U.S. Reviews)
 
 The bar chart below presents the top 30 most frequent words in U.S. reviews.
@@ -185,6 +186,7 @@ Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* domina
 
 ---
 
+<br>
 ### 🔹Word Cloud Visualization
 
 To complement the frequency distribution, a word cloud was generated to visualize important words.
@@ -197,13 +199,14 @@ The visual dominance of words like *best*, *time*, *great*, and *perfect* reinfo
 
 ---
 
+<br>
 ### 🔹 Sentiment Analysis (VADER)
 
 To quantify emotional polarity in U.S. reviews, I applied **VADER (Valence Aware Dictionary and sEntiment Reasoner)** — a lexicon-based sentiment analysis model designed for social and review text.
 
 VADER computes a compound sentiment score ranging from -1 (most negative) to +1 (most positive).
 
-
+<br>
 #### Compute Sentiment Scores
 
 ```python
@@ -235,6 +238,7 @@ Neutral → score = 0
 
 ---
 
+<br>
 ### 🔹 Sentiment Distribution (U.S. Reviews)
 
 <p align="left">
