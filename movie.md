@@ -36,11 +36,10 @@ More specifically, this study aims to:
 3. 🤔 Examine why high ratings may still produce different sentiment patterns  
 4. 🌏 Explore whether cultural communication styles influence sentiment detection  
 
-Although both countries rated the movie highly,  
-the distribution of textual sentiment may reveal deeper structural differences.
+Although both countries rated the movie highly, the distribution of textual sentiment may reveal deeper structural differences.
 
-This is not just about whether people liked the movie —  
-it is about **how emotion is linguistically encoded across cultures.**
+This is not just about whether people liked the movie. 
+It is about **how emotion is linguistically encoded across cultures.**
 
 ---
 <br><br>
@@ -65,10 +64,7 @@ So relying solely on rating scores may hide cross-cultural variation in how emot
 
 Cultural communication theory provides an additional lens.
 
-According to cross-cultural communication research (e.g., Brand et al., 2022), cultures can be broadly categorized as:
-
-- 🇰🇷 **High-context cultures** (e.g., Korea)  
-- 🇺🇸 **Low-context cultures** (e.g., United States)
+According to cross-cultural communication research (e.g., Brand et al., 2022), cultures can be broadly categorized.
 
 In high-context cultures:
 - Communication tends to be indirect and subtle  
@@ -80,8 +76,7 @@ In low-context cultures:
 
 This distinction is important because sentiment analysis models rely heavily on explicit emotional vocabulary.
 
-If emotion is expressed indirectly,  
-a model may struggle to detect it accurately.
+If emotion is expressed indirectly, a model may struggle to detect it accurately.
 
 ---
 <br><br>
