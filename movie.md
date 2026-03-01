@@ -97,7 +97,5 @@ To explore this question, I collected movie review data from two major platforms
 
 All reviews were manually collected from publicly available sources and stored in CSV format.
 
-This ensures consistency across datasets and allows a structured comparison between the two countries.
-
 ---
 <br><br>
