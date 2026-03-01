@@ -163,19 +163,6 @@ def normalize_and_lemmatize(tokens):
     return tokens
 ```
 
-
-#### 4. Final Pipeline
-
-```python
-def full_preprocess(text):
-    text = clean_text(text)
-    tokens = remove_stopwords(text)
-    tokens = normalize_and_lemmatize(tokens)
-    return " ".join(tokens)
-
-df["clean_review"] = df["review"].apply(full_preprocess)
-```
-
 ---
 
 
@@ -252,3 +239,96 @@ Neutral → score = 0
 
 The overwhelming dominance of positive reviews indicates that American audiences expressed strong approval of the film. This result aligns closely with the earlier word frequency analysis, where highly evaluative terms such as *best*, *perfect*, *great*, and *amazing* appeared frequently. This shows that American reviewers tend to express their emotions strongly and directly.
 
+
+
+## 🟦 KOREA
+
+
+### 🔹 Data Processing
+
+
+#### 1. Preprocess Text Data 
+
+```python
+def clean_korean_text(text):
+    text = str(text)
+    text = re.sub(r'\n', ' ', text)       # Remove line breaks
+    text = re.sub(r'\r', '', text)        # Remove carriage returns
+    text = re.sub(r'\t', ' ', text)       # Remove tab characters
+    text = re.sub(r'[~!@#$%^&*()_+=<>?/.,:;\'\"”“‘’…★☆♥♡]', '', text)  # Remove special symbols
+    text = re.sub(r'\d+', '', text)       # Remove numbers
+    text = re.sub(r'[ㄱ-ㅎㅏ-ㅣ]+', '', text)  # Remove isolated Korean consonants/vowels (e.g., ㅋㅋ, ㅎㅎ)
+    text = re.sub(r'\s+', ' ', text)      # Remove multiple spaces
+    text = text.strip()
+```
+
+#### 2. Remove Stopword and Domain-Specific Word
+
+```python
+stop_words = [
+    # Particles, endings, and adverbs (grammatical function words)
+    "은", "는", "이", "가", "을", "를", "의", "에", "에서", "으로", "로", "와", "과",
+    "도", "만", "보다", "처럼", "까지", "께서", "한테", "에게", "라고",
+    "그리고", "그래서", "하지만", "그러나", "또", "또한", "근데", "그런데",
+    "뭔가", "좀", "너무", "정말", "진짜", "완전", "아주", "많이", "되게", "그냥",
+    "이건", "저건", "그건", "우리", "내가", "이번", "이제", "또는", "다시",
+    "하다", "이다",
+
+    # Interjections and onomatopoeia (do not contribute directly to sentiment)
+    "와", "아", "어", "음", "헐", "ㅋㅋ", "ㅎㅎ", "ㅠ", "ㅜ", "ㄷㄷ", "하하", "휴", "캬",
+
+    # Miscellaneous unnecessary words
+    "때문", "정도", "것", "거", "게", "수", "듯", "요", "죠", "네", "데", "중", "영화", "마블", "엔드게임",
+    "건가", "인가", "거나", "라도", "거든요", "네요", "입니다", "했습니다", "봤어요","어벤져스", "재미있다"
+]
+```
+
+#### 3. Normalization & Tokenization
+
+```python
+okt = Okt()
+
+def normalize_and_tokenize(text):
+
+    # tokenization
+    tokens = okt.morphs(text, stem=True) # It is a morphological analysis function that splits a sentence into individual word units.
+
+    # stopword removal and length filtering
+    tokens = [w for w in tokens if w not in stop_words and len(w) > 1]
+
+    return " ".join(tokens)
+```
+
+---
+
+---
+
+### 🔹 Word Frequency Analysis (Korean Reviews)
+
+The bar chart below presents the top 30 most frequent words in Korean reviews.
+
+<p align="left">
+  <img src="/img/posts/kbar.png" width="650">
+</p>
+
+Unlike the U.S. reviews, where highly intense evaluative words dominated, Korean reviews show a mix of evaluative and descriptive expressions.
+
+Words such as *재밌다* (fun), *좋다* (good), and *감동* (emotion) appear frequently, but many neutral or contextual terms like *시간* (time), *마지막* (last), and *시리즈* (series) are also prominent.
+
+This suggests that Korean reviewers often describe their viewing experience in a more contextual and narrative way rather than relying solely on strong evaluative adjectives.
+
+---
+
+### 🔹 Word Cloud Visualization
+
+To complement the frequency distribution, a word cloud was generated to visualize important words in Korean reviews.
+
+<p align="left">
+  <img src="/img/posts/kcloud.png" width="650">
+</p>
+
+The word cloud highlights emotional terms such as *재밌다*, *좋다*, and *감동*, but it also emphasizes relational and experiential words like *보다* (to watch), *시리즈* (series), and *시간* (time).
+
+Compared to the U.S. reviews, the overall tone appears slightly less dominated by extreme evaluative words and more balanced between emotion and narrative context.
+
+This visual pattern suggests that emotional expression in Korean reviews may be embedded within storytelling and experiential description rather than expressed through highly intensified vocabulary alone.
