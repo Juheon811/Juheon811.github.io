@@ -99,3 +99,75 @@ All reviews were manually collected from publicly available sources and stored i
 
 ---
 <br><br>
+
+## USA
+
+### 🔹Data Processing
+
+1. Preprocess Text Data
+
+```python
+def clean_text(text):
+    text = str(text)                        # make sure it is a string
+    text = re.sub(r'\n', ' ', text)         # remove new lines
+    text = re.sub(r'\r', '', text)          # remove return marks
+    text = re.sub(r'\t', ' ', text)         # remove tabs
+    text = re.sub(r'\.', '', text)          # remove dots
+    text = re.sub(r"[^A-Za-z\s]", "", text) # remove special marks, keep letters
+    text = re.sub(r'\d+', '', text)         # remove numbers
+    text = re.sub(r'\s+', ' ', text)        # fix many spaces to one
+    text = text.strip().lower()             # cut side spaces and lowercase
+```
+
+2. Remove Stopword and Domain-Specific Word
+
+```python
+stop_words = set(stopwords.words("english"))
+
+keep_words = {"not", "no", "nor", "but", "however", "though", "although", "without"}
+stop_words = stop_words - keep_words
+
+domain_stopwords = {
+    "movie", "film", "movies", "films",
+    "cinema", "endgame", "marvel",
+    "avengers", "mcu", "infinity"
+}
+
+def remove_stopwords(text):
+    tokens = [
+        w for w in text.split()
+        if w not in stop_words
+        and w not in domain_stopwords
+        and len(w) > 2
+    ]
+    return tokens
+```
+3. Normalization & Lemmatization
+
+```python
+lemmatizer = WordNetLemmatizer()
+
+def normalize_and_lemmatize(tokens):
+
+    # normalize films → movie
+    tokens = [re.sub(r"\bfilms?\b", "movie", w) for w in tokens]
+
+    # apply lemmatization
+    tokens = [lemmatizer.lemmatize(w) for w in tokens]
+
+    return tokens
+```
+
+4. Final Pipeline
+```python
+def full_preprocess(text):
+    text = clean_text(text)
+    tokens = remove_stopwords(text)
+    tokens = normalize_and_lemmatize(tokens)
+    return " ".join(tokens)
+
+df["clean_review"] = df["review"].apply(full_preprocess)
+```
+
+
+
