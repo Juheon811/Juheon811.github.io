@@ -241,6 +241,7 @@ The overwhelming dominance of positive reviews indicates that American audiences
 
 ---
 
+<br><br>
 ## 🟦 KOREA
 
 
@@ -388,8 +389,11 @@ Neutral → score = 0
 
 The sentiment distribution reveals a noticeably different pattern from the U.S. results. Unlike the U.S. reviews, where positive sentiment overwhelmingly dominated, Korean reviews show a much larger proportion of neutral classifications. Although positive reviews still form a substantial portion, the high neutral ratio suggests that Korean audiences often express their opinions in a more subtle and context-dependent manner rather than through strongly polarized wording.
 
+---
+
 
 ## 🔎 Interpretation & Conclusion  
+
 
 ### 1️⃣ Key Interpretation  
 
@@ -421,3 +425,5 @@ Although these sentences imply strong positive or negative reactions, they do no
 
 Overall, both U.S. and Korean audiences reacted positively to *Avengers: Endgame*. However, the sentiment analysis results reveal that **emotional intensity and linguistic expression differ across cultures**. The U.S. reviews demonstrated high-intensity, explicit sentiment expression, resulting in a dominant positive classification. In contrast, Korean reviews exhibited more balanced and context-driven emotional expression, leading to a higher proportion of neutral classifications. Therefore, sentiment analysis does not only measure audience preference. It also reflects deeper cultural patterns in how emotions are communicated through language.
 This study highlights the importance of considering **cultural communication style** when interpreting cross-linguistic sentiment analysis results.
+
+---
