@@ -142,6 +142,7 @@ def remove_stopwords(text):
     ]
     return tokens
 ```
+
 <br>
 #### 3. Normalization & Lemmatization
 
@@ -158,6 +159,7 @@ def normalize_and_lemmatize(tokens):
 
     return tokens
 ```
+
 <br>
 #### 4. Final Pipeline
 
