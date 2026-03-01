@@ -5,7 +5,7 @@ title: "U.S. vs OECD: GDP, Employment, and Income Inequality (2015–2022)"
 date: 2025-11-20 22:00:00
 categories: data-analysis economics
 tags: GDP Employment Gini PCA Clustering OECD
-featured_image: "/img/posts/oecd.png"
+featured_image: "/img/posts/usa.png"
 project_link: "https://github.com/Juheon811/Your-Capstone-Repo"
 button_icon: "bar-chart"
 button_text: "View Project"
