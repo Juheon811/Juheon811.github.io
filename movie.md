@@ -104,7 +104,7 @@ All reviews were manually collected from publicly available sources and stored i
 
 ### 🔹Data Processing
 
-1. Preprocess Text Data
+#### 1. Preprocess Text Data 
 
 ```python
 def clean_text(text):
@@ -119,7 +119,7 @@ def clean_text(text):
     text = text.strip().lower()             # cut side spaces and lowercase
 ```
 
-2. Remove Stopword and Domain-Specific Word
+#### 2. Remove Stopword and Domain-Specific Word
 
 ```python
 stop_words = set(stopwords.words("english"))
@@ -143,7 +143,7 @@ def remove_stopwords(text):
     return tokens
 ```
 
-3. Normalization & Lemmatization
+#### 3. Normalization & Lemmatization
 
 ```python
 lemmatizer = WordNetLemmatizer()
@@ -159,7 +159,7 @@ def normalize_and_lemmatize(tokens):
     return tokens
 ```
 
-4. Final Pipeline
+#### 4. Final Pipeline
 
 ```python
 def full_preprocess(text):
