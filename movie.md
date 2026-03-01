@@ -208,7 +208,6 @@ To quantify emotional polarity in U.S. reviews, I applied **VADER (Valence Aware
 VADER computes a compound sentiment score ranging from -1 (most negative) to +1 (most positive).
 
 
-
 #### Compute Sentiment Scores
 
 ```python
@@ -237,3 +236,19 @@ Positive → score > 0
 Negative → score < 0
 
 Neutral → score = 0
+
+---
+
+### Sentiment Distribution (U.S. Reviews)
+
+<p align="center">
+  <img src="/img/posts/uchart.png" width="650">
+</p>
+
+The overwhelming dominance of positive reviews indicates that American audiences expressed strong approval of the film.
+
+This result aligns closely with the earlier word frequency analysis, where highly evaluative terms such as *best*, *perfect*, *great*, and *amazing* appeared frequently.
+
+In other words, positivity in U.S. reviews is not subtle. It is expressed directly and explicitly through strong lexical choices.
+
+This reinforces the idea that emotional polarity in American review texts tends to be encoded with high intensity.
