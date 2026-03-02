@@ -102,3 +102,49 @@ This OECD-wide relationship serves as a baseline for evaluating whether the Unit
 
 ---
 
+## 🏛️ 6. The United States Structural Divergence from the OECD
+
+### 🔹 6.1 OECD Economic Structure in PCA Space
+
+p align="left">
+  <img src="/img/posts/zz.png" width="650">
+</p>
+
+Based on the explained variance ratios, the first two principal components account for approximately 73% (PC1: 41.3% + PC2: 32%) of the total variability in GDP growth, employment rate, and income inequality across OECD countries. This proportion captures a substantial amount of the underlying structure, making a two-dimensional PCA representation reasonably informative for summarizing cross-country differences.
+
+The direction and length of the variable vector shown in Biplot represent the degree to which each indicator explains the variance between countries. First, the GDP growth rate is strongly aligned with the first principal component (Dim1), indicating that countries with high GDP volatility and high growth rates are mainly on the right side of Dim1. On the contrary, the employment rate has a relatively short vector with a nearly horizontal direction, meaning that the employment rate is not as strong as GDP or Gini.
+
+In addition, the Gini index extends with a distinct negative slope in the direction of Dim2, which shows that income inequality acts as an important axis in distinguishing structural differences between countries. In other words, countries with higher levels of income inequality appear in the upper left direction in the PCA space, and countries with lower inequality are located close to the lower right.
+
+### 🔹 6.2 The United States in PCA Space
+
+p align="left">
+  <img src="/img/posts/zzzz.png" width="650">
+</p>
+
+The United States is located higher than other OECD countries, indicating that income inequality (Gini) in the United States is relatively high. On the other hand, along the Dim1 axis, it is close to the center, meaning that the GDP growth rate or employment rate is not significantly different from the OECD average. In other words, the United States appears to be a country that is distinguished from other countries by the degree of inequality rather than growth and employment. For this reason, the United States occupies an independent position in the PCA space, slightly away from the areas where most countries are gathered. Overall, the United States is interpreted as the country with clearest structural differences in terms of inequality within the OECD. 
+
+### 🔹 6.3 Cluster Structure of OECD Countries
+
+p align="left">
+  <img src="/img/posts/zzz.png" width="650">
+</p>
+
+This graph shows the results of dividing OECD countries into three clusters based on PCA coordinates. The two ovals represent the typical area that each cluster occupies in the PCA space, indicating that countries in the same group share a similar economic structure. The green cluster includes countries with relatively high levels of inequality and larger fluctuations in growth rates. The red cluster includes countries with more stable employment and growth rates. Cluster 1  represents a unique case separated from the others because its economic structure differs significantly from the rest. Overall, each cluster exhibits a clearly distinguishable pattern based on the combination of economic indicators.
+
+### 🔹 6.4 U.S. Gap from the OECD Average
+
+p align="left">
+  <img src="/img/posts/zzzzz.png" width="650">
+</p>
+
+This graph shows how the United States differs from the OECD average in GDP growth, employment rate, and income inequality. The employment gap (blue) shows that the U.S. had consistently higher employment than the OECD average before 2020 and then recovered slightly after the pandemic. The GDP growth gap (in red) was not significantly different from the OECD average for most of the period, and shows that the United States received a greater economic shock in 2020 alone. In contrast, the Gini gap (green) remained significantly higher than the OECD average in the United States throughout the entire period. Overall, the most important feature is that the US is similar to the OECD average in growth and employment rates, but the Gini gap continues to be structurally very large.
+
+
+### 🔹 6.5 Correlation Patterns in the United States
+
+p align="left">
+  <img src="/img/posts/zzzzzz.png" width="650">
+</p>
+
+As a result of analyzing the correlation between GDP, employment rate, and Gini using only US data, GDP growth rate and employment rate showed a weak positive correlation (r = 0.435). However, it is difficult to say that it is a clear pattern. In contrast, the employment rate and Gini showed a very strong positive correlation (r = 0.877), which means that as employment increases, income inequality tends to increase at the same time. This is the opposite of the weak negative correlation (employment increase and Gini reduction) observed across the OECD. Lastly, the correlation coefficient between GDP growth and Gini was r = 0.049, suggesting virtually no association between the two variables. These results show that the United States has a unique structural connection between employment and inequality and works differently from the OECD average pattern. 
