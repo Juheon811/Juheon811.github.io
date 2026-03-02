@@ -167,3 +167,23 @@ This graph shows how the United States differs from the OECD average in GDP grow
 </p>
 
 As a result of analyzing the correlation between GDP, employment rate, and Gini using only US data, GDP growth rate and employment rate showed a weak positive correlation (r = 0.435). However, it is difficult to say that it is a clear pattern. In contrast, the employment rate and Gini showed a very strong positive correlation (r = 0.877), which means that as employment increases, income inequality tends to increase at the same time. This is the opposite of the weak negative correlation (employment increase and Gini reduction) observed across the OECD. Lastly, the correlation coefficient between GDP growth and Gini was r = 0.049, suggesting virtually no association between the two variables. These results show that the United States has a unique structural connection between employment and inequality and works differently from the OECD average pattern. 
+
+---
+
+<br>
+
+## 🧠 7. Conclusion
+
+This study aimed to compare and analyze how the relationship between GDP growth, employment rate, and income inequality (Gini) differs between the United States and the OECD during the period 2015–2022.
+
+First, in the correlation analysis results using all OECD data, only a weak negative correlation between employment rate and Gini was statistically significant (rejecting H2). This means that in OECD countries, income inequality tends to decrease as employment increases. In contrast, there was no significant relationship between GDP-employment (H1) and GDP-Gini (H3). Therefore, it was confirmed that growth and distribution did not have a consistent structural connection at the OECD level as a whole.
+
+Second, in the PCA analysis, OECD countries were classified into three distinct clusters according to GDP, employment rate, and income inequality. Among them, the United States is located in the high Gini direction (Dim2 positive direction) in the PCA space and shows a unique structure of inequality that distinguishes it from other countries. This means that the way inequality is formed and changes in the United States works very differently compared to the general pattern observed in other OECD countries
+
+Third, as a result of comparing the annual gap between the US and OECD average, the GDP growth rate moved similarly for most of the period and the employment rate was not significantly different. However, there was a slight difference in the rate of recovery after the pandemic. On the other hand, Gini maintained that the US was consistently higher than the OECD average throughout the analysis period, and the gap remained structurally large. This means that the US has a fundamentally different inequality system from the OECD in the long run.
+
+Finally, in the single country correlation analysis conducted only on the United States, the opposite result was observed to the OECD. In particular, there was a very strong positive correlation (r = 0.877) between the employment rate and Gini. This shows that unlike the OECD's tendency to reduce inequality as employment increases, in the United States, inequality expands as employment increases. The GDP-employment (r = 0.435) relationship was not clear with a weak positive correlation, and GDP-Gini (r = 0.049) showed almost no correlation.
+
+Overall, this study shows that the US economy is relatively similar to the OECD average in macro-level trends such as GDP growth and employment rates, but has a distinctly independent pattern in structural mechanisms related to income inequality. In particular, the strong positive correlation between employment and inequality in the United States is likely the result of a combination of labor market systems, wage distribution, industrial structure, and welfare systems.
+
+These findings suggest that the US economic policy cannot solve inequality problems simply by promoting growth or expanding employment. Therefore, a separate policy approach different from that of the OECD is needed. This study is also significant in that it reexamines the structural characteristics of the US economy from an international comparison perspective.
