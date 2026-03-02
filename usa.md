@@ -11,7 +11,7 @@ permalink: /usa/
 <br><br>
 
 ## 💡 1. Research Question 
-How did the relationship between GDP growth, employment rate, and income inequality in the United States from 2015 to 2022 differ from the OECD?
+#### How did the relationship between GDP growth, employment rate, and income inequality in the United States from 2015 to 2022 differ from the OECD?
 
 The OECD countries experienced different paths of growth, employment, and inequality between 2015 and 2022. The United States is often described as having strong economic growth but higher inequality than other countries.
 
