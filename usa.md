@@ -19,15 +19,21 @@ Did the relationship between GDP growth, employment, and inequality in the Unite
 
 ---
 
+<br><br>
+
 ## 🌊 2. Introduction
 This study examines the relationship between GDP growth, employment rate (ages 15–64), and income inequality (Gini) from 2015 to 2022. During this period, the global economy experienced steady growth, the shock of COVID-19, and a rapid recovery.In general, economic growth is expected to create jobs and reduce inequality. However, it is not clear whether this pattern applies to the United States. In particular, even if employment increases, inequality may not always decrease. Therefore, this study directly compares the United States and the OECD average using the same period and the same indicators. By analyzing the three variables together, this research examines whether the U.S. follows the OECD pattern or shows a different structural trend. It focuses on clearly showing how growth, employment, and inequality moved during 2015–2022 and how the United States differs from the OECD.
 
 ---
 
+<br><br>
+
 ## 📚 3. Background Context
 Previous research suggests that income inequality can weaken long-term economic growth, especially when lower-income groups fall behind in education, investment opportunities, and consumption. At the same time, many studies argue that employment expansion may help reduce inequality by increasing labor income and improving access to economic opportunities. However, most existing research tends to analyze these relationships separately focusing either on growth and inequality, or employment and inequality — rather than examining all three variables together. In addition, many major studies were conducted before the COVID-19 pandemic, meaning they do not fully capture the structural shocks and recovery patterns between 2020 and 2022. Few studies directly compare the United States and the OECD using harmonized indicators over the same time frame. This leaves an important gap in understanding whether the U.S. follows the broader OECD pattern, or whether it operates under a structurally different economic dynamic.
 
 ---
+
+<br><br>
 
 ## 📦 4. Data Overview 
 
@@ -39,7 +45,11 @@ All datasets were downloaded in CSV format directly from the OECD Data Explorer 
 
 ---
 
+<br><br>
+
 ## 📊 5. Descriptive Patterns and Correlation Analysis
+
+<br>
 
 ### 🔹 5.1 Standardized boxplot 
 
@@ -48,6 +58,8 @@ All datasets were downloaded in CSV format directly from the OECD Data Explorer 
 </p>
 
 To allow meaningful comparison across variables measured in different units, all indicators were standardized into z-scores. The boxplot therefore reflects relative dispersion rather than absolute magnitude. Among the three variables, GDP growth exhibits the widest interquartile range and the most pronounced tails. Several extreme observations extend beyond ±3 standard deviations, indicating substantial short-term volatility within the sample. Employment rates show a comparatively narrower dispersion. While some outliers are present, the central mass of observations remains more tightly clustered around the mean. The Gini coefficient also displays cross-country variation, but its distribution appears more compact relative to GDP growth, suggesting that inequality varies across OECD economies within a more structurally bounded range. Overall, the standardized distribution indicates that GDP growth captures greater short-term fluctuation, whereas employment and income inequality demonstrate comparatively more stable cross-country patterns.
+
+<br>
 
 ### 🔹 5.2 Employment Rate and GDP Growth
 
@@ -59,6 +71,8 @@ The scatter plot shows a **weak positive relationship** between employment rate 
 
 ---
 
+<br>
+
 ### 🔹 5.3 Income Inequality (Gini) and GDP Growth
 
 <p align="left">
@@ -68,6 +82,8 @@ The scatter plot shows a **weak positive relationship** between employment rate 
 The relationship between income inequality and GDP growth appears **close to neutral or slightly negative**. The regression line is relatively flat, indicating that higher inequality does not systematically correspond to higher or lower growth during this period. This finding challenges the assumption that growth automatically reduces inequality or that inequality necessarily drives growth. Instead, growth dynamics seem to operate somewhat independently from income distribution patterns.
 
 ---
+
+<br>
 
 ### 🔹 5.4 Employment Rate and Income Inequality
 
