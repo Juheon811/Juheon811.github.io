@@ -4,7 +4,7 @@ position: right
 title: "Malaria Risk Area Identification and Contributing Factor Analysis in South Korea"
 date: 2025-12-20 23:30:00
 categories: data-analysis public-health spatial-analysis
-tags: PCA KMeans DBSCAN Regression Epidemiology GIS
+tags: PCA KMeans DBSCAN Regression GIS
 featured_image: "/img/posts/malaria.png"
 project_link: "/malaria/"
 button_icon: "bar-chart"
