@@ -102,6 +102,8 @@ This OECD-wide relationship serves as a baseline for evaluating whether the Unit
 
 ---
 
+<br>
+
 ## 🏛️ 6. The United States Structural Divergence from the OECD
 
 <br>
