@@ -4,7 +4,7 @@ position: right
 title: "U.S. vs OECD: GDP, Employment, and Income Inequality (2015–2022)"
 date: 2025-11-20 22:00:00
 categories: data-analysis economics
-tags: GDP Employment Gini PCA Clustering OECD
+tags: GDP Employment Gini PCA Clustering
 featured_image: "/img/posts/qw.png"
 project_link: "/usa/"
 button_icon: "bar-chart"
