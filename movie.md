@@ -171,7 +171,7 @@ def normalize_and_lemmatize(tokens):
 The bar chart below presents the top 30 most frequent words in U.S. reviews.
 
 <p align="left">
-  <img src="/img/posts/ubar.png" width="650">
+  <img src="/img/posts/ubar.png" width="500">
 </p>
 
 Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* dominate the ranking. This indicates that American reviewers frequently rely on direct and high-intensity emotional vocabulary.
@@ -184,7 +184,7 @@ Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* domina
 To complement the frequency distribution, a word cloud was generated to visualize important words.
 
 <p align="left">
-  <img src="/img/posts/ucloud.png" width="650">
+  <img src="/img/posts/ucloud.png" width="500">
 </p>
 
 The visual dominance of words like *best*, *time*, *great*, and *perfect* reinforces the observation that positivity is expressed explicitly and emphatically. While the bar chart provides precise rankings, the word cloud highlights the emotional intensity embedded in word choice.
@@ -234,7 +234,7 @@ Neutral → score = 0
 ### 🔹 Sentiment Distribution (U.S. Reviews)
 
 <p align="left">
-  <img src="/img/posts/uchart.png" width="650">
+  <img src="/img/posts/uchart.png" width="500">
 </p>
 
 The overwhelming dominance of positive reviews indicates that American audiences expressed strong approval of the film. This result aligns closely with the earlier word frequency analysis, where highly evaluative terms such as *best*, *perfect*, *great*, and *amazing* appeared frequently. This shows that American reviewers tend to express their emotions strongly and directly.
@@ -382,7 +382,7 @@ Neutral → score = 0
 ### 🔹 Sentiment Distribution (Korean Reviews)
 
 <p align="left">
-  <img src="/img/posts/kchart.png" width="650">
+  <img src="/img/posts/kchart.png" width="500">
 </p>
 
 The sentiment distribution reveals a noticeably different pattern from the U.S. results. Unlike the U.S. reviews, where positive sentiment overwhelmingly dominated, Korean reviews show a much larger proportion of neutral classifications. Although positive reviews still form a substantial portion, the high neutral ratio suggests that Korean audiences often express their opinions in a more subtle and context-dependent manner rather than through strongly polarized wording.
