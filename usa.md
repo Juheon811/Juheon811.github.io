@@ -106,7 +106,7 @@ This OECD-wide relationship serves as a baseline for evaluating whether the Unit
 
 ### 🔹 6.1 OECD Economic Structure in PCA Space
 
-p align="left">
+<p align="left">
   <img src="/img/posts/zz.png" width="650">
 </p>
 
@@ -118,7 +118,7 @@ In addition, the Gini index extends with a distinct negative slope in the direct
 
 ### 🔹 6.2 The United States in PCA Space
 
-p align="left">
+<p align="left">
   <img src="/img/posts/zzzz.png" width="650">
 </p>
 
@@ -126,7 +126,7 @@ The United States is located higher than other OECD countries, indicating that i
 
 ### 🔹 6.3 Cluster Structure of OECD Countries
 
-p align="left">
+<p align="left">
   <img src="/img/posts/zzz.png" width="650">
 </p>
 
@@ -134,7 +134,7 @@ This graph shows the results of dividing OECD countries into three clusters base
 
 ### 🔹 6.4 U.S. Gap from the OECD Average
 
-p align="left">
+<p align="left">
   <img src="/img/posts/zzzzz.png" width="650">
 </p>
 
@@ -143,7 +143,7 @@ This graph shows how the United States differs from the OECD average in GDP grow
 
 ### 🔹 6.5 Correlation Patterns in the United States
 
-p align="left">
+<p align="left">
   <img src="/img/posts/zzzzzz.png" width="650">
 </p>
 
