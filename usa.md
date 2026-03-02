@@ -39,3 +39,50 @@ All datasets were downloaded in CSV format directly from the OECD Data Explorer 
 
 ---
 
+## 📊 5. Descriptive Patterns and Correlation Analysis
+
+### 🔹 5.1 Standardized boxplot 
+
+<p align="left">
+  <img src="/img/posts/bbb.png" width="650">
+</p>
+
+To allow meaningful comparison across variables measured in different units, all indicators were standardized into z-scores. The boxplot therefore reflects relative dispersion rather than absolute magnitude. Among the three variables, GDP growth exhibits the widest interquartile range and the most pronounced tails. Several extreme observations extend beyond ±3 standard deviations, indicating substantial short-term volatility within the sample. Employment rates show a comparatively narrower dispersion. While some outliers are present, the central mass of observations remains more tightly clustered around the mean. The Gini coefficient also displays cross-country variation, but its distribution appears more compact relative to GDP growth, suggesting that inequality varies across OECD economies within a more structurally bounded range. Overall, the standardized distribution indicates that GDP growth captures greater short-term fluctuation, whereas employment and income inequality demonstrate comparatively more stable cross-country patterns.
+
+### 🔹 5.2 Employment Rate and GDP Growth
+
+<p align="left">
+  <img src="/img/posts/ca.png" width="650">
+</p>
+
+The scatter plot shows a **weak positive relationship** between employment rate and GDP growth across OECD countries. As employment increases, GDP growth tends to rise slightly. However, the relationship is not strong, and there is considerable dispersion in growth outcomes even among countries with similar employment levels. This suggests that while labor market expansion may support economic growth, employment alone does not fully explain variations in GDP performance across countries.
+
+---
+
+### 🔹 5.3 Income Inequality (Gini) and GDP Growth
+
+<p align="left">
+  <img src="/img/posts/cb.png" width="650">
+</p>
+
+The relationship between income inequality and GDP growth appears **close to neutral or slightly negative**. The regression line is relatively flat, indicating that higher inequality does not systematically correspond to higher or lower growth during this period. This finding challenges the assumption that growth automatically reduces inequality or that inequality necessarily drives growth. Instead, growth dynamics seem to operate somewhat independently from income distribution patterns.
+
+---
+
+### 🔹 5.4 Employment Rate and Income Inequality
+
+<p align="left">
+  <img src="/img/posts/cc.png" width="650">
+</p>
+
+
+In contrast, the relationship between employment rate and income inequality reveals a **clear negative association**. Countries with higher employment rates generally tend to exhibit lower Gini coefficients. This suggests that labor market participation plays an important role in moderating income inequality within OECD economies.
+
+This pattern represents the broader OECD structural tendency:  
+
+> Higher employment → Lower inequality
+
+This OECD-wide relationship serves as a baseline for evaluating whether the United States follows the same structural pattern or diverges from it.
+
+---
+
