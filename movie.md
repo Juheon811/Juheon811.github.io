@@ -184,7 +184,7 @@ Strong evaluative terms such as *best*, *perfect*, *great*, and *amazing* domina
 To complement the frequency distribution, a word cloud was generated to visualize important words.
 
 <p align="left">
-  <img src="/img/posts/ucloud.png" width="500">
+  <img src="/img/posts/ucloud.png" width="50">
 </p>
 
 The visual dominance of words like *best*, *time*, *great*, and *perfect* reinforces the observation that positivity is expressed explicitly and emphatically. While the bar chart provides precise rankings, the word cloud highlights the emotional intensity embedded in word choice.
