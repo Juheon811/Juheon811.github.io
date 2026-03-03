@@ -98,17 +98,10 @@ This framework allows for both structural interpretation and policy-relevant ins
 
 ## 📦 5. Dataset Overview
 
-Based on the analytical framework presented in this study, three final datasets were constructed.
+The data used in this study were collected from official Korean statistical and public data sources, including malaria incidence records, meteorological statistics, agricultural land data, livestock statistics, demographic data, mobility data, healthcare workforce statistics, and geographic coordinate data.
 
-Each dataset corresponds directly to one of the three analytical components:
+The analysis focuses on district-level observations within Seoul, Gyeonggi, Incheon, and Gangwon, where the majority of domestic malaria cases are concentrated.
 
-1. Spatial movement analysis  
-2. Risk area selection  
-3. Determinant analysis  
-
-These datasets were prepared separately according to their specific analytical purposes.
-
----
 
 ### 🗺 5.1 Spatial Movement Analysis
 
@@ -124,7 +117,6 @@ This dataset contains yearly malaria incidence data and geographic coordinates f
 
 It was used to examine changes in spatial distribution over time.
 
----
 
 ### ⚠ 5.2 Risk Area Selection
 
@@ -140,9 +132,9 @@ This dataset includes recent incidence data and selected structural indicators.
 
 It was used to compare districts and identify risk areas.
 
----
 
-### 📈 3.3 Determinant Analysis
+
+### 📈 5.3 Determinant Analysis
 
 **Structure:**
 
@@ -162,4 +154,23 @@ It was used to compare districts and identify risk areas.
 
 This dataset integrates environmental, demographic, and agricultural variables with malaria incidence data.
 
+---
 
+## 📊 6. Analysis
+
+### 🗺️ 6.1 Spatial Shift of Malaria Incidence Over Time
+
+<p align="left">
+  <img src="/img/posts/mal1.png" width="450">
+</p>
+
+To identify temporal changes in the spatial concentration of malaria incidence, the annual weighted mean center was calculated from 2001 to 2023 using district-level case counts and geographic coordinates. In 2001, the weighted mean center was clearly located in the northeastern inland area, around the Yangju region. This indicates that malaria cases were strongly concentrated in the northern border-adjacent districts at the beginning of the study period. From 2002 to around 2010, the centroid shifted southwest toward the Uijeongbu–northern Goyang corridor. The movement during this period shows a gradual transition away from the far northeastern inland area and toward the northwestern part of the Seoul metropolitan region. Around 2012, the centroid moved further west compared to previous years, reaching its most southwestern position in the observed period. This suggests a temporary increase in case concentration toward the western Gyeonggi area. After 2013, the mean center shifted back slightly eastward and became more tightly clustered around the Goyang–Eunpyeong boundary area. From 2014 onward, the annual centroids appear concentrated within a relatively small spatial range, indicating stabilization of the core incidence zone. By 2023, although total malaria cases increased nationally, the weighted mean center remained within this northwestern metropolitan corridor rather than returning to the original northeastern inland position observed in 2001. Overall, the enlarged map confirms a clear long-term spatial shift: malaria incidence moved from a northeastern border-focused concentration toward a more stable northwestern metropolitan-adjacent cluster.
+
+
+### 📅 6.2 Selection Criteria for Reference Years (2017 and 2023)
+
+<p align="left">
+  <img src="/img/posts/mal2.png" width="450">
+</p>
+
+To examine structural differences in malaria incidence under contrasting conditions, two reference years were selected: 2017 and 2023. As shown in the annual trend graph, malaria cases remained relatively stable between 2014 and 2019, followed by a sharp decline during 2020–2021, likely associated with reduced mobility and public health interventions during the COVID-19 pandemic. In 2017, malaria incidence was comparatively low within the pre-pandemic period, representing a stable baseline condition before major external disruptions. In contrast, 2023 shows a dramatic surge in cases, marking the highest level in the observed period. This sharp increase reflects a post-pandemic rebound and suggests the influence of structural and environmental factors beyond temporary mobility restrictions. Therefore, 2017 and 2023 were selected as analytical reference points to compare malaria determinants under stable versus outbreak conditions.
