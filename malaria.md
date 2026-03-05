@@ -181,3 +181,27 @@ To identify structural differences in malaria incidence across districts, dimens
 
 Two clustering algorithms, **K-Means and DBSCAN**, were tested. The **Elbow Method** was used to determine the optimal number of clusters for K-Means, and the results indicated that **three clusters (k = 3)** provided the most appropriate grouping of districts. Although DBSCAN was also applied, it produced only a single cluster under the selected parameter settings, making it unsuitable for distinguishing meaningful regional patterns.
 The **Silhouette Score of the K-Means model was approximately 0.26**, suggesting a moderate but interpretable level of separation among clusters. Therefore, **K-Means clustering with three clusters was selected for the final regional classification**, and the characteristics of each cluster are analyzed in the following section.
+
+### 📍 6.4 Cluster 1: Urban-Adjacent Regions
+
+<p align="left">
+  <img src="/img/posts/mall1.png" width="450">
+</p>
+
+Cluster 1 mainly consists of districts located near the Seoul metropolitan area. These regions represent urban-adjacent environments where malaria incidence is influenced more strongly by climatic conditions rather than agricultural land-use factors. Decision tree analysis shows that **precipitation is the most important variable determining malaria incidence in this cluster**. Other environmental variables such as average temperature and population density also contribute to the variation in case counts. Multiple linear regression analysis was conducted to examine the relationship between malaria incidence and explanatory variables within this cluster. The regression model indicates that climatic variables, particularly precipitation, play a more significant role compared to agricultural variables such as paddy field area. Overall, the results suggest that malaria occurrence in urban-adjacent regions is primarily associated with **climatic conditions and urban environmental factors**, rather than agricultural landscape structure.
+
+### 📍 6.5 Cluster 2: Agricultural Regions
+
+<p align="left">
+  <img src="/img/posts/mall2.png" width="450">
+</p>
+
+Cluster 2 includes districts characterized by extensive agricultural land use, particularly areas with large paddy field coverage.Decision tree analysis indicates that **paddy field area is the most influential variable explaining malaria incidence in this cluster**. Paddy fields provide favorable breeding environments for mosquitoes, which increases the potential risk of malaria transmission.Multiple linear regression analysis further supports this finding. Among the explanatory variables, the **paddy field ratio shows the strongest relationship with malaria case counts**, indicating that agricultural landscape structure plays a key role in malaria occurrence within these regions. These results suggest that malaria risk in agricultural districts is strongly associated with **environmental conditions related to rice cultivation and mosquito habitat formation**.
+
+### 🐄 6.6 Cluster 3: Livestock and Socioeconomic Regions
+
+<p align="left">
+  <img src="/img/posts/mall3.png" width="450">
+</p>
+
+Cluster 3 consists of districts where livestock-related and socioeconomic variables appear to be associated with malaria incidence. Decision tree analysis indicates that **livestock count is the most influential variable explaining malaria incidence in this cluster**. This suggests that regions with higher livestock populations may provide ecological conditions that affect mosquito activity and malaria transmission. Multiple linear regression analysis shows that variables such as **population density and sex ratio also exhibit relationships with malaria case counts**. However, these variables alone are not sufficient to fully explain malaria incidence patterns. Therefore, the decision tree results suggest that **livestock-related variables play a more significant role** in explaining malaria occurrence within this cluster. Overall, the results indicate that malaria incidence in these regions is associated with **livestock distribution and broader socioeconomic characteristics**.
