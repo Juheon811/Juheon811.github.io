@@ -198,7 +198,7 @@ Cluster 1 mainly consists of districts located near the Seoul metropolitan area.
 
 Cluster 2 includes districts characterized by extensive agricultural land use, particularly areas with large paddy field coverage.Decision tree analysis indicates that **paddy field area is the most influential variable explaining malaria incidence in this cluster**. Paddy fields provide favorable breeding environments for mosquitoes, which increases the potential risk of malaria transmission.Multiple linear regression analysis further supports this finding. Among the explanatory variables, the **paddy field ratio shows the strongest relationship with malaria case counts**, indicating that agricultural landscape structure plays a key role in malaria occurrence within these regions. These results suggest that malaria risk in agricultural districts is strongly associated with **environmental conditions related to rice cultivation and mosquito habitat formation**.
 
-### 🐄 6.6 Cluster 3: Livestock and Socioeconomic Regions
+### 📍 6.6 Cluster 3: Livestock and Socioeconomic Regions
 
 <p align="left">
   <img src="/img/posts/mall3.png" width="450">
