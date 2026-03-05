@@ -174,3 +174,21 @@ To identify temporal changes in the spatial concentration of malaria incidence, 
 </p>
 
 To examine structural differences in malaria incidence under contrasting conditions, two reference years were selected: 2017 and 2023. As shown in the annual trend graph, malaria cases remained relatively stable between 2014 and 2019, followed by a sharp decline during 2020–2021, likely associated with reduced mobility and public health interventions during the COVID-19 pandemic. In 2017, malaria incidence was comparatively low within the pre-pandemic period, representing a stable baseline condition before major external disruptions. In contrast, 2023 shows a dramatic surge in cases, marking the highest level in the observed period. This sharp increase reflects a post-pandemic rebound and suggests the influence of structural and environmental factors beyond temporary mobility restrictions. Therefore, 2017 and 2023 were selected as analytical reference points to compare malaria determinants under stable versus outbreak conditions.
+
+### 🧩 6.3 Regional Structural Classification
+
+To identify structural differences in malaria incidence across districts, dimensionality reduction and clustering analysis were conducted.
+
+First, **Principal Component Analysis (PCA)** was applied to reduce the dimensionality of the dataset and capture the major variance structure among environmental, demographic, and agricultural variables.
+
+The cumulative explained variance analysis showed that **five principal components explain approximately 92% of the total variance**, indicating that the main structure of the dataset can be represented with a reduced number of components.
+
+Based on these transformed features, clustering analysis was performed to identify districts with similar structural characteristics.
+
+Two clustering algorithms, **K-Means and DBSCAN**, were tested. The **Elbow Method** was used to determine the optimal number of clusters for K-Means, and the results indicated that **three clusters (k = 3)** provided the most appropriate grouping of districts.
+
+Although DBSCAN was also applied, it produced only a single cluster under the selected parameter settings, making it unsuitable for distinguishing meaningful regional patterns.
+
+The **Silhouette Score of the K-Means model was approximately 0.26**, suggesting a moderate but interpretable level of separation among clusters.
+
+Therefore, **K-Means clustering with three clusters was selected for the final regional classification**, and the characteristics of each cluster are analyzed in the following section.
