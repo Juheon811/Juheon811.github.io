@@ -177,18 +177,7 @@ To examine structural differences in malaria incidence under contrasting conditi
 
 ### 🧩 6.3 Regional Structural Classification
 
-To identify structural differences in malaria incidence across districts, dimensionality reduction and clustering analysis were conducted.
+To identify structural differences in malaria incidence across districts, dimensionality reduction and clustering analysis were conducted. First, **Principal Component Analysis (PCA)** was applied to reduce the dimensionality of the dataset and capture the major variance structure among environmental, demographic, and agricultural variables. The cumulative explained variance analysis showed that **five principal components explain approximately 92% of the total variance**, indicating that the main structure of the dataset can be represented with a reduced number of components. Based on these transformed features, clustering analysis was performed to identify districts with similar structural characteristics.
 
-First, **Principal Component Analysis (PCA)** was applied to reduce the dimensionality of the dataset and capture the major variance structure among environmental, demographic, and agricultural variables.
-
-The cumulative explained variance analysis showed that **five principal components explain approximately 92% of the total variance**, indicating that the main structure of the dataset can be represented with a reduced number of components.
-
-Based on these transformed features, clustering analysis was performed to identify districts with similar structural characteristics.
-
-Two clustering algorithms, **K-Means and DBSCAN**, were tested. The **Elbow Method** was used to determine the optimal number of clusters for K-Means, and the results indicated that **three clusters (k = 3)** provided the most appropriate grouping of districts.
-
-Although DBSCAN was also applied, it produced only a single cluster under the selected parameter settings, making it unsuitable for distinguishing meaningful regional patterns.
-
-The **Silhouette Score of the K-Means model was approximately 0.26**, suggesting a moderate but interpretable level of separation among clusters.
-
-Therefore, **K-Means clustering with three clusters was selected for the final regional classification**, and the characteristics of each cluster are analyzed in the following section.
+Two clustering algorithms, **K-Means and DBSCAN**, were tested. The **Elbow Method** was used to determine the optimal number of clusters for K-Means, and the results indicated that **three clusters (k = 3)** provided the most appropriate grouping of districts. Although DBSCAN was also applied, it produced only a single cluster under the selected parameter settings, making it unsuitable for distinguishing meaningful regional patterns.
+The **Silhouette Score of the K-Means model was approximately 0.26**, suggesting a moderate but interpretable level of separation among clusters. Therefore, **K-Means clustering with three clusters was selected for the final regional classification**, and the characteristics of each cluster are analyzed in the following section.
