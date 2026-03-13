@@ -189,6 +189,10 @@ The **Silhouette Score of the K-Means model was approximately 0.26**, suggesting
   <img src="/img/posts/malll1.png" width="45%">
 </p>
 
+<p align="center">
+  <em>2017</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>2023</em>
+</p>
 
 Cluster 1 mainly consists of districts located near the Seoul metropolitan area. These regions represent urban-adjacent environments where malaria incidence is influenced more strongly by climatic conditions rather than agricultural land-use factors. Decision tree analysis shows that **precipitation is the most important variable determining malaria incidence in this cluster**. Other environmental variables such as average temperature and population density also contribute to the variation in case counts. Multiple linear regression analysis was conducted to examine the relationship between malaria incidence and explanatory variables within this cluster. The regression model indicates that climatic variables, particularly precipitation, play a more significant role compared to agricultural variables such as paddy field area. Overall, the results suggest that malaria occurrence in urban-adjacent regions is primarily associated with **climatic conditions and urban environmental factors**, rather than agricultural landscape structure.
 
