@@ -185,8 +185,8 @@ The **Silhouette Score of the K-Means model was approximately 0.26**, suggesting
 ### 📍 6.4 Cluster 1: Urban-Adjacent Regions
 
 <p align="center">
-  <img src="/assets/images/mall1.png" width="45%">
-  <img src="/assets/images/malll1.png" width="45%">
+  <img src="/img/posts/mall1.png" width="45%">
+  <img src="/img/posts/malll1.png" width="45%">
 </p>
 
 
@@ -195,8 +195,8 @@ Cluster 1 mainly consists of districts located near the Seoul metropolitan area.
 ### 📍 6.5 Cluster 2: Agricultural Regions
 
 <p align="center">
-  <img src="/assets/images/mall2.png" width="45%">
-  <img src="/assets/images/malll2.png" width="45%">
+  <img src="/img/posts/mall2.png" width="45%">
+  <img src="/img/posts/malll2.png" width="45%">
 </p>
 
 
@@ -205,8 +205,8 @@ Cluster 2 includes districts characterized by extensive agricultural land use, p
 ### 📍 6.6 Cluster 3: Livestock and Socioeconomic Regions
 
 <p align="center">
-  <img src="/assets/images/mall3.png" width="45%">
-  <img src="/assets/images/malll3.png" width="45%">
+  <img src="/img/posts/mall3.png" width="45%">
+  <img src="/img/posts/malll3.png" width="45%">
 </p>
 
 Cluster 3 consists of districts where livestock-related and socioeconomic variables appear to be associated with malaria incidence.Decision tree analysis indicates that **livestock count and income level are the most influential variables explaining malaria incidence in this cluster**. This suggests that regions with higher livestock populations and certain socioeconomic conditions may provide ecological environments that influence mosquito activity and malaria transmission.Multiple linear regression analysis shows that variables such as **population density and sex ratio also exhibit relationships with malaria case counts**. However, these variables alone are not sufficient to fully explain malaria incidence patterns.Therefore, the decision tree results suggest that **livestock distribution and income-related socioeconomic factors play a more significant role** in explaining malaria occurrence within this cluster.Overall, the results indicate that malaria incidence in these regions is associated with **livestock distribution and broader socioeconomic characteristics**.
