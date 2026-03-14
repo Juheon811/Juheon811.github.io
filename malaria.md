@@ -331,24 +331,24 @@ To further understand the differences between high-risk and low-risk regions, se
 
 #### Indicators in High-Risk Regions
 
-Sex Ratio  
+**Sex Ratio**
 High-risk districts are often located near military bases where a higher proportion of male population is present. Previous studies indicate that a large portion of malaria cases in Korea occurs among military personnel.
 
-Cattle Density  
+**Cattle Density**  
 The malaria vector mosquito Anopheles sinensis shows a strong preference for feeding on cattle. Therefore, regions with higher cattle density provide favorable environments for mosquito activity.
 
-Paddy Field Ratio  
+**Paddy Field Ratio**  
 Rice paddies provide ideal breeding environments for mosquitoes. Areas with larger paddy field coverage tend to experience higher malaria transmission risk.
 
 #### Indicators in Low-Risk Regions
 
-Population Density  
+**Population Density**  
 Urban regions with high population density tend to have better healthcare accessibility and faster treatment systems, reducing malaria spread.
 
-Average Temperature  
+**Average Temperature**  
 Extremely high temperatures can reduce mosquito survival rates and vector activity, which lowers malaria risk.
 
-Precipitation  
+**Precipitation**  
 Heavy rainfall can reduce mosquito activity and limit the movement of flying insects, decreasing the potential transmission of malaria.
 
 ## 🧾 7. Conclusion
