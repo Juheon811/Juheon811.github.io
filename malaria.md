@@ -248,7 +248,7 @@ Cluster 2 consists primarily of districts characterized by extensive agricultura
 
 Cluster 3 consists of districts located mainly in rural and peripheral areas of the study region. These districts are generally characterized by lower population density and broader rural landscapes compared to the metropolitan districts. In 2017, the spatial distribution of this cluster appeared in several scattered districts, particularly in eastern and peripheral areas. The cluster represented rural regions that were spatially separated from the metropolitan core. By 2023, the spatial pattern of Cluster 3 became more extensive and continuous, especially across large areas in the eastern part of the study region. Compared with 2017, the cluster expanded spatially and formed a broader rural zone. Overall, Cluster 3 represents **rural regions where malaria incidence is associated with broader regional characteristics rather than metropolitan or purely agricultural environments.**
 
-### 6.7 Overall Interpretation of Results
+### 🧠 6.7 Overall Interpretation of Results
 
 <table style="width:100%; text-align:center;">
 <tr>
@@ -271,11 +271,11 @@ Cluster 3 consists of districts located mainly in rural and peripheral areas of 
 The clustering results reveal clear regional differences in malaria incidence patterns. By combining clustering analysis with multiple linear regression and decision tree analysis, this study identified the key environmental and socioeconomic factors associated with malaria occurrence. The analysis of the 2017 dataset indicates that agricultural land structure played the most important role in explaining malaria incidence. In particular, paddy field area was identified as the dominant factor, as rice paddies provide suitable breeding environments for mosquitoes. However, the 2023 analysis revealed a more diversified pattern of determinants across regions. Three major regional structures were identified: urban-adjacent regions, agricultural regions, and livestock or socioeconomic regions. Each cluster shows different environmental and structural characteristics influencing malaria incidence. Overall, the findings suggest that the spatial distribution and determinants of malaria risk have evolved over time. While agricultural factors were dominant in earlier years, recent patterns indicate that multiple environmental and socioeconomic conditions jointly influence malaria occurrence. These results highlight the importance of region-specific malaria prevention and management strategies.
 
 
-### 6.8 Future Malaria Risk Prediction (2041–2050)
+### 🏙️ 6.8 Future Malaria Risk Prediction (2041–2050)
 
 Using regression coefficients estimated from the 2023 dataset, malaria risk was projected for the period 2041–2050 under future climate scenarios. Climate projection data, including predicted temperature and precipitation, were obtained from the national climate change scenario dataset. The prediction results indicate that Cluster 1 is expected to show the lowest malaria risk, while Cluster 2 and Cluster 3 are projected to exhibit higher risk levels. In particular, Cluster 2 is predicted to have the highest malaria incidence risk during the 2041–2050 period. These results suggest that agricultural regions may remain the most vulnerable areas for malaria occurrence under future climate conditions.
 
-## 6.9 Malaria Risk Index Calculation
+### 🧮 6.9 Malaria Risk Index Calculation
 
 To identify high-risk and low-risk regions for malaria occurrence, a malaria risk index was calculated by incorporating malaria incidence, medical workforce capacity, and regional mobility factors.
 
@@ -299,7 +299,7 @@ The number of malaria cases was divided by the number of medical staff in each d
 4. Identification of High and Low Risk Regions  
 Based on the calculated risk scores, the top five and bottom five districts were selected as high-risk and low-risk regions respectively.
 
-## 6.10 Identification of High-Risk and Low-Risk Regions
+### 🌿 6.10 Identification of High-Risk and Low-Risk Regions
 
 ### High-Risk Regions
 
@@ -325,7 +325,7 @@ The bottom five districts with the lowest malaria risk scores were:
 
 These districts are largely located in metropolitan urban areas corresponding to Cluster 1. Higher healthcare accessibility and urban environmental conditions contribute to lower malaria transmission risk.
 
-## 6.11 Environmental Characteristics of Risk Regions
+### 🔮  6.11 Environmental Characteristics of Risk Regions
 
 To further understand the differences between high-risk and low-risk regions, several environmental and socioeconomic indicators were analyzed.
 
