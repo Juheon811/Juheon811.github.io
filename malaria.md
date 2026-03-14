@@ -184,17 +184,21 @@ The **Silhouette Score of the K-Means model was approximately 0.26**, suggesting
 
 ### 📍 6.4 Cluster 1: Urban-Adjacent Regions
 
-<table>
+<table style="width:100%; text-align:center;">
 <tr>
-<td align="center">
-<img src="/img/posts/mall1.png" width="350"><br>
+
+<td style="width:50%;">
+<img src="/img/posts/mall1.png" style="width:90%;">
+<br>
 <em>2017</em>
 </td>
 
-<td align="center">
-<img src="/img/posts/malll1.png" width="350"><br>
+<td style="width:50%;">
+<img src="/img/posts/malll1.png" style="width:90%;">
+<br>
 <em>2023</em>
 </td>
+
 </tr>
 </table>
 
