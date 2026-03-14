@@ -285,7 +285,7 @@ Malaria Risk Index = (Malaria Cases / Number of Medical Staff) × Mobility Weigh
 
 This approach considers both healthcare accessibility and population movement, which can influence malaria transmission risk.
 
-### Analysis Procedure
+#### Analysis Procedure
 
 1. Data Preprocessing  
 Seven CSV datasets were integrated. Data corresponding to Seoul, Gyeonggi, Incheon, and Gangwon regions were filtered and matched by regional names. The mobility population for each region was aggregated.
@@ -301,7 +301,7 @@ Based on the calculated risk scores, the top five and bottom five districts were
 
 ### 🌿 6.10 Identification of High-Risk and Low-Risk Regions
 
-### High-Risk Regions
+#### High-Risk Regions
 
 The analysis identified the following districts as the top five malaria risk regions:
 
@@ -313,7 +313,7 @@ The analysis identified the following districts as the top five malaria risk reg
 
 Most of these districts correspond to Cluster 3 regions identified in the clustering analysis. These areas are typically rural regions with livestock farming activities and environmental conditions favorable for mosquito breeding.
 
-### Low-Risk Regions
+#### Low-Risk Regions
 
 The bottom five districts with the lowest malaria risk scores were:
 
@@ -329,7 +329,7 @@ These districts are largely located in metropolitan urban areas corresponding to
 
 To further understand the differences between high-risk and low-risk regions, several environmental and socioeconomic indicators were analyzed.
 
-### Indicators in High-Risk Regions
+#### Indicators in High-Risk Regions
 
 Sex Ratio  
 High-risk districts are often located near military bases where a higher proportion of male population is present. Previous studies indicate that a large portion of malaria cases in Korea occurs among military personnel.
@@ -340,7 +340,7 @@ The malaria vector mosquito Anopheles sinensis shows a strong preference for fee
 Paddy Field Ratio  
 Rice paddies provide ideal breeding environments for mosquitoes. Areas with larger paddy field coverage tend to experience higher malaria transmission risk.
 
-### Indicators in Low-Risk Regions
+#### Indicators in Low-Risk Regions
 
 Population Density  
 Urban regions with high population density tend to have better healthcare accessibility and faster treatment systems, reducing malaria spread.
