@@ -68,11 +68,11 @@ The overall analytical process consists of two major stages:
 
 ### 4.1 Data Collection and Preprocessing
 
- Collection of district-level data including population, land use, agricultural area, temperature, precipitation, humidity, malaria incidence, income, mobility, and healthcare resources.
- Integration of datasets into a unified panel structure  
- Removal of outliers and missing values  
- Application of scaling techniques  
- Construction of derived variables (e.g., ratios and density measures)
+1. Collection of district-level data including population, land use, agricultural area, temperature, precipitation, humidity, malaria incidence, income, mobility, and healthcare resources.
+2. Integration of datasets into a unified panel structure  
+3. Removal of outliers and missing values  
+4. Application of scaling techniques  
+5. Construction of derived variables (e.g., ratios and density measures)
 
 ### 4.2 Data Analysis
 
