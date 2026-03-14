@@ -206,19 +206,45 @@ Cluster 1 mainly consists of districts located near the Seoul metropolitan area.
 
 ### 📍 6.5 Cluster 2: Agricultural Regions
 
-<p align="center">
-  <img src="/img/posts/mall2.png" width="45%">
-  <img src="/img/posts/malll2.png" width="45%">
-</p>
+<table style="width:100%; text-align:center;">
+<tr>
+
+<td style="width:50%;">
+<img src="/img/posts/mall2.png" style="width:90%;">
+<br>
+<em>2017</em>
+</td>
+
+<td style="width:50%;">
+<img src="/img/posts/malll2.png" style="width:90%;">
+<br>
+<em>2023</em>
+</td>
+
+</tr>
+</table>
 
 
 Cluster 2 includes districts characterized by extensive agricultural land use, particularly areas with large paddy field coverage.Decision tree analysis indicates that **paddy field area is the most influential variable explaining malaria incidence in this cluster**. Paddy fields provide favorable breeding environments for mosquitoes, which increases the potential risk of malaria transmission.Multiple linear regression analysis further supports this finding. Among the explanatory variables, the **paddy field ratio shows the strongest relationship with malaria case counts**, indicating that agricultural landscape structure plays a key role in malaria occurrence within these regions. These results suggest that malaria risk in agricultural districts is strongly associated with **environmental conditions related to rice cultivation and mosquito habitat formation**.
 
 ### 📍 6.6 Cluster 3: Livestock and Socioeconomic Regions
 
-<p align="center">
-  <img src="/img/posts/mall3.png" width="45%">
-  <img src="/img/posts/malll3.png" width="45%">
-</p>
+<table style="width:100%; text-align:center;">
+<tr>
+
+<td style="width:50%;">
+<img src="/img/posts/mall3.png" style="width:90%;">
+<br>
+<em>2017</em>
+</td>
+
+<td style="width:50%;">
+<img src="/img/posts/malll3.png" style="width:90%;">
+<br>
+<em>2023</em>
+</td>
+
+</tr>
+</table>
 
 Cluster 3 consists of districts where livestock-related and socioeconomic variables appear to be associated with malaria incidence.Decision tree analysis indicates that **livestock count and income level are the most influential variables explaining malaria incidence in this cluster**. This suggests that regions with higher livestock populations and certain socioeconomic conditions may provide ecological environments that influence mosquito activity and malaria transmission.Multiple linear regression analysis shows that variables such as **population density and sex ratio also exhibit relationships with malaria case counts**. However, these variables alone are not sufficient to fully explain malaria incidence patterns.Therefore, the decision tree results suggest that **livestock distribution and income-related socioeconomic factors play a more significant role** in explaining malaria occurrence within this cluster.Overall, the results indicate that malaria incidence in these regions is associated with **livestock distribution and broader socioeconomic characteristics**.
