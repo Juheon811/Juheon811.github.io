@@ -5,7 +5,7 @@ permalink: /malaria/
 ---
 
 <br><br>
-# Malaria Risk Area Identification and Contributing Factor Analysis in South Korea
+# 🦟 Malaria Risk Area Identification and Contributing Factor Analysis in South Korea
 <br><br>
 
 ## 🌍 1. Background
