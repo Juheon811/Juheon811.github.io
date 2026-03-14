@@ -247,3 +247,25 @@ Cluster 2 consists primarily of districts characterized by extensive agricultura
 </table>
 
 Cluster 3 consists of districts located mainly in rural and peripheral areas of the study region. These districts are generally characterized by lower population density and broader rural landscapes compared to the metropolitan districts. In 2017, the spatial distribution of this cluster appeared in several scattered districts, particularly in eastern and peripheral areas. The cluster represented rural regions that were spatially separated from the metropolitan core. By 2023, the spatial pattern of Cluster 3 became more extensive and continuous, especially across large areas in the eastern part of the study region. Compared with 2017, the cluster expanded spatially and formed a broader rural zone. Overall, Cluster 3 represents **rural regions where malaria incidence is associated with broader regional characteristics rather than metropolitan or purely agricultural environments.**
+
+### 6.7 Overall Interpretation of Results
+
+<table style="width:100%; text-align:center;">
+<tr>
+
+<td style="width:50%;">
+<img src="/img/posts/mm1.png" style="width:90%;">
+<br>
+<em>2017</em>
+</td>
+
+<td style="width:50%;">
+<img src="/img/posts/mm2.png" style="width:90%;">
+<br>
+<em>2023</em>
+</td>
+
+</tr>
+</table>
+
+The clustering results reveal clear regional differences in malaria incidence patterns. By combining clustering analysis with multiple linear regression and decision tree analysis, this study identified the key environmental and socioeconomic factors associated with malaria occurrence. The analysis of the 2017 dataset indicates that agricultural land structure played the most important role in explaining malaria incidence. In particular, paddy field area was identified as the dominant factor, as rice paddies provide suitable breeding environments for mosquitoes. However, the 2023 analysis revealed a more diversified pattern of determinants across regions. Three major regional structures were identified: urban-adjacent regions, agricultural regions, and livestock or socioeconomic regions. Each cluster shows different environmental and structural characteristics influencing malaria incidence. Overall, the findings suggest that the spatial distribution and determinants of malaria risk have evolved over time. While agricultural factors were dominant in earlier years, recent patterns indicate that multiple environmental and socioeconomic conditions jointly influence malaria occurrence. These results highlight the importance of region-specific malaria prevention and management strategies.
