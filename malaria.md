@@ -269,3 +269,84 @@ Cluster 3 consists of districts located mainly in rural and peripheral areas of 
 </table>
 
 The clustering results reveal clear regional differences in malaria incidence patterns. By combining clustering analysis with multiple linear regression and decision tree analysis, this study identified the key environmental and socioeconomic factors associated with malaria occurrence. The analysis of the 2017 dataset indicates that agricultural land structure played the most important role in explaining malaria incidence. In particular, paddy field area was identified as the dominant factor, as rice paddies provide suitable breeding environments for mosquitoes. However, the 2023 analysis revealed a more diversified pattern of determinants across regions. Three major regional structures were identified: urban-adjacent regions, agricultural regions, and livestock or socioeconomic regions. Each cluster shows different environmental and structural characteristics influencing malaria incidence. Overall, the findings suggest that the spatial distribution and determinants of malaria risk have evolved over time. While agricultural factors were dominant in earlier years, recent patterns indicate that multiple environmental and socioeconomic conditions jointly influence malaria occurrence. These results highlight the importance of region-specific malaria prevention and management strategies.
+
+
+### 6.8 Future Malaria Risk Prediction (2041–2050)
+
+Using regression coefficients estimated from the 2023 dataset, malaria risk was projected for the period 2041–2050 under future climate scenarios. Climate projection data, including predicted temperature and precipitation, were obtained from the national climate change scenario dataset. The prediction results indicate that Cluster 1 is expected to show the lowest malaria risk, while Cluster 2 and Cluster 3 are projected to exhibit higher risk levels. In particular, Cluster 2 is predicted to have the highest malaria incidence risk during the 2041–2050 period. These results suggest that agricultural regions may remain the most vulnerable areas for malaria occurrence under future climate conditions.
+
+## 6.9 Malaria Risk Index Calculation
+
+To identify high-risk and low-risk regions for malaria occurrence, a malaria risk index was calculated by incorporating malaria incidence, medical workforce capacity, and regional mobility factors.
+
+The malaria risk index was defined as follows:
+
+Malaria Risk Index = (Malaria Cases / Number of Medical Staff) × Mobility Weight
+
+This approach considers both healthcare accessibility and population movement, which can influence malaria transmission risk.
+
+### Analysis Procedure
+
+1. Data Preprocessing  
+Seven CSV datasets were integrated. Data corresponding to Seoul, Gyeonggi, Incheon, and Gangwon regions were filtered and matched by regional names. The mobility population for each region was aggregated.
+
+2. Mobility Population Normalization  
+The filtered data were grouped using regional codes and district names. Mobility population data were normalized to ensure comparability across regions.
+
+3. Risk Score Calculation  
+The number of malaria cases was divided by the number of medical staff in each district. The normalized mobility population value was then applied as a weighting factor to calculate the malaria risk score.
+
+4. Identification of High and Low Risk Regions  
+Based on the calculated risk scores, the top five and bottom five districts were selected as high-risk and low-risk regions respectively.
+
+## 6.10 Identification of High-Risk and Low-Risk Regions
+
+### High-Risk Regions
+
+The analysis identified the following districts as the top five malaria risk regions:
+
+- Icheon-si (Gyeonggi)
+- Gimpo-si (Gyeonggi)
+- Ganghwa-gun (Incheon)
+- Ilsanseo-gu (Goyang, Gyeonggi)
+- Manan-gu (Anyang, Gyeonggi)
+
+Most of these districts correspond to Cluster 3 regions identified in the clustering analysis. These areas are typically rural regions with livestock farming activities and environmental conditions favorable for mosquito breeding.
+
+### Low-Risk Regions
+
+The bottom five districts with the lowest malaria risk scores were:
+
+- Songpa-gu (Seoul)
+- Bundang-gu (Seongnam, Gyeonggi)
+- Seocho-gu (Seoul)
+- Wonju-si (Gangwon)
+- Gangnam-gu (Seoul)
+
+These districts are largely located in metropolitan urban areas corresponding to Cluster 1. Higher healthcare accessibility and urban environmental conditions contribute to lower malaria transmission risk.
+
+## 6.11 Environmental Characteristics of Risk Regions
+
+To further understand the differences between high-risk and low-risk regions, several environmental and socioeconomic indicators were analyzed.
+
+### Indicators in High-Risk Regions
+
+Sex Ratio  
+High-risk districts are often located near military bases where a higher proportion of male population is present. Previous studies indicate that a large portion of malaria cases in Korea occurs among military personnel.
+
+Cattle Density  
+The malaria vector mosquito Anopheles sinensis shows a strong preference for feeding on cattle. Therefore, regions with higher cattle density provide favorable environments for mosquito activity.
+
+Paddy Field Ratio  
+Rice paddies provide ideal breeding environments for mosquitoes. Areas with larger paddy field coverage tend to experience higher malaria transmission risk.
+
+### Indicators in Low-Risk Regions
+
+Population Density  
+Urban regions with high population density tend to have better healthcare accessibility and faster treatment systems, reducing malaria spread.
+
+Average Temperature  
+Extremely high temperatures can reduce mosquito survival rates and vector activity, which lowers malaria risk.
+
+Precipitation  
+Heavy rainfall can reduce mosquito activity and limit the movement of flying insects, decreasing the potential transmission of malaria.
